@@ -23,20 +23,6 @@ In VPHUD's Options menu you'll be able to:
   - Enable a virtual crosshair and change its color. You can use the crosshair only if you don't care about the gauges.
   - Force/unforce VPHUD to show up, ignoring built-in filtering options.
 
-# Issues
-  - Gauges size scalling algorythm needs improvement.
-  - Altitude bar sometimes getting behind the Vertical Speed Indicator is a expected behaviour.
-  - Pitch not perfectly accurate.
-  
-Aside from that, none that I'm aware. Let me know if you find any.
-
-# Planned Improvements
-  - Throttle indicator.
-  - Better crosshair customisation.
-  - Change pitch degrees scale from 10º to 15º.
-  - Translations.
-  - Another VPHUD styling that replicates real aircraft HUDs. Meanwhile [this][iy] may interest you.
-
 # Licensing
 **No Redistribution** *- You may not publicly redistribute VPHUD without my consent. As such public modpacks/mod compilations are not authorized. The ONLY EXCEPTION are communities/clans that may PRIVATELY share VPHUD on their own PRIVATE repositories for PRIVATE IN-HOUSE use without noticing me. (I'll personally take care of distributing and keeping updated VPHUD on the most popular Arma public repositories. If you wish for VPHUD to be available on a public repository that is not yet available please contact me.)*
 
