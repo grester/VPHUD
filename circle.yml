@@ -14,9 +14,9 @@ jobs:
       - deploy:
           name: Update documentation and translation statistics
           command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ] && [ "${CIRCLE_PROJECT_USERNAME}" == "acemod" ]; then
+            if [ "${CIRCLE_BRANCH}" == "master" ] && [ "${CIRCLE_PROJECT_USERNAME}" == "grester" ]; then
               pip install pygithub pygithub3
               python3 tools/deploy.py
             else
-              echo "Skipping, not on acemod/ACE3 master branch..."
+              echo "Skipping, not on grester/VPHUD master branch..."
             fi
