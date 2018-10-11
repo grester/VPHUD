@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="Grstr_VPHUD">
+	<Package name="GUI">
+		<Container name="Main menu">
+			<Key ID="STR_myKey">
+				<Original>Hey there</Original>
+			</Key>
+		</Container>
+	</Package>
+</Project>
