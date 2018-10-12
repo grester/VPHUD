@@ -1,0 +1,12 @@
+name = "VPHUD 1.2";
+picture = "workshop.jpg";
+description = "VPHUD stands for Virtual Pilot Head-Up Display. What is VPHUD? Have you ever felt the need to look at the aircraft fixed gauges, because it had no HUD? Have you ever crashed your aircraft because you were distracted looking at such gauges? Have you ever wished the Advanced Flight Model GUI existed in the Standard Flight Model? I'm glad to tell you that VPHUD seeks to solve all those problems and wishes you ever had before.";
+logo = "logo.paa";
+logoOver = "logoover.paa";
+tooltip = "VPHUD";
+tooltipOwned = "VPHUD Owned";
+overview = "VPHUD stands for Virtual Pilot Head-Up Display. What is VPHUD? Have you ever felt the need to look at the aircraft fixed gauges, because it had no HUD? Have you ever crashed your aircraft because you were distracted looking at such gauges? Have you ever wished the Advanced Flight Model GUI existed in the Standard Flight Model? I'm glad to tell you that VPHUD seeks to solve all those problems and wishes you ever had before.";
+author = "Grester";
+overviewPicture = "logo.paa";
+overviewText = "VPHUD stands for Virtual Pilot Head-Up Display. What is VPHUD? Have you ever felt the need to look at the aircraft fixed gauges, because it had no HUD? Have you ever crashed your aircraft because you were distracted looking at such gauges? Have you ever wished the Advanced Flight Model GUI existed in the Standard Flight Model? I'm glad to tell you that VPHUD seeks to solve all those problems and wishes you ever had before.";
+overviewFootnote = "";
