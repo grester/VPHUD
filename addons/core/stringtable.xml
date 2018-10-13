@@ -1,64 +1,62 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Project name="Grstr_VPHUD">
+<Project name="VPHUD">
 	<Package name="GUI">
-		<Container name="Main menu">
-			<Key ID="STR_metricSystem">
-				<Original>Metric System</Original>
-			</Key>
-			<Key ID="STR_imperialSystem">
-				<Original>Imperial System</Original>
-			</Key>
-			<Key ID="STR_save">
-				<Original>Save</Original>
-			</Key>
-			<Key ID="STR_saveOptions">
-				<Original>Save Options</Original>
-			</Key>
-			<Key ID="STR_cancel">
-				<Original>Cancel</Original>
-			</Key>
-			<Key ID="STR_cancelChanges">
-				<Original>Cancel Changes</Original>
-			</Key>
-			<Key ID="STR_disabled">
-				<Original>Disabled</Original>
-			</Key>
-			<Key ID="STR_enabled">
-				<Original>Enabled</Original>
-			</Key>
-			<Key ID="STR_virtualCrosshair">
-				<Original>Virtual Crosshair</Original>
-			</Key>
-			<Key ID="STR_crosshairOnly">
-				<Original>Crosshair Only</Original>
-			</Key>
-			<Key ID="STR_crosshairColor">
-				<Original>Crosshair Color</Original>
-			</Key>
-			<Key ID="STR_red">
-				<Original>Red</Original>
-			</Key>
-			<Key ID="STR_green">
-				<Original>Green</Original>
-			</Key>
-			<Key ID="STR_blue">
-				<Original>Blue</Original>
-			</Key>
-			<Key ID="STR_opacity">
-				<Original>Opacity</Original>
-			</Key>
-			<Key ID="STR_hudScaling">
-				<Original>HUD Scaling</Original>
-			</Key>
-			<Key ID="STR_hudSpacing">
-				<Original>HUD Spacing</Original>
-			</Key>
-			<Key ID="STR_unitSystem">
-				<Original>Units System</Original>
-			</Key>
-			<Key ID="STR_forceUnforce">
-				<Original>Force/Unforce</Original>
-			</Key>
-		</Container>
+		<Key ID="STR_metricSystem">
+			<Original>Metric System</Original>
+		</Key>
+		<Key ID="STR_imperialSystem">
+			<Original>Imperial System</Original>
+		</Key>
+		<Key ID="STR_save">
+			<Original>Save</Original>
+		</Key>
+		<Key ID="STR_saveOptions">
+			<Original>Save Options</Original>
+		</Key>
+		<Key ID="STR_cancel">
+			<Original>Cancel</Original>
+		</Key>
+		<Key ID="STR_cancelChanges">
+			<Original>Cancel Changes</Original>
+		</Key>
+		<Key ID="STR_disabled">
+			<Original>Disabled</Original>
+		</Key>
+		<Key ID="STR_enabled">
+			<Original>Enabled</Original>
+		</Key>
+		<Key ID="STR_virtualCrosshair">
+			<Original>Virtual Crosshair</Original>
+		</Key>
+		<Key ID="STR_crosshairOnly">
+			<Original>Crosshair Only</Original>
+		</Key>
+		<Key ID="STR_crosshairColor">
+			<Original>Crosshair Color</Original>
+		</Key>
+		<Key ID="STR_red">
+			<Original>Red</Original>
+		</Key>
+		<Key ID="STR_green">
+			<Original>Green</Original>
+		</Key>
+		<Key ID="STR_blue">
+			<Original>Blue</Original>
+		</Key>
+		<Key ID="STR_opacity">
+			<Original>Opacity</Original>
+		</Key>
+		<Key ID="STR_hudScaling">
+			<Original>HUD Scaling</Original>
+		</Key>
+		<Key ID="STR_hudSpacing">
+			<Original>HUD Spacing</Original>
+		</Key>
+		<Key ID="STR_unitSystem">
+			<Original>Units System</Original>
+		</Key>
+		<Key ID="STR_forceUnforce">
+			<Original>Force/Unforce</Original>
+		</Key>
 	</Package>
 </Project>
