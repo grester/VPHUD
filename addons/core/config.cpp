@@ -1,13 +1,13 @@
 class CfgPatches
 {
-	class Grstr_VPHUD
-	{
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = "1.84";
-		version = "1.2.1";
-		author = "Grester";
-	};
+    class Grstr_VPHUD
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = "1.84";
+        version = "1.2.1";
+        author = "Grester";
+    };
 };
 // Control types
 #define CT_STATIC           0
@@ -101,1826 +101,1826 @@ class CfgPatches
 
 class RscText
 {
-	deletable = 0;
-	fade = 0;
-	access = 0;
-	type = 0;
-	idc = -1;
-	colorBackground[] =
-	{
-		0,
-		0,
-		0,
-		0
-	};
-	colorText[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	text = "";
-	fixedWidth = 0;
-	x = 0;
-	y = 0;
-	h = 0.037;
-	w = 0.3;
-	style = 0;
-	shadow = 1;
-	colorShadow[] =
-	{
-		0,
-		0,
-		0,
-		0.5
-	};
-	font = "RobotoCondensed";
-	SizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	linespacing = 1;
-	tooltipColorText[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorBox[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorShade[] =
-	{
-		0,
-		0,
-		0,
-		0.65
-	};
+    deletable = 0;
+    fade = 0;
+    access = 0;
+    type = 0;
+    idc = -1;
+    colorBackground[] =
+    {
+        0,
+        0,
+        0,
+        0
+    };
+    colorText[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    text = "";
+    fixedWidth = 0;
+    x = 0;
+    y = 0;
+    h = 0.037;
+    w = 0.3;
+    style = 0;
+    shadow = 1;
+    colorShadow[] =
+    {
+        0,
+        0,
+        0,
+        0.5
+    };
+    font = "RobotoCondensed";
+    SizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+    linespacing = 1;
+    tooltipColorText[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    tooltipColorBox[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    tooltipColorShade[] =
+    {
+        0,
+        0,
+        0,
+        0.65
+    };
 };
 class RscStructuredText
 {
-	deletable = 0;
-	fade = 0;
-	access = 0;
-	type = 13;
-	idc = -1;
-	style = 0;
-	colorText[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	class Attributes
-	{
-		font = "RobotoCondensed";
-		color = "#ffffff";
-		colorLink = "#D09B43";
-		align = "left";
-		shadow = 1;
-	};
-	x = 0;
-	y = 0;
-	h = 0.035;
-	w = 0.1;
-	text = "";
-	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	shadow = 1;
+    deletable = 0;
+    fade = 0;
+    access = 0;
+    type = 13;
+    idc = -1;
+    style = 0;
+    colorText[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    class Attributes
+    {
+        font = "RobotoCondensed";
+        color = "#ffffff";
+        colorLink = "#D09B43";
+        align = "left";
+        shadow = 1;
+    };
+    x = 0;
+    y = 0;
+    h = 0.035;
+    w = 0.1;
+    text = "";
+    size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+    shadow = 1;
 };
 class RscPicture
 {
-	deletable = 0;
-	fade = 0;
-	access = 0;
-	type = 0;
-	idc = -1;
-	style = 48;
-	colorBackground[] =
-	{
-		0,
-		0,
-		0,
-		0
-	};
-	colorText[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	font = "TahomaB";
-	sizeEx = 0;
-	lineSpacing = 0;
-	text = "";
-	fixedWidth = 0;
-	shadow = 0;
-	x = 0;
-	y = 0;
-	w = 0.2;
-	h = 0.15;
-	tooltipColorText[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorBox[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorShade[] =
-	{
-		0,
-		0,
-		0,
-		0.65
-	};
+    deletable = 0;
+    fade = 0;
+    access = 0;
+    type = 0;
+    idc = -1;
+    style = 48;
+    colorBackground[] =
+    {
+        0,
+        0,
+        0,
+        0
+    };
+    colorText[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    font = "TahomaB";
+    sizeEx = 0;
+    lineSpacing = 0;
+    text = "";
+    fixedWidth = 0;
+    shadow = 0;
+    x = 0;
+    y = 0;
+    w = 0.2;
+    h = 0.15;
+    tooltipColorText[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    tooltipColorBox[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    tooltipColorShade[] =
+    {
+        0,
+        0,
+        0,
+        0.65
+    };
 };
 class RscEdit
 {
-	deletable = 0;
-	fade = 0;
-	access = 0;
-	type = 2;
-	x = 0;
-	y = 0;
-	h = 0.04;
-	w = 0.2;
-	colorBackground[] =
-	{
-		0,
-		0,
-		0,
-		0
-	};
-	colorText[] =
-	{
-		0.95,
-		0.95,
-		0.95,
-		1
-	};
-	colorDisabled[] =
-	{
-		1,
-		1,
-		1,
-		0.25
-	};
-	colorSelection[] =
-	{
-		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.13])",
-		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.54])",
-		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.21])",
-		1
-	};
-	autocomplete = "";
-	text = "";
-	size = 0.2;
-	style = "0x00 + 0x40";
-	font = "RobotoCondensed";
-	shadow = 2;
-	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	canModify = 1;
-	tooltipColorText[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorBox[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorShade[] =
-	{
-		0,
-		0,
-		0,
-		0.65
-	};
+    deletable = 0;
+    fade = 0;
+    access = 0;
+    type = 2;
+    x = 0;
+    y = 0;
+    h = 0.04;
+    w = 0.2;
+    colorBackground[] =
+    {
+        0,
+        0,
+        0,
+        0
+    };
+    colorText[] =
+    {
+        0.95,
+        0.95,
+        0.95,
+        1
+    };
+    colorDisabled[] =
+    {
+        1,
+        1,
+        1,
+        0.25
+    };
+    colorSelection[] =
+    {
+        "(profilenamespace getvariable ['GUI_BCG_RGB_R',0.13])",
+        "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.54])",
+        "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.21])",
+        1
+    };
+    autocomplete = "";
+    text = "";
+    size = 0.2;
+    style = "0x00 + 0x40";
+    font = "RobotoCondensed";
+    shadow = 2;
+    sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+    canModify = 1;
+    tooltipColorText[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    tooltipColorBox[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    tooltipColorShade[] =
+    {
+        0,
+        0,
+        0,
+        0.65
+    };
 };
 class RscCombo
 {
-	deletable = 0;
-	fade = 0;
-	access = 0;
-	type = 4;
-	colorSelect[] =
-	{
-		0,
-		0,
-		0,
-		1
-	};
-	colorText[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorBackground[] =
-	{
-		0,
-		0,
-		0,
-		1
-	};
-	colorScrollbar[] =
-	{
-		1,
-		0,
-		0,
-		1
-	};
-	colorDisabled[] =
-	{
-		1,
-		1,
-		1,
-		0.25
-	};
-	colorPicture[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorPictureSelected[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorPictureDisabled[] =
-	{
-		1,
-		1,
-		1,
-		0.25
-	};
-	colorPictureRight[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorPictureRightSelected[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorPictureRightDisabled[] =
-	{
-		1,
-		1,
-		1,
-		0.25
-	};
-	colorTextRight[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorSelectRight[] =
-	{
-		0,
-		0,
-		0,
-		1
-	};
-	colorSelect2Right[] =
-	{
-		0,
-		0,
-		0,
-		1
-	};
-	tooltipColorText[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorBox[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorShade[] =
-	{
-		0,
-		0,
-		0,
-		0.65
-	};
-	soundSelect[] =
-	{
-		"\A3\ui_f\data\sound\RscCombo\soundSelect",
-		0.1,
-		1
-	};
-	soundExpand[] =
-	{
-		"\A3\ui_f\data\sound\RscCombo\soundExpand",
-		0.1,
-		1
-	};
-	soundCollapse[] =
-	{
-		"\A3\ui_f\data\sound\RscCombo\soundCollapse",
-		0.1,
-		1
-	};
-	maxHistoryDelay = 1;
-	class ComboScrollBar
-	{
-		color[] =
-		{
-			1,
-			1,
-			1,
-			1
-		};
-	};
-	style = "0x10 + 0x200";
-	font = "RobotoCondensed";
-	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	shadow = 0;
-	x = 0;
-	y = 0;
-	w = 0.12;
-	h = 0.035;
-	colorSelectBackground[] =
-	{
-		1,
-		1,
-		1,
-		0.7
-	};
-	arrowEmpty = "\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_ca.paa";
-	arrowFull = "\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_active_ca.paa";
-	wholeHeight = 0.45;
-	colorActive[] =
-	{
-		1,
-		0,
-		0,
-		1
-	};
+    deletable = 0;
+    fade = 0;
+    access = 0;
+    type = 4;
+    colorSelect[] =
+    {
+        0,
+        0,
+        0,
+        1
+    };
+    colorText[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorBackground[] =
+    {
+        0,
+        0,
+        0,
+        1
+    };
+    colorScrollbar[] =
+    {
+        1,
+        0,
+        0,
+        1
+    };
+    colorDisabled[] =
+    {
+        1,
+        1,
+        1,
+        0.25
+    };
+    colorPicture[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorPictureSelected[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorPictureDisabled[] =
+    {
+        1,
+        1,
+        1,
+        0.25
+    };
+    colorPictureRight[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorPictureRightSelected[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorPictureRightDisabled[] =
+    {
+        1,
+        1,
+        1,
+        0.25
+    };
+    colorTextRight[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorSelectRight[] =
+    {
+        0,
+        0,
+        0,
+        1
+    };
+    colorSelect2Right[] =
+    {
+        0,
+        0,
+        0,
+        1
+    };
+    tooltipColorText[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    tooltipColorBox[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    tooltipColorShade[] =
+    {
+        0,
+        0,
+        0,
+        0.65
+    };
+    soundSelect[] =
+    {
+        "\A3\ui_f\data\sound\RscCombo\soundSelect",
+        0.1,
+        1
+    };
+    soundExpand[] =
+    {
+        "\A3\ui_f\data\sound\RscCombo\soundExpand",
+        0.1,
+        1
+    };
+    soundCollapse[] =
+    {
+        "\A3\ui_f\data\sound\RscCombo\soundCollapse",
+        0.1,
+        1
+    };
+    maxHistoryDelay = 1;
+    class ComboScrollBar
+    {
+        color[] =
+        {
+            1,
+            1,
+            1,
+            1
+        };
+    };
+    style = "0x10 + 0x200";
+    font = "RobotoCondensed";
+    sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+    shadow = 0;
+    x = 0;
+    y = 0;
+    w = 0.12;
+    h = 0.035;
+    colorSelectBackground[] =
+    {
+        1,
+        1,
+        1,
+        0.7
+    };
+    arrowEmpty = "\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_ca.paa";
+    arrowFull = "\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_active_ca.paa";
+    wholeHeight = 0.45;
+    colorActive[] =
+    {
+        1,
+        0,
+        0,
+        1
+    };
 };
 class RscListBox
 {
-	deletable = 0;
-	fade = 0;
-	access = 0;
-	type = 5;
-	rowHeight = 0;
-	colorText[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorDisabled[] =
-	{
-		1,
-		1,
-		1,
-		0.25
-	};
-	colorScrollbar[] =
-	{
-		1,
-		0,
-		0,
-		0
-	};
-	colorSelect[] =
-	{
-		0,
-		0,
-		0,
-		1
-	};
-	colorSelect2[] =
-	{
-		0,
-		0,
-		0,
-		1
-	};
-	colorSelectBackground[] =
-	{
-		0.95,
-		0.95,
-		0.95,
-		1
-	};
-	colorSelectBackground2[] =
-	{
-		1,
-		1,
-		1,
-		0.5
-	};
-	colorBackground[] =
-	{
-		0,
-		0,
-		0,
-		0.3
-	};
-	soundSelect[] =
-	{
-		"\A3\ui_f\data\sound\RscListbox\soundSelect",
-		0.09,
-		1
-	};
-	autoScrollSpeed = -1;
-	autoScrollDelay = 5;
-	autoScrollRewind = 0;
-	arrowEmpty = "#(argb,8,8,3)color(1,1,1,1)";
-	arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
-	colorPicture[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorPictureSelected[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorPictureDisabled[] =
-	{
-		1,
-		1,
-		1,
-		0.25
-	};
-	colorPictureRight[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorPictureRightSelected[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorPictureRightDisabled[] =
-	{
-		1,
-		1,
-		1,
-		0.25
-	};
-	colorTextRight[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorSelectRight[] =
-	{
-		0,
-		0,
-		0,
-		1
-	};
-	colorSelect2Right[] =
-	{
-		0,
-		0,
-		0,
-		1
-	};
-	tooltipColorText[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorBox[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorShade[] =
-	{
-		0,
-		0,
-		0,
-		0.65
-	};
-	class ListScrollBar
-	{
-		color[] =
-		{
-			1,
-			1,
-			1,
-			1
-		};
-		autoScrollEnabled = 1;
-	};
-	x = 0;
-	y = 0;
-	w = 0.3;
-	h = 0.3;
-	style = 16;
-	font = "RobotoCondensed";
-	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	shadow = 0;
-	colorShadow[] =
-	{
-		0,
-		0,
-		0,
-		0.5
-	};
-	period = 1.2;
-	maxHistoryDelay = 1;
+    deletable = 0;
+    fade = 0;
+    access = 0;
+    type = 5;
+    rowHeight = 0;
+    colorText[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorDisabled[] =
+    {
+        1,
+        1,
+        1,
+        0.25
+    };
+    colorScrollbar[] =
+    {
+        1,
+        0,
+        0,
+        0
+    };
+    colorSelect[] =
+    {
+        0,
+        0,
+        0,
+        1
+    };
+    colorSelect2[] =
+    {
+        0,
+        0,
+        0,
+        1
+    };
+    colorSelectBackground[] =
+    {
+        0.95,
+        0.95,
+        0.95,
+        1
+    };
+    colorSelectBackground2[] =
+    {
+        1,
+        1,
+        1,
+        0.5
+    };
+    colorBackground[] =
+    {
+        0,
+        0,
+        0,
+        0.3
+    };
+    soundSelect[] =
+    {
+        "\A3\ui_f\data\sound\RscListbox\soundSelect",
+        0.09,
+        1
+    };
+    autoScrollSpeed = -1;
+    autoScrollDelay = 5;
+    autoScrollRewind = 0;
+    arrowEmpty = "#(argb,8,8,3)color(1,1,1,1)";
+    arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
+    colorPicture[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorPictureSelected[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorPictureDisabled[] =
+    {
+        1,
+        1,
+        1,
+        0.25
+    };
+    colorPictureRight[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorPictureRightSelected[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorPictureRightDisabled[] =
+    {
+        1,
+        1,
+        1,
+        0.25
+    };
+    colorTextRight[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorSelectRight[] =
+    {
+        0,
+        0,
+        0,
+        1
+    };
+    colorSelect2Right[] =
+    {
+        0,
+        0,
+        0,
+        1
+    };
+    tooltipColorText[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    tooltipColorBox[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    tooltipColorShade[] =
+    {
+        0,
+        0,
+        0,
+        0.65
+    };
+    class ListScrollBar
+    {
+        color[] =
+        {
+            1,
+            1,
+            1,
+            1
+        };
+        autoScrollEnabled = 1;
+    };
+    x = 0;
+    y = 0;
+    w = 0.3;
+    h = 0.3;
+    style = 16;
+    font = "RobotoCondensed";
+    sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+    shadow = 0;
+    colorShadow[] =
+    {
+        0,
+        0,
+        0,
+        0.5
+    };
+    period = 1.2;
+    maxHistoryDelay = 1;
 };
 class RscButton
 {
-	deletable = 0;
-	fade = 0;
-	access = 0;
-	type = 1;
-	text = "";
-	colorText[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorDisabled[] =
-	{
-		1,
-		1,
-		1,
-		0.25
-	};
-	colorBackground[] =
-	{
-		0,
-		0,
-		0,
-		0.5
-	};
-	colorBackgroundDisabled[] =
-	{
-		0,
-		0,
-		0,
-		0.5
-	};
-	colorBackgroundActive[] =
-	{
-		0,
-		0,
-		0,
-		1
-	};
-	colorFocused[] =
-	{
-		0,
-		0,
-		0,
-		1
-	};
-	colorShadow[] =
-	{
-		0,
-		0,
-		0,
-		0
-	};
-	colorBorder[] =
-	{
-		0,
-		0,
-		0,
-		1
-	};
-	soundEnter[] =
-	{
-		"\A3\ui_f\data\sound\RscButton\soundEnter",
-		0.09,
-		1
-	};
-	soundPush[] =
-	{
-		"\A3\ui_f\data\sound\RscButton\soundPush",
-		0.09,
-		1
-	};
-	soundClick[] =
-	{
-		"\A3\ui_f\data\sound\RscButton\soundClick",
-		0.09,
-		1
-	};
-	soundEscape[] =
-	{
-		"\A3\ui_f\data\sound\RscButton\soundEscape",
-		0.09,
-		1
-	};
-	idc = -1;
-	style = 2;
-	x = 0;
-	y = 0;
-	w = 0.095589;
-	h = 0.039216;
-	shadow = 2;
-	font = "RobotoCondensed";
-	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	url = "";
-	offsetX = 0;
-	offsetY = 0;
-	offsetPressedX = 0;
-	offsetPressedY = 0;
-	borderSize = 0;
+    deletable = 0;
+    fade = 0;
+    access = 0;
+    type = 1;
+    text = "";
+    colorText[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorDisabled[] =
+    {
+        1,
+        1,
+        1,
+        0.25
+    };
+    colorBackground[] =
+    {
+        0,
+        0,
+        0,
+        0.5
+    };
+    colorBackgroundDisabled[] =
+    {
+        0,
+        0,
+        0,
+        0.5
+    };
+    colorBackgroundActive[] =
+    {
+        0,
+        0,
+        0,
+        1
+    };
+    colorFocused[] =
+    {
+        0,
+        0,
+        0,
+        1
+    };
+    colorShadow[] =
+    {
+        0,
+        0,
+        0,
+        0
+    };
+    colorBorder[] =
+    {
+        0,
+        0,
+        0,
+        1
+    };
+    soundEnter[] =
+    {
+        "\A3\ui_f\data\sound\RscButton\soundEnter",
+        0.09,
+        1
+    };
+    soundPush[] =
+    {
+        "\A3\ui_f\data\sound\RscButton\soundPush",
+        0.09,
+        1
+    };
+    soundClick[] =
+    {
+        "\A3\ui_f\data\sound\RscButton\soundClick",
+        0.09,
+        1
+    };
+    soundEscape[] =
+    {
+        "\A3\ui_f\data\sound\RscButton\soundEscape",
+        0.09,
+        1
+    };
+    idc = -1;
+    style = 2;
+    x = 0;
+    y = 0;
+    w = 0.095589;
+    h = 0.039216;
+    shadow = 2;
+    font = "RobotoCondensed";
+    sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+    url = "";
+    offsetX = 0;
+    offsetY = 0;
+    offsetPressedX = 0;
+    offsetPressedY = 0;
+    borderSize = 0;
 };
 class RscShortcutButton
 {
-	deletable = 0;
-	fade = 0;
-	type = 16;
-	x = 0.1;
-	y = 0.1;
-	class HitZone
-	{
-		left = 0;
-		top = 0;
-		right = 0;
-		bottom = 0;
-	};
-	class ShortcutPos
-	{
-		left = 0;
-		top = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 20) - (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)) / 2";
-		w = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1) * (3/4)";
-		h = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	};
-	class TextPos
-	{
-		left = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1) * (3/4)";
-		top = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 20) - (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)) / 2";
-		right = 0.005;
-		bottom = 0;
-	};
-	shortcuts[] =
-	{
-	};
-	textureNoShortcut = "#(argb,8,8,3)color(0,0,0,0)";
-	color[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorFocused[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	color2[] =
-	{
-		0.95,
-		0.95,
-		0.95,
-		1
-	};
-	colorDisabled[] =
-	{
-		1,
-		1,
-		1,
-		0.25
-	};
-	colorBackground[] =
-	{
-		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.13])",
-		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.54])",
-		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.21])",
-		1
-	};
-	colorBackgroundFocused[] =
-	{
-		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.13])",
-		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.54])",
-		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.21])",
-		1
-	};
-	colorBackground2[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	soundEnter[] =
-	{
-		"\A3\ui_f\data\sound\RscButton\soundEnter",
-		0.09,
-		1
-	};
-	soundPush[] =
-	{
-		"\A3\ui_f\data\sound\RscButton\soundPush",
-		0.09,
-		1
-	};
-	soundClick[] =
-	{
-		"\A3\ui_f\data\sound\RscButton\soundClick",
-		0.09,
-		1
-	};
-	soundEscape[] =
-	{
-		"\A3\ui_f\data\sound\RscButton\soundEscape",
-		0.09,
-		1
-	};
-	class Attributes
-	{
-		font = "RobotoCondensed";
-		color = "#E5E5E5";
-		align = "left";
-		shadow = "true";
-	};
-	idc = -1;
-	style = 0;
-	default = 0;
-	shadow = 1;
-	w = 0.183825;
-	h = "((((safezoneW / safezoneH) min 1.2) / 1.2) / 20)";
-	textSecondary = "";
-	colorSecondary[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorFocusedSecondary[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	color2Secondary[] =
-	{
-		0.95,
-		0.95,
-		0.95,
-		1
-	};
-	colorDisabledSecondary[] =
-	{
-		1,
-		1,
-		1,
-		0.25
-	};
-	sizeExSecondary = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	fontSecondary = "RobotoCondensed";
-	animTextureDefault = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\normal_ca.paa";
-	animTextureNormal = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\normal_ca.paa";
-	animTextureDisabled = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\normal_ca.paa";
-	animTextureOver = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\over_ca.paa";
-	animTextureFocused = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\focus_ca.paa";
-	animTexturePressed = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\down_ca.paa";
-	periodFocus = 1.2;
-	periodOver = 0.8;
-	period = 0.4;
-	font = "RobotoCondensed";
-	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	text = "";
-	url = "";
-	action = "";
-	class AttributesImage
-	{
-		font = "RobotoCondensed";
-		color = "#E5E5E5";
-		align = "left";
-	};
+    deletable = 0;
+    fade = 0;
+    type = 16;
+    x = 0.1;
+    y = 0.1;
+    class HitZone
+    {
+        left = 0;
+        top = 0;
+        right = 0;
+        bottom = 0;
+    };
+    class ShortcutPos
+    {
+        left = 0;
+        top = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 20) - (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)) / 2";
+        w = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1) * (3/4)";
+        h = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+    };
+    class TextPos
+    {
+        left = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1) * (3/4)";
+        top = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 20) - (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)) / 2";
+        right = 0.005;
+        bottom = 0;
+    };
+    shortcuts[] =
+    {
+    };
+    textureNoShortcut = "#(argb,8,8,3)color(0,0,0,0)";
+    color[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorFocused[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    color2[] =
+    {
+        0.95,
+        0.95,
+        0.95,
+        1
+    };
+    colorDisabled[] =
+    {
+        1,
+        1,
+        1,
+        0.25
+    };
+    colorBackground[] =
+    {
+        "(profilenamespace getvariable ['GUI_BCG_RGB_R',0.13])",
+        "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.54])",
+        "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.21])",
+        1
+    };
+    colorBackgroundFocused[] =
+    {
+        "(profilenamespace getvariable ['GUI_BCG_RGB_R',0.13])",
+        "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.54])",
+        "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.21])",
+        1
+    };
+    colorBackground2[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    soundEnter[] =
+    {
+        "\A3\ui_f\data\sound\RscButton\soundEnter",
+        0.09,
+        1
+    };
+    soundPush[] =
+    {
+        "\A3\ui_f\data\sound\RscButton\soundPush",
+        0.09,
+        1
+    };
+    soundClick[] =
+    {
+        "\A3\ui_f\data\sound\RscButton\soundClick",
+        0.09,
+        1
+    };
+    soundEscape[] =
+    {
+        "\A3\ui_f\data\sound\RscButton\soundEscape",
+        0.09,
+        1
+    };
+    class Attributes
+    {
+        font = "RobotoCondensed";
+        color = "#E5E5E5";
+        align = "left";
+        shadow = "true";
+    };
+    idc = -1;
+    style = 0;
+    default = 0;
+    shadow = 1;
+    w = 0.183825;
+    h = "((((safezoneW / safezoneH) min 1.2) / 1.2) / 20)";
+    textSecondary = "";
+    colorSecondary[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorFocusedSecondary[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    color2Secondary[] =
+    {
+        0.95,
+        0.95,
+        0.95,
+        1
+    };
+    colorDisabledSecondary[] =
+    {
+        1,
+        1,
+        1,
+        0.25
+    };
+    sizeExSecondary = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+    fontSecondary = "RobotoCondensed";
+    animTextureDefault = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\normal_ca.paa";
+    animTextureNormal = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\normal_ca.paa";
+    animTextureDisabled = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\normal_ca.paa";
+    animTextureOver = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\over_ca.paa";
+    animTextureFocused = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\focus_ca.paa";
+    animTexturePressed = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\down_ca.paa";
+    periodFocus = 1.2;
+    periodOver = 0.8;
+    period = 0.4;
+    font = "RobotoCondensed";
+    size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+    sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+    text = "";
+    url = "";
+    action = "";
+    class AttributesImage
+    {
+        font = "RobotoCondensed";
+        color = "#E5E5E5";
+        align = "left";
+    };
 };
 class RscShortcutButtonMain
 {
-	idc = -1;
-	style = 0;
-	default = 0;
-	w = 0.313726;
-	h = 0.104575;
-	color[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorDisabled[] =
-	{
-		1,
-		1,
-		1,
-		0.25
-	};
-	class HitZone
-	{
-		left = 0;
-		top = 0;
-		right = 0;
-		bottom = 0;
-	};
-	class ShortcutPos
-	{
-		left = 0.0145;
-		top = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 20) - (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)) / 2";
-		w = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2) * (3/4)";
-		h = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)";
-	};
-	class TextPos
-	{
-		left = "(((safezoneW / safezoneH) min 1.2) / 32) * 1.5";
-		top = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 20)*2 - (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)) / 2";
-		right = 0.005;
-		bottom = 0;
-	};
-	animTextureNormal = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\normal_ca.paa";
-	animTextureDisabled = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\disabled_ca.paa";
-	animTextureOver = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\over_ca.paa";
-	animTextureFocused = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\focus_ca.paa";
-	animTexturePressed = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\down_ca.paa";
-	animTextureDefault = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\normal_ca.paa";
-	period = 0.5;
-	font = "RobotoCondensed";
-	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)";
-	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)";
-	text = "";
-	action = "";
-	class Attributes
-	{
-		font = "RobotoCondensed";
-		color = "#E5E5E5";
-		align = "left";
-		shadow = "false";
-	};
-	class AttributesImage
-	{
-		font = "RobotoCondensed";
-		color = "#E5E5E5";
-		align = "false";
-	};
+    idc = -1;
+    style = 0;
+    default = 0;
+    w = 0.313726;
+    h = 0.104575;
+    color[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorDisabled[] =
+    {
+        1,
+        1,
+        1,
+        0.25
+    };
+    class HitZone
+    {
+        left = 0;
+        top = 0;
+        right = 0;
+        bottom = 0;
+    };
+    class ShortcutPos
+    {
+        left = 0.0145;
+        top = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 20) - (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)) / 2";
+        w = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2) * (3/4)";
+        h = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)";
+    };
+    class TextPos
+    {
+        left = "(((safezoneW / safezoneH) min 1.2) / 32) * 1.5";
+        top = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 20)*2 - (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)) / 2";
+        right = 0.005;
+        bottom = 0;
+    };
+    animTextureNormal = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\normal_ca.paa";
+    animTextureDisabled = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\disabled_ca.paa";
+    animTextureOver = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\over_ca.paa";
+    animTextureFocused = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\focus_ca.paa";
+    animTexturePressed = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\down_ca.paa";
+    animTextureDefault = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\normal_ca.paa";
+    period = 0.5;
+    font = "RobotoCondensed";
+    size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)";
+    sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)";
+    text = "";
+    action = "";
+    class Attributes
+    {
+        font = "RobotoCondensed";
+        color = "#E5E5E5";
+        align = "left";
+        shadow = "false";
+    };
+    class AttributesImage
+    {
+        font = "RobotoCondensed";
+        color = "#E5E5E5";
+        align = "false";
+    };
 };
 class RscFrame
 {
-	type = 0;
-	idc = -1;
-	style = 64;
-	shadow = 2;
-	colorBackground[] =
-	{
-		0,
-		0,
-		0,
-		0
-	};
-	colorText[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	font = "RobotoCondensed";
-	sizeEx = 0.02;
-	text = "";
-	x = 0;
-	y = 0;
-	w = 0.3;
-	h = 0.3;
+    type = 0;
+    idc = -1;
+    style = 64;
+    shadow = 2;
+    colorBackground[] =
+    {
+        0,
+        0,
+        0,
+        0
+    };
+    colorText[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    font = "RobotoCondensed";
+    sizeEx = 0.02;
+    text = "";
+    x = 0;
+    y = 0;
+    w = 0.3;
+    h = 0.3;
 };
 class RscSlider
 {
-	deletable = 0;
-	fade = 0;
-	access = 0;
-	type = 3;
-	style = 1024;
-	color[] =
-	{
-		1,
-		1,
-		1,
-		0.8
-	};
-	colorActive[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	shadow = 0;
-	x = 0;
-	y = 0;
-	w = 0.3;
-	h = 0.025;
+    deletable = 0;
+    fade = 0;
+    access = 0;
+    type = 3;
+    style = 1024;
+    color[] =
+    {
+        1,
+        1,
+        1,
+        0.8
+    };
+    colorActive[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    shadow = 0;
+    x = 0;
+    y = 0;
+    w = 0.3;
+    h = 0.025;
 };
 class IGUIBack
 {
-	type = 0;
-	idc = 124;
-	style = 128;
-	text = "";
-	colorText[] =
-	{
-		0,
-		0,
-		0,
-		0
-	};
-	font = "RobotoCondensed";
-	sizeEx = 0;
-	shadow = 0;
-	x = 0.1;
-	y = 0.1;
-	w = 0.1;
-	h = 0.1;
-	colorbackground[] =
-	{
-		"(profilenamespace getvariable ['IGUI_BCG_RGB_R',0])",
-		"(profilenamespace getvariable ['IGUI_BCG_RGB_G',1])",
-		"(profilenamespace getvariable ['IGUI_BCG_RGB_B',1])",
-		"(profilenamespace getvariable ['IGUI_BCG_RGB_A',0.8])"
-	};
+    type = 0;
+    idc = 124;
+    style = 128;
+    text = "";
+    colorText[] =
+    {
+        0,
+        0,
+        0,
+        0
+    };
+    font = "RobotoCondensed";
+    sizeEx = 0;
+    shadow = 0;
+    x = 0.1;
+    y = 0.1;
+    w = 0.1;
+    h = 0.1;
+    colorbackground[] =
+    {
+        "(profilenamespace getvariable ['IGUI_BCG_RGB_R',0])",
+        "(profilenamespace getvariable ['IGUI_BCG_RGB_G',1])",
+        "(profilenamespace getvariable ['IGUI_BCG_RGB_B',1])",
+        "(profilenamespace getvariable ['IGUI_BCG_RGB_A',0.8])"
+    };
 };
 class RscCheckBox
 {
-	idc = -1;
-	type = 77;
-	style = 0;
-	checked = 0;
-	x = "0.375 * safezoneW + safezoneX";
-	y = "0.36 * safezoneH + safezoneY";
-	w = "0.025 * safezoneW";
-	h = "0.04 * safezoneH";
-	color[] =
-	{
-		1,
-		1,
-		1,
-		0.7
-	};
-	colorFocused[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorHover[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorPressed[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorDisabled[] =
-	{
-		1,
-		1,
-		1,
-		0.2
-	};
-	colorBackground[] =
-	{
-		0,
-		0,
-		0,
-		0
-	};
-	colorBackgroundFocused[] =
-	{
-		0,
-		0,
-		0,
-		0
-	};
-	colorBackgroundHover[] =
-	{
-		0,
-		0,
-		0,
-		0
-	};
-	colorBackgroundPressed[] =
-	{
-		0,
-		0,
-		0,
-		0
-	};
-	colorBackgroundDisabled[] =
-	{
-		0,
-		0,
-		0,
-		0
-	};
-	textureChecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
-	textureUnchecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
-	textureFocusedChecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
-	textureFocusedUnchecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
-	textureHoverChecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
-	textureHoverUnchecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
-	texturePressedChecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
-	texturePressedUnchecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
-	textureDisabledChecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
-	textureDisabledUnchecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
-	tooltipColorText[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorBox[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorShade[] =
-	{
-		0,
-		0,
-		0,
-		0.65
-	};
-	soundEnter[] =
-	{
-		"",
-		0.1,
-		1
-	};
-	soundPush[] =
-	{
-		"",
-		0.1,
-		1
-	};
-	soundClick[] =
-	{
-		"",
-		0.1,
-		1
-	};
-	soundEscape[] =
-	{
-		"",
-		0.1,
-		1
-	};
+    idc = -1;
+    type = 77;
+    style = 0;
+    checked = 0;
+    x = "0.375 * safezoneW + safezoneX";
+    y = "0.36 * safezoneH + safezoneY";
+    w = "0.025 * safezoneW";
+    h = "0.04 * safezoneH";
+    color[] =
+    {
+        1,
+        1,
+        1,
+        0.7
+    };
+    colorFocused[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorHover[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorPressed[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorDisabled[] =
+    {
+        1,
+        1,
+        1,
+        0.2
+    };
+    colorBackground[] =
+    {
+        0,
+        0,
+        0,
+        0
+    };
+    colorBackgroundFocused[] =
+    {
+        0,
+        0,
+        0,
+        0
+    };
+    colorBackgroundHover[] =
+    {
+        0,
+        0,
+        0,
+        0
+    };
+    colorBackgroundPressed[] =
+    {
+        0,
+        0,
+        0,
+        0
+    };
+    colorBackgroundDisabled[] =
+    {
+        0,
+        0,
+        0,
+        0
+    };
+    textureChecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
+    textureUnchecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
+    textureFocusedChecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
+    textureFocusedUnchecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
+    textureHoverChecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
+    textureHoverUnchecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
+    texturePressedChecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
+    texturePressedUnchecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
+    textureDisabledChecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
+    textureDisabledUnchecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
+    tooltipColorText[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    tooltipColorBox[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    tooltipColorShade[] =
+    {
+        0,
+        0,
+        0,
+        0.65
+    };
+    soundEnter[] =
+    {
+        "",
+        0.1,
+        1
+    };
+    soundPush[] =
+    {
+        "",
+        0.1,
+        1
+    };
+    soundClick[] =
+    {
+        "",
+        0.1,
+        1
+    };
+    soundEscape[] =
+    {
+        "",
+        0.1,
+        1
+    };
 };
 class RscTextCheckBox
 {
-	idc = -1;
-	type = 7;
-	style = 0;
-	x = "0.375 * safezoneW + safezoneX";
-	y = "0.36 * safezoneH + safezoneY";
-	w = "0.025 * safezoneW";
-	h = "0.038 * safezoneH";
-	colorText[] =
-	{
-		1,
-		0,
-		0,
-		1
-	};
-	color[] =
-	{
-		0,
-		0,
-		0,
-		0
-	};
-	colorBackground[] =
-	{
-		0,
-		0,
-		0,
-		0
-	};
-	colorTextSelect[] =
-	{
-		0,
-		0.8,
-		0,
-		1
-	};
-	colorSelectedBg[] =
-	{
-		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.13])",
-		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.54])",
-		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.21])",
-		1
-	};
-	colorSelect[] =
-	{
-		0,
-		0,
-		0,
-		1
-	};
-	colorTextDisable[] =
-	{
-		0.4,
-		0.4,
-		0.4,
-		1
-	};
-	colorDisable[] =
-	{
-		0.4,
-		0.4,
-		0.4,
-		1
-	};
-	tooltipColorText[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorBox[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorShade[] =
-	{
-		0,
-		0,
-		0,
-		0.65
-	};
-	font = "RobotoCondensed";
-	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-	rows = 1;
-	columns = 1;
-	strings[] =
-	{
-		"UNCHECKED"
-	};
-	checked_strings[] =
-	{
-		"CHECKED"
-	};
+    idc = -1;
+    type = 7;
+    style = 0;
+    x = "0.375 * safezoneW + safezoneX";
+    y = "0.36 * safezoneH + safezoneY";
+    w = "0.025 * safezoneW";
+    h = "0.038 * safezoneH";
+    colorText[] =
+    {
+        1,
+        0,
+        0,
+        1
+    };
+    color[] =
+    {
+        0,
+        0,
+        0,
+        0
+    };
+    colorBackground[] =
+    {
+        0,
+        0,
+        0,
+        0
+    };
+    colorTextSelect[] =
+    {
+        0,
+        0.8,
+        0,
+        1
+    };
+    colorSelectedBg[] =
+    {
+        "(profilenamespace getvariable ['GUI_BCG_RGB_R',0.13])",
+        "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.54])",
+        "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.21])",
+        1
+    };
+    colorSelect[] =
+    {
+        0,
+        0,
+        0,
+        1
+    };
+    colorTextDisable[] =
+    {
+        0.4,
+        0.4,
+        0.4,
+        1
+    };
+    colorDisable[] =
+    {
+        0.4,
+        0.4,
+        0.4,
+        1
+    };
+    tooltipColorText[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    tooltipColorBox[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    tooltipColorShade[] =
+    {
+        0,
+        0,
+        0,
+        0.65
+    };
+    font = "RobotoCondensed";
+    sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+    rows = 1;
+    columns = 1;
+    strings[] =
+    {
+        "UNCHECKED"
+    };
+    checked_strings[] =
+    {
+        "CHECKED"
+    };
 };
 class RscButtonMenu
 {
-	idc = -1;
-	type = 16;
-	style = "0x02 + 0xC0";
-	default = 0;
-	shadow = 0;
-	x = 0;
-	y = 0;
-	w = 0.095589;
-	h = 0.039216;
-	animTextureNormal = "#(argb,8,8,3)color(1,1,1,1)";
-	animTextureDisabled = "#(argb,8,8,3)color(1,1,1,1)";
-	animTextureOver = "#(argb,8,8,3)color(1,1,1,1)";
-	animTextureFocused = "#(argb,8,8,3)color(1,1,1,1)";
-	animTexturePressed = "#(argb,8,8,3)color(1,1,1,1)";
-	animTextureDefault = "#(argb,8,8,3)color(1,1,1,1)";
-	colorBackground[] =
-	{
-		0,
-		0,
-		0,
-		0.8
-	};
-	colorBackgroundFocused[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorBackground2[] =
-	{
-		0.75,
-		0.75,
-		0.75,
-		1
-	};
-	color[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorFocused[] =
-	{
-		0,
-		0,
-		0,
-		1
-	};
-	color2[] =
-	{
-		0,
-		0,
-		0,
-		1
-	};
-	colorText[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorDisabled[] =
-	{
-		1,
-		1,
-		1,
-		0.25
-	};
-	textSecondary = "";
-	colorSecondary[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	colorFocusedSecondary[] =
-	{
-		0,
-		0,
-		0,
-		1
-	};
-	color2Secondary[] =
-	{
-		0,
-		0,
-		0,
-		1
-	};
-	colorDisabledSecondary[] =
-	{
-		1,
-		1,
-		1,
-		0.25
-	};
-	sizeExSecondary = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	fontSecondary = "PuristaLight";
-	period = 1.2;
-	periodFocus = 1.2;
-	periodOver = 1.2;
-	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	tooltipColorText[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorBox[] =
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorShade[] =
-	{
-		0,
-		0,
-		0,
-		0.65
-	};
-	class TextPos
-	{
-		left = "0.25 * (((safezoneW / safezoneH) min 1.2) / 40)";
-		top = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) - (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)) / 2";
-		right = 0.005;
-		bottom = 0;
-	};
-	class Attributes
-	{
-		font = "PuristaLight";
-		color = "#E5E5E5";
-		align = "left";
-		shadow = "false";
-	};
-	class ShortcutPos
-	{
-		left = "5.25 * (((safezoneW / safezoneH) min 1.2) / 40)";
-		top = 0;
-		w = "1 * (((safezoneW / safezoneH) min 1.2) / 40)";
-		h = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-	};
-	soundEnter[] =
-	{
-		"\A3\ui_f\data\sound\RscButtonMenu\soundEnter",
-		0.09,
-		1
-	};
-	soundPush[] =
-	{
-		"\A3\ui_f\data\sound\RscButtonMenu\soundPush",
-		0.09,
-		1
-	};
-	soundClick[] =
-	{
-		"\A3\ui_f\data\sound\RscButtonMenu\soundClick",
-		0.09,
-		1
-	};
-	soundEscape[] =
-	{
-		"\A3\ui_f\data\sound\RscButtonMenu\soundEscape",
-		0.09,
-		1
-	};
+    idc = -1;
+    type = 16;
+    style = "0x02 + 0xC0";
+    default = 0;
+    shadow = 0;
+    x = 0;
+    y = 0;
+    w = 0.095589;
+    h = 0.039216;
+    animTextureNormal = "#(argb,8,8,3)color(1,1,1,1)";
+    animTextureDisabled = "#(argb,8,8,3)color(1,1,1,1)";
+    animTextureOver = "#(argb,8,8,3)color(1,1,1,1)";
+    animTextureFocused = "#(argb,8,8,3)color(1,1,1,1)";
+    animTexturePressed = "#(argb,8,8,3)color(1,1,1,1)";
+    animTextureDefault = "#(argb,8,8,3)color(1,1,1,1)";
+    colorBackground[] =
+    {
+        0,
+        0,
+        0,
+        0.8
+    };
+    colorBackgroundFocused[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorBackground2[] =
+    {
+        0.75,
+        0.75,
+        0.75,
+        1
+    };
+    color[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorFocused[] =
+    {
+        0,
+        0,
+        0,
+        1
+    };
+    color2[] =
+    {
+        0,
+        0,
+        0,
+        1
+    };
+    colorText[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorDisabled[] =
+    {
+        1,
+        1,
+        1,
+        0.25
+    };
+    textSecondary = "";
+    colorSecondary[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    colorFocusedSecondary[] =
+    {
+        0,
+        0,
+        0,
+        1
+    };
+    color2Secondary[] =
+    {
+        0,
+        0,
+        0,
+        1
+    };
+    colorDisabledSecondary[] =
+    {
+        1,
+        1,
+        1,
+        0.25
+    };
+    sizeExSecondary = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+    fontSecondary = "PuristaLight";
+    period = 1.2;
+    periodFocus = 1.2;
+    periodOver = 1.2;
+    size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+    sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+    tooltipColorText[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    tooltipColorBox[] =
+    {
+        1,
+        1,
+        1,
+        1
+    };
+    tooltipColorShade[] =
+    {
+        0,
+        0,
+        0,
+        0.65
+    };
+    class TextPos
+    {
+        left = "0.25 * (((safezoneW / safezoneH) min 1.2) / 40)";
+        top = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) - (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)) / 2";
+        right = 0.005;
+        bottom = 0;
+    };
+    class Attributes
+    {
+        font = "PuristaLight";
+        color = "#E5E5E5";
+        align = "left";
+        shadow = "false";
+    };
+    class ShortcutPos
+    {
+        left = "5.25 * (((safezoneW / safezoneH) min 1.2) / 40)";
+        top = 0;
+        w = "1 * (((safezoneW / safezoneH) min 1.2) / 40)";
+        h = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+    };
+    soundEnter[] =
+    {
+        "\A3\ui_f\data\sound\RscButtonMenu\soundEnter",
+        0.09,
+        1
+    };
+    soundPush[] =
+    {
+        "\A3\ui_f\data\sound\RscButtonMenu\soundPush",
+        0.09,
+        1
+    };
+    soundClick[] =
+    {
+        "\A3\ui_f\data\sound\RscButtonMenu\soundClick",
+        0.09,
+        1
+    };
+    soundEscape[] =
+    {
+        "\A3\ui_f\data\sound\RscButtonMenu\soundEscape",
+        0.09,
+        1
+    };
 };
 class RscButtonMenuOK
 {
-	idc = 1;
-	shortcuts[] =
-	{
-		"0x00050000 + 0",
-		28,
-		57,
-		156
-	};
-	default = 1;
-	text = "OK";
-	soundPush[] =
-	{
-		"\A3\ui_f\data\sound\RscButtonMenuOK\soundPush",
-		0.09,
-		1
-	};
+    idc = 1;
+    shortcuts[] =
+    {
+        "0x00050000 + 0",
+        28,
+        57,
+        156
+    };
+    default = 1;
+    text = "OK";
+    soundPush[] =
+    {
+        "\A3\ui_f\data\sound\RscButtonMenuOK\soundPush",
+        0.09,
+        1
+    };
 };
 class RscButtonMenuCancel
 {
-	idc = 2;
-	shortcuts[] =
-	{
-		"0x00050000 + 1"
-	};
-	text = "Cancel";
+    idc = 2;
+    shortcuts[] =
+    {
+        "0x00050000 + 1"
+    };
+    text = "Cancel";
 };
 class RscControlsGroup
 {
-	deletable = 0;
-	fade = 0;
-	class VScrollbar
-	{
-		color[] =
-		{
-			1,
-			1,
-			1,
-			1
-		};
-		width = 0.021;
-		autoScrollEnabled = 1;
-	};
-	class HScrollbar
-	{
-		color[] =
-		{
-			1,
-			1,
-			1,
-			1
-		};
-		height = 0.028;
-	};
-	class Controls
-	{
-	};
-	type = 15;
-	idc = -1;
-	x = 0;
-	y = 0;
-	w = 1;
-	h = 1;
-	shadow = 0;
-	style = 16;
+    deletable = 0;
+    fade = 0;
+    class VScrollbar
+    {
+        color[] =
+        {
+            1,
+            1,
+            1,
+            1
+        };
+        width = 0.021;
+        autoScrollEnabled = 1;
+    };
+    class HScrollbar
+    {
+        color[] =
+        {
+            1,
+            1,
+            1,
+            1
+        };
+        height = 0.028;
+    };
+    class Controls
+    {
+    };
+    type = 15;
+    idc = -1;
+    x = 0;
+    y = 0;
+    w = 1;
+    h = 1;
+    shadow = 0;
+    style = 16;
 };
 
 class Grstr_VPHUD_Dialog
 {
-	idd = 2110;
-	movingEnabled = 1;
-	enableSimulation = 1;
-	class controls
-	{
-		class Grstr_bg: IGUIBack
-		{
-			idc = 2200;
-			x = 0.355625 * safezoneW + safezoneX;
-			y = 0.247 * safezoneH + safezoneY;
-			w = 0.28875 * safezoneW;
-			h = 0.33 * safezoneH;
-			colorBackground[] = {0,0,0,0.6};
-			moving = 1;
-		};
-		class Grstr_ok: RscButtonMenuOK
-		{
-			text = "Save"; //--- ToDo: Localize;
-			x = 0.365937 * safezoneW + safezoneX;
-			y = 0.544 * safezoneH + safezoneY;
-			w = 0.0309375 * safezoneW;
-			h = 0.022 * safezoneH;
-			tooltip = "Save Options";
-			action = "closeDialog 0; profileNamespace setVariable ['vphud_scaling',vphud_scaling];	profileNamespace setVariable ['vphud_spacing',vphud_spacing];	profileNamespace setVariable ['vphud_crosshair_toggle',vphud_crosshair_toggle];	profileNamespace setVariable ['vphud_crosshair_color_red',vphud_crosshair_color_red];	profileNamespace setVariable ['vphud_crosshair_color_green',vphud_crosshair_color_green];	profileNamespace setVariable ['vphud_crosshair_color_blue',vphud_crosshair_color_blue];	profileNamespace setVariable ['vphud_crosshair_color_alpha',vphud_crosshair_color_alpha];profileNamespace setVariable ['vphud_unit_system',vphud_unit_system];profileNamespace setVariable ['vphud_force',vphud_force];profileNamespace setVariable ['vphud_crosshair_only_toggle',vphud_crosshair_only_toggle];saveProfileNamespace;";
-		};
-		class Grstr_cancel: RscButtonMenuCancel
-		{
-			text ="Cancel";
-			x = 0.592812 * safezoneW + safezoneX;
-			y = 0.544 * safezoneH + safezoneY;
-			w = 0.04125 * safezoneW;
-			h = 0.022 * safezoneH;
-			tooltip = "Cancel Changes";
-			action = "closeDialog 0; vphud_scaling = profileNamespace getVariable ['vphud_scaling',1]; vphud_spacing = profileNamespace getVariable ['vphud_spacing',1]; vphud_crosshair_toggle = profileNamespace getVariable ['vphud_crosshair_toggle',false]; vphud_crosshair_color_red = profileNamespace getVariable ['vphud_crosshair_color_red',0]; vphud_crosshair_color_green = profileNamespace getVariable ['vphud_crosshair_color_green',1]; vphud_crosshair_color_blue = profileNamespace getVariable ['vphud_crosshair_color_blue',0]; vphud_crosshair_color_alpha = profileNamespace getVariable ['vphud_crosshair_color_alpha',1]; vphud_unit_system = profileNamespace getVariable ['vphud_unit_system',0]; vphud_force = profileNamespace getVariable ['vphud_force',false]; if ([] call should_render) then {[] spawn render_vphud;} else {['vphud', 'onEachFrame'] call BIS_fnc_removeStackedEventHandler;}; vphud_crosshair_only_toggle = profileNamespace getVariable ['vphud_crosshair_only_toggle',false];";
-		};
-		class Grstr_tcbch: RscTextCheckbox
-		{
-			idc = 2500;
-			x = 0.39 * safezoneW + safezoneX;
-			y = 0.489 * safezoneH + safezoneY;
-			w = 0.04 * safezoneW;
-			h = 0.022 * safezoneH;
-			strings[] =
-			{
-				"Disabled"
-			};
-			checked_strings[] =
-			{
-				"Enabled"
-			};
-			onCheckBoxesSelChanged = "if (_this select 2 == 1) then {vphud_crosshair_toggle = true;} else {vphud_crosshair_toggle = false;};";
-		};
-		class Grstr_slideScale: RscSlider
-		{
-			idc = 1900;
-			x = 0.365937 * safezoneW + safezoneX;
-			y = 0.368 * safezoneH + safezoneY;
-			w = 0.0825 * safezoneW;
-			h = 0.022 * safezoneH;
-		};
-		class Grstr_slideSpace: RscSlider
-		{
-			idc = 1901;
-			x = 0.365937 * safezoneW + safezoneX;
-			y = 0.434 * safezoneH + safezoneY;
-			w = 0.0825 * safezoneW;
-			h = 0.022 * safezoneH;
-		};
-		class Grstr_red: RscSlider
-		{
-			idc = 1902;
-			x = 0.530937 * safezoneW + safezoneX;
-			y = 0.335 * safezoneH + safezoneY;
-			w = 0.0825 * safezoneW;
-			h = 0.022 * safezoneH;
-		};
-		class Grstr_green: RscSlider
-		{
-			idc = 1903;
-			x = 0.530937 * safezoneW + safezoneX;
-			y = 0.39 * safezoneH + safezoneY;
-			w = 0.0825 * safezoneW;
-			h = 0.022 * safezoneH;
-		};
-		class Grstr_blue: RscSlider
-		{
-			idc = 1904;
-			x = 0.530937 * safezoneW + safezoneX;
-			y = 0.445 * safezoneH + safezoneY;
-			w = 0.0825 * safezoneW;
-			h = 0.022 * safezoneH;
-		};
-		class Grstr_alpha: RscSlider
-		{
-			idc = 1905;
-			x = 0.530937 * safezoneW + safezoneX;
-			y = 0.5 * safezoneH + safezoneY;
-			w = 0.0825 * safezoneW;
-			h = 0.022 * safezoneH;
-		};
-		class Grstr_tbch: RscText
-		{
-			idc = 1001;
-			text = "Virtual Crosshair"; //--- ToDo: Localize;
-			x = 0.37625 * safezoneW + safezoneX;
-			y = 0.467 * safezoneH + safezoneY;
-			w = 0.061875 * safezoneW;
-			h = 0.011 * safezoneH;
-		};
-		class Grstr_tbred: RscText
-		{
-			idc = 1002;
-			text = "0"; //--- ToDo: Localize;
-			x = 0.618594 * safezoneW + safezoneX;
-			y = 0.335 * safezoneH + safezoneY;
-			w = 0.020625 * safezoneW;
-			h = 0.011 * safezoneH;
-		};
-		class Grstr_tbgreen: RscText
-		{
-			idc = 1003;
-			text = "255"; //--- ToDo: Localize;
-			x = 0.618594 * safezoneW + safezoneX;
-			y = 0.39 * safezoneH + safezoneY;
-			w = 0.020625 * safezoneW;
-			h = 0.011 * safezoneH;
-		};
-		class Grstr_tbblue: RscText
-		{
-			idc = 1004;
-			text = "0"; //--- ToDo: Localize;
-			x = 0.618594 * safezoneW + safezoneX;
-			y = 0.445 * safezoneH + safezoneY;
-			w = 0.020625 * safezoneW;
-			h = 0.011 * safezoneH;
-		};
-		class Grstr_tbalpha: RscText
-		{
-			idc = 1005;
-			text = "100%"; //--- ToDo: Localize;
-			x = 0.618594 * safezoneW + safezoneX;
-			y = 0.5 * safezoneH + safezoneY;
-			w = 0.020625 * safezoneW;
-			h = 0.011 * safezoneH;
-		};
-		class Grstr_tred: RscText
-		{
-			idc = 1006;
-			text = "Red"; //--- ToDo: Localize;
-			x = 0.561875 * safezoneW + safezoneX;
-			y = 0.313 * safezoneH + safezoneY;
-			w = 0.020625 * safezoneW;
-			h = 0.011 * safezoneH;
-		};
-		class Grstr_tgreen: RscText
-		{
-			idc = 1007;
-			text = "Green"; //--- ToDo: Localize;
-			x = 0.561875 * safezoneW + safezoneX;
-			y = 0.357 * safezoneH + safezoneY;
-			w = 0.0257812 * safezoneW;
-			h = 0.011 * safezoneH;
-		};
-		class Grstr_tblue: RscText
-		{
-			idc = 1008;
-			text = "Blue"; //--- ToDo: Localize;
-			x = 0.561875 * safezoneW + safezoneX;
-			y = 0.423 * safezoneH + safezoneY;
-			w = 0.020625 * safezoneW;
-			h = 0.011 * safezoneH;
-		};
-		class Grstr_talpha: RscText
-		{
-			idc = 1009;
-			text = "Opacity"; //--- ToDo: Localize;
-			x = 0.55 * safezoneW + safezoneX;
-			y = 0.478 * safezoneH + safezoneY;
-			w = 0.060 * safezoneW;
-			h = 0.02 * safezoneH;
-		};
-		class Grstr_tscale: RscText
-		{
-			idc = 1010;
-			text = "HUD Scale"; //--- ToDo: Localize;
-			x = 0.386562 * safezoneW + safezoneX;
-			y = 0.335 * safezoneH + safezoneY;
-			w = 0.04125 * safezoneW;
-			h = 0.022 * safezoneH;
-		};
-		class Grstr_tspace: RscText
-		{
-			idc = 1011;
-			text = "HUD Spacing"; //--- ToDo: Localize;
-			x = 0.381406 * safezoneW + safezoneX;
-			y = 0.401 * safezoneH + safezoneY;
-			w = 0.0515625 * safezoneW;
-			h = 0.022 * safezoneH;
-		};
-		class Grstr_tmeasure: RscText
-		{
-			idc = 1012;
-			text = "System of Units"; //--- ToDo: Localize;
-			x = 0.371094 * safezoneW + safezoneX;
-			y = 0.269 * safezoneH + safezoneY;
-			w = 0.0825 * safezoneW;
-			h = 0.022 * safezoneH;
-		};
-		class Grstr_cbMeasure: RscCombo
-		{
-			idc = 2100;
-			x = 0.371094 * safezoneW + safezoneX;
-			y = 0.302 * safezoneH + safezoneY;
-			w = 0.08 * safezoneW;
-			h = 0.022 * safezoneH;
-		};
-		class Grstr_tbscale: RscText
-		{
-			idc = 1013;
-			text = "50"; //--- ToDo: Localize;
-			x = 0.453594 * safezoneW + safezoneX;
-			y = 0.368 * safezoneH + safezoneY;
-			w = 0.0154688 * safezoneW;
-			h = 0.011 * safezoneH;
-		};
-		class Grstr_tbspace: RscText
-		{
-			idc = 1014;
-			text = "50"; //--- ToDo: Localize;
-			x = 0.453594 * safezoneW + safezoneX;
-			y = 0.434 * safezoneH + safezoneY;
-			w = 0.0154688 * safezoneW;
-			h = 0.011 * safezoneH;
-		};
-		class Grstr_tcolor: RscText
-		{
-			idc = 1015;
-			text = "Crosshair Color"; //--- ToDo: Localize;
-			x = 0.546406 * safezoneW + safezoneX;
-			y = 0.28 * safezoneH + safezoneY;
-			w = 0.0567187 * safezoneW;
-			h = 0.022 * safezoneH;
-		};
-		class Grstr_logo: RscPicture
-		{
-			idc = 1200;
-			text = "Grstr_VPHUD\textures\logo.paa";
-			x = 0.47 * safezoneW + safezoneX;
-			y = 0.258 * safezoneH + safezoneY;
-			w = 0.0515625 * safezoneW;
-			h = 0.088 * safezoneH;
-		};
-		class Grstr_force: RscText
-		{
-			idc = 1016;
-			text = "Force/Unforce"; //--- ToDo: Localize;
-			x = 0.469062 * safezoneW + safezoneX;
-			y = 0.367 * safezoneH + safezoneY;
-			w = 0.0567187 * safezoneW;
-			h = 0.011 * safezoneH
-		};
-		class Grstr_tcbforce: RscTextCheckbox
-		{
-			idc = 2501;
-			x = 0.479375 * safezoneW + safezoneX;
-			y = 0.39 * safezoneH + safezoneY;
-			w = 0.0360937 * safezoneW;
-			h = 0.022 * safezoneH;
-			strings[] =
-			{
-				"Disabled"
-			};
-			checked_strings[] =
-			{
-				"Enabled"
-			};
-			onCheckBoxesSelChanged = "if (_this select 2 == 1) then {vphud_force = true;} else {vphud_force = false;}; if ([] call should_render) then {[] spawn render_vphud;} else {[""vphud"", ""onEachFrame""] call BIS_fnc_removeStackedEventHandler;};";
-		};
-		class Grstr_chonly: RscText
-		{
-			idc = 1017;
-			text = "Crosshair Only"; //--- ToDo: Localize;
-			x = 0.469062 * safezoneW + safezoneX;
-			y = 0.46 * safezoneH + safezoneY;
-			w = 0.0567187 * safezoneW;
-			h = 0.022 * safezoneH
-		};
-		class Grstr_tcbchonly: RscTextCheckbox
-		{
-			idc = 2502;
-			x = 0.479375 * safezoneW + safezoneX;
-			y = 0.489 * safezoneH + safezoneY;
-			w = 0.0360937 * safezoneW;
-			h = 0.022 * safezoneH;
-			strings[] =
-			{
-				"Disabled"
-			};
-			checked_strings[] =
-			{
-				"Enabled"
-			};
-			onCheckBoxesSelChanged = "if (_this select 2 == 1) then {vphud_crosshair_only_toggle = true;} else {vphud_crosshair_only_toggle = false;}; if ([] call should_render) then {[] spawn render_vphud;} else {[""vphud"", ""onEachFrame""] call BIS_fnc_removeStackedEventHandler;};";
-		};
-		/*class Grstr_cbPov: RscCombo
-		{
-			idc = 2101;
-			x = 0.371094 * safezoneW + safezoneX;
-			y = 0.302 * safezoneH + safezoneY;
-			w = 0.08 * safezoneW;
-			h = 0.022 * safezoneH;
-		};*/
-	};
+    idd = 2110;
+    movingEnabled = 1;
+    enableSimulation = 1;
+    class controls
+    {
+        class Grstr_bg: IGUIBack
+        {
+            idc = 2200;
+            x = 0.355625 * safezoneW + safezoneX;
+            y = 0.247 * safezoneH + safezoneY;
+            w = 0.28875 * safezoneW;
+            h = 0.33 * safezoneH;
+            colorBackground[] = {0,0,0,0.6};
+            moving = 1;
+        };
+        class Grstr_ok: RscButtonMenuOK
+        {
+            text = "Save"; //--- ToDo: Localize;
+            x = 0.365937 * safezoneW + safezoneX;
+            y = 0.544 * safezoneH + safezoneY;
+            w = 0.0309375 * safezoneW;
+            h = 0.022 * safezoneH;
+            tooltip = "Save Options";
+            action = "closeDialog 0; profileNamespace setVariable ['vphud_scaling',vphud_scaling];    profileNamespace setVariable ['vphud_spacing',vphud_spacing];    profileNamespace setVariable ['vphud_crosshair_toggle',vphud_crosshair_toggle];    profileNamespace setVariable ['vphud_crosshair_color_red',vphud_crosshair_color_red];    profileNamespace setVariable ['vphud_crosshair_color_green',vphud_crosshair_color_green];    profileNamespace setVariable ['vphud_crosshair_color_blue',vphud_crosshair_color_blue];    profileNamespace setVariable ['vphud_crosshair_color_alpha',vphud_crosshair_color_alpha];profileNamespace setVariable ['vphud_unit_system',vphud_unit_system];profileNamespace setVariable ['vphud_force',vphud_force];profileNamespace setVariable ['vphud_crosshair_only_toggle',vphud_crosshair_only_toggle];saveProfileNamespace;";
+        };
+        class Grstr_cancel: RscButtonMenuCancel
+        {
+            text ="Cancel";
+            x = 0.592812 * safezoneW + safezoneX;
+            y = 0.544 * safezoneH + safezoneY;
+            w = 0.04125 * safezoneW;
+            h = 0.022 * safezoneH;
+            tooltip = "Cancel Changes";
+            action = "closeDialog 0; vphud_scaling = profileNamespace getVariable ['vphud_scaling',1]; vphud_spacing = profileNamespace getVariable ['vphud_spacing',1]; vphud_crosshair_toggle = profileNamespace getVariable ['vphud_crosshair_toggle',false]; vphud_crosshair_color_red = profileNamespace getVariable ['vphud_crosshair_color_red',0]; vphud_crosshair_color_green = profileNamespace getVariable ['vphud_crosshair_color_green',1]; vphud_crosshair_color_blue = profileNamespace getVariable ['vphud_crosshair_color_blue',0]; vphud_crosshair_color_alpha = profileNamespace getVariable ['vphud_crosshair_color_alpha',1]; vphud_unit_system = profileNamespace getVariable ['vphud_unit_system',0]; vphud_force = profileNamespace getVariable ['vphud_force',false]; if ([] call should_render) then {[] spawn render_vphud;} else {['vphud', 'onEachFrame'] call BIS_fnc_removeStackedEventHandler;}; vphud_crosshair_only_toggle = profileNamespace getVariable ['vphud_crosshair_only_toggle',false];";
+        };
+        class Grstr_tcbch: RscTextCheckbox
+        {
+            idc = 2500;
+            x = 0.39 * safezoneW + safezoneX;
+            y = 0.489 * safezoneH + safezoneY;
+            w = 0.04 * safezoneW;
+            h = 0.022 * safezoneH;
+            strings[] =
+            {
+                "Disabled"
+            };
+            checked_strings[] =
+            {
+                "Enabled"
+            };
+            onCheckBoxesSelChanged = "if (_this select 2 == 1) then {vphud_crosshair_toggle = true;} else {vphud_crosshair_toggle = false;};";
+        };
+        class Grstr_slideScale: RscSlider
+        {
+            idc = 1900;
+            x = 0.365937 * safezoneW + safezoneX;
+            y = 0.368 * safezoneH + safezoneY;
+            w = 0.0825 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+        class Grstr_slideSpace: RscSlider
+        {
+            idc = 1901;
+            x = 0.365937 * safezoneW + safezoneX;
+            y = 0.434 * safezoneH + safezoneY;
+            w = 0.0825 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+        class Grstr_red: RscSlider
+        {
+            idc = 1902;
+            x = 0.530937 * safezoneW + safezoneX;
+            y = 0.335 * safezoneH + safezoneY;
+            w = 0.0825 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+        class Grstr_green: RscSlider
+        {
+            idc = 1903;
+            x = 0.530937 * safezoneW + safezoneX;
+            y = 0.39 * safezoneH + safezoneY;
+            w = 0.0825 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+        class Grstr_blue: RscSlider
+        {
+            idc = 1904;
+            x = 0.530937 * safezoneW + safezoneX;
+            y = 0.445 * safezoneH + safezoneY;
+            w = 0.0825 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+        class Grstr_alpha: RscSlider
+        {
+            idc = 1905;
+            x = 0.530937 * safezoneW + safezoneX;
+            y = 0.5 * safezoneH + safezoneY;
+            w = 0.0825 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+        class Grstr_tbch: RscText
+        {
+            idc = 1001;
+            text = "Virtual Crosshair"; //--- ToDo: Localize;
+            x = 0.37625 * safezoneW + safezoneX;
+            y = 0.467 * safezoneH + safezoneY;
+            w = 0.061875 * safezoneW;
+            h = 0.011 * safezoneH;
+        };
+        class Grstr_tbred: RscText
+        {
+            idc = 1002;
+            text = "0"; //--- ToDo: Localize;
+            x = 0.618594 * safezoneW + safezoneX;
+            y = 0.335 * safezoneH + safezoneY;
+            w = 0.020625 * safezoneW;
+            h = 0.011 * safezoneH;
+        };
+        class Grstr_tbgreen: RscText
+        {
+            idc = 1003;
+            text = "255"; //--- ToDo: Localize;
+            x = 0.618594 * safezoneW + safezoneX;
+            y = 0.39 * safezoneH + safezoneY;
+            w = 0.020625 * safezoneW;
+            h = 0.011 * safezoneH;
+        };
+        class Grstr_tbblue: RscText
+        {
+            idc = 1004;
+            text = "0"; //--- ToDo: Localize;
+            x = 0.618594 * safezoneW + safezoneX;
+            y = 0.445 * safezoneH + safezoneY;
+            w = 0.020625 * safezoneW;
+            h = 0.011 * safezoneH;
+        };
+        class Grstr_tbalpha: RscText
+        {
+            idc = 1005;
+            text = "100%"; //--- ToDo: Localize;
+            x = 0.618594 * safezoneW + safezoneX;
+            y = 0.5 * safezoneH + safezoneY;
+            w = 0.020625 * safezoneW;
+            h = 0.011 * safezoneH;
+        };
+        class Grstr_tred: RscText
+        {
+            idc = 1006;
+            text = "Red"; //--- ToDo: Localize;
+            x = 0.561875 * safezoneW + safezoneX;
+            y = 0.313 * safezoneH + safezoneY;
+            w = 0.020625 * safezoneW;
+            h = 0.011 * safezoneH;
+        };
+        class Grstr_tgreen: RscText
+        {
+            idc = 1007;
+            text = "Green"; //--- ToDo: Localize;
+            x = 0.561875 * safezoneW + safezoneX;
+            y = 0.357 * safezoneH + safezoneY;
+            w = 0.0257812 * safezoneW;
+            h = 0.011 * safezoneH;
+        };
+        class Grstr_tblue: RscText
+        {
+            idc = 1008;
+            text = "Blue"; //--- ToDo: Localize;
+            x = 0.561875 * safezoneW + safezoneX;
+            y = 0.423 * safezoneH + safezoneY;
+            w = 0.020625 * safezoneW;
+            h = 0.011 * safezoneH;
+        };
+        class Grstr_talpha: RscText
+        {
+            idc = 1009;
+            text = "Opacity"; //--- ToDo: Localize;
+            x = 0.55 * safezoneW + safezoneX;
+            y = 0.478 * safezoneH + safezoneY;
+            w = 0.060 * safezoneW;
+            h = 0.02 * safezoneH;
+        };
+        class Grstr_tscale: RscText
+        {
+            idc = 1010;
+            text = "HUD Scale"; //--- ToDo: Localize;
+            x = 0.386562 * safezoneW + safezoneX;
+            y = 0.335 * safezoneH + safezoneY;
+            w = 0.04125 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+        class Grstr_tspace: RscText
+        {
+            idc = 1011;
+            text = "HUD Spacing"; //--- ToDo: Localize;
+            x = 0.381406 * safezoneW + safezoneX;
+            y = 0.401 * safezoneH + safezoneY;
+            w = 0.0515625 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+        class Grstr_tmeasure: RscText
+        {
+            idc = 1012;
+            text = "System of Units"; //--- ToDo: Localize;
+            x = 0.371094 * safezoneW + safezoneX;
+            y = 0.269 * safezoneH + safezoneY;
+            w = 0.0825 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+        class Grstr_cbMeasure: RscCombo
+        {
+            idc = 2100;
+            x = 0.371094 * safezoneW + safezoneX;
+            y = 0.302 * safezoneH + safezoneY;
+            w = 0.08 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+        class Grstr_tbscale: RscText
+        {
+            idc = 1013;
+            text = "50"; //--- ToDo: Localize;
+            x = 0.453594 * safezoneW + safezoneX;
+            y = 0.368 * safezoneH + safezoneY;
+            w = 0.0154688 * safezoneW;
+            h = 0.011 * safezoneH;
+        };
+        class Grstr_tbspace: RscText
+        {
+            idc = 1014;
+            text = "50"; //--- ToDo: Localize;
+            x = 0.453594 * safezoneW + safezoneX;
+            y = 0.434 * safezoneH + safezoneY;
+            w = 0.0154688 * safezoneW;
+            h = 0.011 * safezoneH;
+        };
+        class Grstr_tcolor: RscText
+        {
+            idc = 1015;
+            text = "Crosshair Color"; //--- ToDo: Localize;
+            x = 0.546406 * safezoneW + safezoneX;
+            y = 0.28 * safezoneH + safezoneY;
+            w = 0.0567187 * safezoneW;
+            h = 0.022 * safezoneH;
+        };
+        class Grstr_logo: RscPicture
+        {
+            idc = 1200;
+            text = "Grstr_VPHUD\textures\logo.paa";
+            x = 0.47 * safezoneW + safezoneX;
+            y = 0.258 * safezoneH + safezoneY;
+            w = 0.0515625 * safezoneW;
+            h = 0.088 * safezoneH;
+        };
+        class Grstr_force: RscText
+        {
+            idc = 1016;
+            text = "Force/Unforce"; //--- ToDo: Localize;
+            x = 0.469062 * safezoneW + safezoneX;
+            y = 0.367 * safezoneH + safezoneY;
+            w = 0.0567187 * safezoneW;
+            h = 0.011 * safezoneH
+        };
+        class Grstr_tcbforce: RscTextCheckbox
+        {
+            idc = 2501;
+            x = 0.479375 * safezoneW + safezoneX;
+            y = 0.39 * safezoneH + safezoneY;
+            w = 0.0360937 * safezoneW;
+            h = 0.022 * safezoneH;
+            strings[] =
+            {
+                "Disabled"
+            };
+            checked_strings[] =
+            {
+                "Enabled"
+            };
+            onCheckBoxesSelChanged = "if (_this select 2 == 1) then {vphud_force = true;} else {vphud_force = false;}; if ([] call should_render) then {[] spawn render_vphud;} else {[""vphud"", ""onEachFrame""] call BIS_fnc_removeStackedEventHandler;};";
+        };
+        class Grstr_chonly: RscText
+        {
+            idc = 1017;
+            text = "Crosshair Only"; //--- ToDo: Localize;
+            x = 0.469062 * safezoneW + safezoneX;
+            y = 0.46 * safezoneH + safezoneY;
+            w = 0.0567187 * safezoneW;
+            h = 0.022 * safezoneH
+        };
+        class Grstr_tcbchonly: RscTextCheckbox
+        {
+            idc = 2502;
+            x = 0.479375 * safezoneW + safezoneX;
+            y = 0.489 * safezoneH + safezoneY;
+            w = 0.0360937 * safezoneW;
+            h = 0.022 * safezoneH;
+            strings[] =
+            {
+                "Disabled"
+            };
+            checked_strings[] =
+            {
+                "Enabled"
+            };
+            onCheckBoxesSelChanged = "if (_this select 2 == 1) then {vphud_crosshair_only_toggle = true;} else {vphud_crosshair_only_toggle = false;}; if ([] call should_render) then {[] spawn render_vphud;} else {[""vphud"", ""onEachFrame""] call BIS_fnc_removeStackedEventHandler;};";
+        };
+        /*class Grstr_cbPov: RscCombo
+        {
+            idc = 2101;
+            x = 0.371094 * safezoneW + safezoneX;
+            y = 0.302 * safezoneH + safezoneY;
+            w = 0.08 * safezoneW;
+            h = 0.022 * safezoneH;
+        };*/
+    };
 };
 
 
 class CfgFunctions
 {
-	class Grstr
-	{
-		class VPHUD
-		{
-			file = "\Grstr_VPHUD\functions";
-			class vphud{
-				postInit=1;
-				ext = ".sqf";
-			};
-		};
-		class VPHUD_Dialog
-		{
-			file = "\Grstr_VPHUD\functions";
-			class vphud_dialog{
-				postInit=0;
-				ext = ".sqf";
-			};
-		};
-	};
+    class Grstr
+    {
+        class VPHUD
+        {
+            file = "\Grstr_VPHUD\functions";
+            class vphud{
+                postInit=1;
+                ext = ".sqf";
+            };
+        };
+        class VPHUD_Dialog
+        {
+            file = "\Grstr_VPHUD\functions";
+            class vphud_dialog{
+                postInit=0;
+                ext = ".sqf";
+            };
+        };
+    };
 };

@@ -1,0 +1,661 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"number",
+				"getNumber"
+			],
+			[
+				"MISSION",
+				"missionNamespace"
+			],
+			[
+				"missionN",
+				"missionNamespace"
+			],
+			[
+				"exit",
+				"exitWith"
+			],
+			[
+				"vp",
+				"vphud_cross"
+			],
+			[
+				"rgb",
+				"BIS_fnc_colorRGBtoHTML"
+			],
+			[
+				"sliderset",
+				"sliderSetPosition"
+			],
+			[
+				"spawn",
+				"BIS_fnc_spawn"
+			],
+			[
+				"displ",
+				"displayName"
+			],
+			[
+				"dis",
+				"displayName"
+			],
+			[
+				"VCS",
+				"VCSupport"
+			],
+			[
+				"exec",
+				"execVM"
+			],
+			[
+				"_chute",
+				"_chuteheight"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/config.cpp",
+			"settings":
+			{
+				"buffer_size": 40153,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/functions/fn_vphud.sqf",
+			"settings":
+			{
+				"buffer_size": 12533,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/functions/fn_vphud_dialog.sqf",
+			"settings":
+			{
+				"buffer_size": 2897,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/tools/PoseideonProject.sublime-project",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/Grstr_VPHUD/config.cpp",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/Grstr_VPHUD/functions/fn_vphud.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/MTA.Altis/taw_vd/CfgFunctions.hpp",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/MTA.Altis/taw_vd/fn_stateTracker.fsm",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/MTA.Altis/initPlayerLocal.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/MTA.Altis/init.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/MTA.Altis/taw_vd/fn_updateViewDistance.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/MTA.Altis/taw_vd/fn_onChar.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/MTA.Altis/taw_vd/defines.h",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/MTA.Altis/taw_vd/fn_openMenu.sqf",
+		"/D/Users/Gil/Desktop/rg33/cfgM1025.hpp",
+		"/D/Users/Gil/Desktop/rg33/cfgBradley.hpp",
+		"/D/Users/Gil/Desktop/rg33/brad.cpp",
+		"/D/Users/Gil/Desktop/rg33/hmvw.cpp",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/!Workshop/@RHS RE-Texture Tricolor/addons/Config2.cpp",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/!Workshop/@RHS RE-Texture Tricolor/addons/Config.cpp",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/@atft/atft/CfgHelmet.hpp",
+		"/D/Users/Gil/Desktop/al/veiculos atft/test.sublime-project",
+		"/D/Users/Gil/Desktop/al/config.cfg",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/RfVRiversideNam.blud_cordelia/initServer.sqf",
+		"/D/Users/Gil/Downloads/Arma3(2).cfg",
+		"/D/Users/Gil/Desktop/2rgt/RGT_HUD/RGT_HUD_Resource.sqf",
+		"/D/Users/Gil/Desktop/2rgt/RGT_HUD/RGT_HUDdialogs.cpp",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/treinoATFT.Altis/Powerpoint/BRIEFinit.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/treinoATFT.Altis/Powerpoint/BRIEFnext.sqf",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/@atft/atft/tex/config.cpp",
+		"/D/Users/Gil/Desktop/LSV_02/config.cpp",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/MTA.Altis/taw_vd/fn_openSaveManager.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/MTA.Altis/initServer.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/MTA.Altis/onPlayerRespawn.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/Liberation_Chernarus.Chernarus/gameplay_constants.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/Liberation_Chernarus.Chernarus/init.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/Liberation_Chernarus.Chernarus/GREUH/GREUH_config.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/Liberation_Chernarus.Chernarus/scripts/client/init_client.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/Liberation_Chernarus.Chernarus/scripts/client/spawn/do_halo.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/Liberation_Chernarus.Chernarus/scripts/fob_templates/export_template.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/Liberation_Chernarus.Chernarus/scripts/fob_templates/template1.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/Liberation_Chernarus.Chernarus/classnames_extension.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/Liberation_Chernarus.Chernarus/whitelist.sqf",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-05-07_18-00-27.rpt",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/RfVRiversideNam.blud_cordelia/mission.sqm",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-05-06_02-04-30.rpt",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/vietest.blud_cordelia/description.ext",
+		"/D/Users/Gil/Desktop/init.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/apresentacaoATFT.Altis/Powerpoint/BRIEFinit.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/RfVRiversideNam.blud_cordelia/init.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/RfVRiversideNam.blud_cordelia/initPlayerLocal.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/RfVRiversideNam.blud_cordelia/description.ext",
+		"/D/Users/Gil/Desktop/pbo/baseDefines.hpp",
+		"/D/Users/Gil/Desktop/2rgt/RGT_HUD/RGT_HUD.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/apresentacaoATFT.Altis/init.sqf",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-05-05_17-29-33.rpt",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/RfVRiversideNam.blud_cordelia/cfgTitles.hpp",
+		"/D/Gil/Google Drive/rfv/initPlayerLocal.sqf",
+		"/D/Gil/Google Drive/rfv/init.sqf",
+		"/D/Gil/Google Drive/rfv/description.ext",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-05-04_22-56-40.rpt",
+		"/D/Users/Gil/Desktop/initPlayerLocal.sqf",
+		"/C/Users/Gil/AppData/Local/Temp/PboM/1218161710/rff_gas/rff_mascara.sqf",
+		"/D/Users/Gil/Desktop/description.ext",
+		"/D/Users/Gil/Desktop/2rgt/RGT_HUD/RGT_HUDdefines.hpp",
+		"/D/Users/Gil/Desktop/2rgt/init.sqf",
+		"/D/Users/Gil/Desktop/2rgt/description.ext",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/Grstr_VPHUD/functions/fn_vphud_dialog.sqf",
+		"/D/Users/Gil/Desktop/una/scripts/Intro1.sqf",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-05-04_17-56-05.rpt",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/RfVBaysideNam.blud_cordelia/description.ext",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/RfVBaysideNam.blud_cordelia/initPlayerLocal.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/RfVBaysideNam.blud_cordelia/initPlayerServe.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/RfVBaysideNam.blud_cordelia/onPlayerRespawn.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/RfVBaysideNam.blud_cordelia/initPlayerServer.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/RfVBaysideNam.blud_cordelia/init.sqf",
+		"/D/Users/Gil/Desktop/una/init.sqf",
+		"/D/Users/Gil/Desktop/una/initPlayerLocal.sqf",
+		"/D/Users/Gil/Desktop/una/description.ext",
+		"/D/Users/Gil/Desktop/una/scripts/cfgTitles.hpp",
+		"/D/Users/Gil/Desktop/una/Missionparams.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/Rush4VictoryVietnam.blud_cordelia/description.ext",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-05-01_21-30-49.rpt",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-05-01_21-41-30.rpt",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-04-29_21-12-47.rpt",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-04-29_20-03-58.rpt",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/Grstr_VPHUD/baseDefines.hpp",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-04-29_05-04-04.rpt",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/Grstr_VPHUD/vphud_dialog.hpp",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/@vphud/mod.cpp",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/testeGUI.Stratis/description.ext",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/vietnam.blud_cordelia/onPlayerRespawn.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/vietnam.blud_cordelia/description.ext",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/vietnam.blud_cordelia/init.sqf",
+		"/D/Users/Gil/Desktop/fn_colorPalette.sqf",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-04-27_16-53-39.rpt",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-04-27_16-17-18.rpt",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-04-27_16-14-16.rpt",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-04-27_15-59-35.rpt",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-04-27_15-46-09.rpt",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-04-27_01-59-18.rpt",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-04-27_02-04-55.rpt",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-04-27_14-03-20.rpt",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-04-27_14-12-03.rpt",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-04-27_01-46-10.rpt",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-04-27_01-54-40.rpt",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-04-27_01-51-20.rpt",
+		"/D/Users/Gil/Desktop/pbo/Grstr_VPHUD/baseDefines.hpp",
+		"/C/Users/Gil/AppData/Local/Arma 3/Arma3_x64_2017-04-27_01-42-33.rpt",
+		"/D/Users/Gil/Desktop/baseDefines.hpp",
+		"/D/Users/Gil/Desktop/colorPalette_IDCs.hpp",
+		"/C/Users/Gil/AppData/Local/Temp/7zE43990584/colorPalette_IDCs.hpp",
+		"/C/Users/Gil/AppData/Local/Temp/7zE439A8294/baseDefines.hpp",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/Grstr_VPHUD/functions/vphud_dialog.hpp",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/!Workshop/@Advanced Rappelling/addons/fn_advancedRappellingInit.sqf",
+		"/D/Users/Gil/Desktop/rg33/config.cpp",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/@atft/atft/tex/rg/CfgSounds.hpp",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3 Tools/CfgConvert/chars.cpp",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3 Tools/CfgConvert/configMarkers.h",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/CFA.Altis/missionTasks.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/CFA.Altis/initPlayerLocal.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/CFA.Altis/initServer.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/CFA.Altis/init.sqf",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/@alforces/config.cpp",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/@al_vegetation/alvegetation/CfgPatches.hpp",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/vietnam.blud_cordelia/mission.sqm",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/testeVPHUD.Stratis/vphud.sqf",
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/testeVPHUD.Stratis/description.ext",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/@vphud/Grstr_VPHUD/functions/fn_vphud.sqf",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/@vphud/Grstr_VPHUD/config.cpp",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/!Workshop/@Advanced Towing/addons/SA_AdvancedTowing/config.cpp"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"	",
+			"modelToWorld",
+			"force",
+			",",
+			"close",
+			"only",
+			"force",
+			"force/unforce",
+			"\"",
+			"1016",
+			"1017",
+			"ch",
+			"virtual ",
+			"force",
+			"hide_frontDoors",
+			"AnimationSources",
+			"rhsusf_CH53E_USMC",
+			"rhsusf_m1025_w_m2",
+			"BUSK",
+			"von",
+			"\",\n",
+			"RGT_HUD_TimeHMS",
+			"hide",
+			"rhs_hasNoRadar=1;",
+			"frontdoors",
+			"reflectors",
+			"refl",
+			"reflec",
+			"reflecto",
+			"MG",
+			"GS",
+			"doors",
+			"rvmat",
+			"GS",
+			"BASE",
+			"respawn",
+			"grstr_vphud",
+			"hude",
+			"textcheckbo",
+			"comb",
+			"check",
+			"1200",
+			"textc",
+			"check",
+			"green",
+			"blu3",
+			"255",
+			"green",
+			"action",
+			"255",
+			"Item_tf_anprc152",
+			"type = 7",
+			"checkbox",
+			"sliderPosition[",
+			");\"];",
+			"checkbox",
+			"7",
+			"77",
+			"tch",
+			"anim",
+			"RHS_HMMWV_Door",
+			"vehicleClass",
+			"rhsusf_m1025_d_s_m2",
+			"BIS_curator_2",
+			"BIS_curator_1",
+			"VCSapper",
+			"VCScout",
+			"VCSupport",
+			"VCSniper",
+			"veh spawn",
+			"m113",
+			"(vehicle player) call BIS_fnc_getPitchBank select 1",
+			"150",
+			"200",
+			"(vehicle player)",
+			"_unit",
+			"_chuteheight",
+			"beret"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"    ",
+			"'",
+			"render_vphud",
+			"tf_rf7800str",
+			"RSapper",
+			"RAntiair",
+			"RSupport",
+			"RSniper",
+			"_banky",
+			"100",
+			"150",
+			"_veh",
+			"player",
+			"200"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/config.cpp",
+					"settings":
+					{
+						"buffer_size": 40153,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1087,
+								1087
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Lang C++ Arma/cpp.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 522.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/functions/fn_vphud.sqf",
+					"settings":
+					{
+						"buffer_size": 12533,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2976,
+								2976
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Bin/fsmEditor/SQF.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 261.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/functions/fn_vphud_dialog.sqf",
+					"settings":
+					{
+						"buffer_size": 2897,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								193,
+								193
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Bin/fsmEditor/SQF.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 84.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/D/Users/Gil/Desktop/al/veiculos atft/test.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": false,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

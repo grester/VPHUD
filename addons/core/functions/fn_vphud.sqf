@@ -3,18 +3,18 @@
 //LEAVE LINE 2 EMPTY
 //Load profileVars (Mod settings) if exist
 if(isNil {profileNamespace getVariable "vphud_scaling"}) then {
-	profileNamespace setVariable ["vphud_scaling",1];
-	profileNamespace setVariable ["vphud_spacing",1];
-	profileNamespace setVariable ["vphud_crosshair_toggle",false];
-	profileNamespace setVariable ["vphud_crosshair_color_red",0];
-	profileNamespace setVariable ["vphud_crosshair_color_green",1];
-	profileNamespace setVariable ["vphud_crosshair_color_blue",0];
-	profileNamespace setVariable ["vphud_crosshair_color_alpha",1];
-	profileNamespace setVariable ["vphud_unit_system",0];
-	profileNamespace setVariable ["vphud_force",false];
-	profileNamespace setVariable ["vphud_crosshair_only_toggle",false];
-	//profileNamespace setVariable ["vphud_pov",0];
-	saveProfileNamespace;
+    profileNamespace setVariable ["vphud_scaling",1];
+    profileNamespace setVariable ["vphud_spacing",1];
+    profileNamespace setVariable ["vphud_crosshair_toggle",false];
+    profileNamespace setVariable ["vphud_crosshair_color_red",0];
+    profileNamespace setVariable ["vphud_crosshair_color_green",1];
+    profileNamespace setVariable ["vphud_crosshair_color_blue",0];
+    profileNamespace setVariable ["vphud_crosshair_color_alpha",1];
+    profileNamespace setVariable ["vphud_unit_system",0];
+    profileNamespace setVariable ["vphud_force",false];
+    profileNamespace setVariable ["vphud_crosshair_only_toggle",false];
+    //profileNamespace setVariable ["vphud_pov",0];
+    saveProfileNamespace;
 };
 
 //Global vars
@@ -34,233 +34,233 @@ vphud_crosshair_only_toggle = profileNamespace getVariable ["vphud_crosshair_onl
 
 //Main method
 render_vphud = {
-	["vphud", "onEachFrame", {
-		if (!vphud_crosshair_only_toggle) then {
-			_pitchy = round((vehicle player) call BIS_fnc_getPitchBank select 0);
-			_banky = round((vehicle player) call BIS_fnc_getPitchBank select 1);
-			_vert = (velocity vehicle player select 2);
-			drawIcon3D [
-		    "Grstr_VPHUD\textures\artiPitch2.paa",
-		    [1,1,1,1],
-		    positionCameraToWorld [
-		    if (_pitchy >30) then {30*vphud_spacing+(30 * sin _banky)*0.150*vphud_scaling} else {if (_pitchy <-30) then {30*vphud_spacing+(-30 * sin _banky)*0.150*vphud_scaling} else {30*vphud_spacing+(_pitchy * sin _banky)*0.150*vphud_scaling}},
-		    if (_pitchy >30) then {-30*vphud_spacing-(30 * cos _banky)*0.150*vphud_scaling} else {if (_pitchy <-30) then {-30*vphud_spacing-(-30 * cos _banky)*0.150*vphud_scaling} else {-30*vphud_spacing-(_pitchy * cos _banky)*0.150*vphud_scaling}},
-		    85],
-		    7*vphud_scaling,
-		    7*vphud_scaling,
-		    _banky,
-		    "",
-		    2,
-		    0.1,
-		    "TahomaB",
-			"center"
-			];
-			drawIcon3D [
-		    "Grstr_VPHUD\textures\artiHori2.paa",
-		    [1,1,1,1],
-		    positionCameraToWorld [30*vphud_spacing,-30*vphud_spacing,85],
-		    7*vphud_scaling,
-		    7*vphud_scaling,
-		    _banky,
-		    "",
-		    2,
-		    0.1,
-		    "TahomaB",
-			"center"
-			];
-			drawIcon3D [
-		    "Grstr_VPHUD\textures\artiInd2.paa",
-		    [1,1,1,1],
-		    positionCameraToWorld [30*vphud_spacing,-30*vphud_spacing,85],
-		    7*vphud_scaling,
-		    7*vphud_scaling,
-		    0,
-		    "",
-		    2,
-		    0.1,
-		    "TahomaB",
-			"center"
-			];
-			drawIcon3D [
-		    "Grstr_VPHUD\textures\linhaAlt.paa",
-		    [0,1,0,1],
-		    positionCameraToWorld [-47*vphud_spacing,-39*vphud_spacing,85],
-		    7*vphud_scaling,
-		    (if (round (getPos (vehicle player) select 2)<60) then {round((getPos (vehicle player) select 2)/4.6)} else {13})*vphud_scaling,
-		    0,
-		    "",
-		    2,
-		    0.1,
-		    "TahomaB",
-			"center"
-			];
-			if (vphud_unit_system == 0) then {
-				drawIcon3D [
-			    "Grstr_VPHUD\textures\altimeter.paa",
-			    [1,1,1,1],
-			    positionCameraToWorld [-35*vphud_spacing,-28*vphud_spacing,85],
-			    5*vphud_scaling,
-			    5*vphud_scaling,
-			    0,
-			    "",
-			    2,
-			    0.1,
-			    "TahomaB",
-				"center"
-				];
-				drawIcon3D [
-			    "Grstr_VPHUD\textures\redline.paa",
-			    [1,1,1,1],
-			    positionCameraToWorld [-35*vphud_spacing,-28*vphud_spacing,85],
-			    5*vphud_scaling,
-			    5*vphud_scaling,
-			    if ((_vert >6) || (_vert <-6)) then {180} else {-(((-0.5734872)*(_vert^3))+(_vert*49.5353566))},
-			    "",
-			    2,
-			    0.1,
-			    "TahomaB",
-				"center"
-				];
-				drawIcon3D [
-			    "",
-			    [0,1,0,1],
-			    positionCameraToWorld [21.5*vphud_spacing,-40.5*vphud_spacing,85],
-			    0,
-			    0,
-			    0,
-			    str (round (speed (vehicle player)))+" km/h",
-			    2,
-			    0.05*vphud_scaling,
-			    "TahomaB",
-				"center"
-				];
-				drawIcon3D [
-			    "",
-			    [0,1,0,1],
-			    positionCameraToWorld [-40*vphud_spacing,-35*vphud_spacing,85],
-			    0,
-			    0,
-			    0,
-			    str (round (getPos (vehicle player) select 2))+" m",
-			    2,
-			    0.05*vphud_scaling,
-			    "TahomaB",
-				"center"
-				];
-			} else {
-				drawIcon3D [
-			    "Grstr_VPHUD\textures\altimeterft.paa",
-			    [1,1,1,1],
-			    positionCameraToWorld [-35*vphud_spacing,-28*vphud_spacing,85],
-			    5*vphud_scaling,
-			    5*vphud_scaling,
-			    0,
-			    "",
-			    2,
-			    0.1,
-			    "TahomaB",
-				"center"
-				];
-				drawIcon3D [
-			    "Grstr_VPHUD\textures\redline.paa",
-			    [1,1,1,1],
-			    positionCameraToWorld [-35*vphud_spacing,-28*vphud_spacing,85],
-			    5*vphud_scaling,
-			    5*vphud_scaling,
-			    if ((_vert >10) || (_vert <-10)) then {180} else {-(_vert*18)},
-			    "",
-			    2,
-			    0.1,
-			    "TahomaB",
-				"center"
-				];
-				drawIcon3D [
-			    "",
-			    [0,1,0,1],
-			    positionCameraToWorld [21.5*vphud_spacing,-40.5*vphud_spacing,85],
-			    0,
-			    0,
-			    0,
-			    str (round (speed (vehicle player)*0.539956803))+" knots",
-			    2,
-			    0.05*vphud_scaling,
-			    "TahomaB",
-				"center"
-				];
-				drawIcon3D [
-			    "",
-			    [0,1,0,1],
-			    positionCameraToWorld [-40*vphud_spacing,-35*vphud_spacing,85],
-			    0,
-			    0,
-			    0,
-			    str (round ((getPos (vehicle player) select 2)*3.2808399))+" ft",
-			    2,
-			    0.05*vphud_scaling,
-			    "TahomaB",
-				"center"
-				];
-			};
-		};
-		if (vphud_crosshair_toggle) then {
-			drawIcon3D [
-			    "",
-			    [vphud_crosshair_color_red,vphud_crosshair_color_green,vphud_crosshair_color_blue,vphud_crosshair_color_alpha],
-			    player modelToWorldVisual [0,85,(1.6*vphud_scaling)],
-			    0,
-			    0,
-			    0,
-			    "V",
-			    2,
-			    0.1*vphud_scaling,
-			    "EtelkaMonospacePro",
-			 	"center",
-			 	true
-			];
-		};
-	}] call BIS_fnc_addStackedEventHandler;
+    ["vphud", "onEachFrame", {
+        if (!vphud_crosshair_only_toggle) then {
+            _pitchy = round((vehicle player) call BIS_fnc_getPitchBank select 0);
+            _banky = round((vehicle player) call BIS_fnc_getPitchBank select 1);
+            _vert = (velocity vehicle player select 2);
+            drawIcon3D [
+            "Grstr_VPHUD\textures\artiPitch2.paa",
+            [1,1,1,1],
+            positionCameraToWorld [
+            if (_pitchy >30) then {30*vphud_spacing+(30 * sin _banky)*0.150*vphud_scaling} else {if (_pitchy <-30) then {30*vphud_spacing+(-30 * sin _banky)*0.150*vphud_scaling} else {30*vphud_spacing+(_pitchy * sin _banky)*0.150*vphud_scaling}},
+            if (_pitchy >30) then {-30*vphud_spacing-(30 * cos _banky)*0.150*vphud_scaling} else {if (_pitchy <-30) then {-30*vphud_spacing-(-30 * cos _banky)*0.150*vphud_scaling} else {-30*vphud_spacing-(_pitchy * cos _banky)*0.150*vphud_scaling}},
+            85],
+            7*vphud_scaling,
+            7*vphud_scaling,
+            _banky,
+            "",
+            2,
+            0.1,
+            "TahomaB",
+            "center"
+            ];
+            drawIcon3D [
+            "Grstr_VPHUD\textures\artiHori2.paa",
+            [1,1,1,1],
+            positionCameraToWorld [30*vphud_spacing,-30*vphud_spacing,85],
+            7*vphud_scaling,
+            7*vphud_scaling,
+            _banky,
+            "",
+            2,
+            0.1,
+            "TahomaB",
+            "center"
+            ];
+            drawIcon3D [
+            "Grstr_VPHUD\textures\artiInd2.paa",
+            [1,1,1,1],
+            positionCameraToWorld [30*vphud_spacing,-30*vphud_spacing,85],
+            7*vphud_scaling,
+            7*vphud_scaling,
+            0,
+            "",
+            2,
+            0.1,
+            "TahomaB",
+            "center"
+            ];
+            drawIcon3D [
+            "Grstr_VPHUD\textures\linhaAlt.paa",
+            [0,1,0,1],
+            positionCameraToWorld [-47*vphud_spacing,-39*vphud_spacing,85],
+            7*vphud_scaling,
+            (if (round (getPos (vehicle player) select 2)<60) then {round((getPos (vehicle player) select 2)/4.6)} else {13})*vphud_scaling,
+            0,
+            "",
+            2,
+            0.1,
+            "TahomaB",
+            "center"
+            ];
+            if (vphud_unit_system == 0) then {
+                drawIcon3D [
+                "Grstr_VPHUD\textures\altimeter.paa",
+                [1,1,1,1],
+                positionCameraToWorld [-35*vphud_spacing,-28*vphud_spacing,85],
+                5*vphud_scaling,
+                5*vphud_scaling,
+                0,
+                "",
+                2,
+                0.1,
+                "TahomaB",
+                "center"
+                ];
+                drawIcon3D [
+                "Grstr_VPHUD\textures\redline.paa",
+                [1,1,1,1],
+                positionCameraToWorld [-35*vphud_spacing,-28*vphud_spacing,85],
+                5*vphud_scaling,
+                5*vphud_scaling,
+                if ((_vert >6) || (_vert <-6)) then {180} else {-(((-0.5734872)*(_vert^3))+(_vert*49.5353566))},
+                "",
+                2,
+                0.1,
+                "TahomaB",
+                "center"
+                ];
+                drawIcon3D [
+                "",
+                [0,1,0,1],
+                positionCameraToWorld [21.5*vphud_spacing,-40.5*vphud_spacing,85],
+                0,
+                0,
+                0,
+                str (round (speed (vehicle player)))+" km/h",
+                2,
+                0.05*vphud_scaling,
+                "TahomaB",
+                "center"
+                ];
+                drawIcon3D [
+                "",
+                [0,1,0,1],
+                positionCameraToWorld [-40*vphud_spacing,-35*vphud_spacing,85],
+                0,
+                0,
+                0,
+                str (round (getPos (vehicle player) select 2))+" m",
+                2,
+                0.05*vphud_scaling,
+                "TahomaB",
+                "center"
+                ];
+            } else {
+                drawIcon3D [
+                "Grstr_VPHUD\textures\altimeterft.paa",
+                [1,1,1,1],
+                positionCameraToWorld [-35*vphud_spacing,-28*vphud_spacing,85],
+                5*vphud_scaling,
+                5*vphud_scaling,
+                0,
+                "",
+                2,
+                0.1,
+                "TahomaB",
+                "center"
+                ];
+                drawIcon3D [
+                "Grstr_VPHUD\textures\redline.paa",
+                [1,1,1,1],
+                positionCameraToWorld [-35*vphud_spacing,-28*vphud_spacing,85],
+                5*vphud_scaling,
+                5*vphud_scaling,
+                if ((_vert >10) || (_vert <-10)) then {180} else {-(_vert*18)},
+                "",
+                2,
+                0.1,
+                "TahomaB",
+                "center"
+                ];
+                drawIcon3D [
+                "",
+                [0,1,0,1],
+                positionCameraToWorld [21.5*vphud_spacing,-40.5*vphud_spacing,85],
+                0,
+                0,
+                0,
+                str (round (speed (vehicle player)*0.539956803))+" knots",
+                2,
+                0.05*vphud_scaling,
+                "TahomaB",
+                "center"
+                ];
+                drawIcon3D [
+                "",
+                [0,1,0,1],
+                positionCameraToWorld [-40*vphud_spacing,-35*vphud_spacing,85],
+                0,
+                0,
+                0,
+                str (round ((getPos (vehicle player) select 2)*3.2808399))+" ft",
+                2,
+                0.05*vphud_scaling,
+                "TahomaB",
+                "center"
+                ];
+            };
+        };
+        if (vphud_crosshair_toggle) then {
+            drawIcon3D [
+                "",
+                [vphud_crosshair_color_red,vphud_crosshair_color_green,vphud_crosshair_color_blue,vphud_crosshair_color_alpha],
+                player modelToWorldVisual [0,85,(1.6*vphud_scaling)],
+                0,
+                0,
+                0,
+                "V",
+                2,
+                0.1*vphud_scaling,
+                "EtelkaMonospacePro",
+                 "center",
+                 true
+            ];
+        };
+    }] call BIS_fnc_addStackedEventHandler;
 };
 //End Main Method
 
 filtered_vehicles = {
-	if (vphud_force) then {
-		(typeof vehicle player) in hudedveh;
-	} else {
-		!((typeof vehicle player) in hudedveh);
-	};
+    if (vphud_force) then {
+        (typeof vehicle player) in hudedveh;
+    } else {
+        !((typeof vehicle player) in hudedveh);
+    };
 };
 
 check_rendering_conditions = {
-	if ((vehicle player isKindOf "Air") && ([] call filtered_vehicles)) then {
-		if ( ((assignedVehicleRole player) select 0 == "driver") || ((assignedVehicleRole player) isEqualTo ["Turret",[0]]) ) then {true};
-	} else {false};
+    if ((vehicle player isKindOf "Air") && ([] call filtered_vehicles)) then {
+        if ( ((assignedVehicleRole player) select 0 == "driver") || ((assignedVehicleRole player) isEqualTo ["Turret",[0]]) ) then {true};
+    } else {false};
 };
 //END METHODS
 
 //Main
 if (hasInterface) then {
-	player addEventHandler ["Init", {
-		if ([] call check_rendering_conditions) then {
-			[] spawn render_vphud;
-		};
-	}];
-	player addEventHandler ["GetInMan", {
-		if ([] call check_rendering_conditions) then {
-			[] spawn render_vphud;
-		};
-	}];
-	player addEventHandler ["SeatSwitchedMan", {
-		if ([] call check_rendering_conditions) then {
-			[] spawn render_vphud;
-			} else {
-				["vphud", "onEachFrame"] call BIS_fnc_removeStackedEventHandler;
-			}
-	}];
-	player addEventHandler ["GetOutMan", {
-		["vphud", "onEachFrame"] call BIS_fnc_removeStackedEventHandler;
-	}];
-	player addEventHandler ["Killed", {
-		["vphud", "onEachFrame"] call BIS_fnc_removeStackedEventHandler;
-	}];
-	player addAction["<t color='#00FF00'>VPHUD Options</t>",{[] spawn Grstr_fnc_VPHUD_Dialog;},nil,0,false];
+    player addEventHandler ["Init", {
+        if ([] call check_rendering_conditions) then {
+            [] spawn render_vphud;
+        };
+    }];
+    player addEventHandler ["GetInMan", {
+        if ([] call check_rendering_conditions) then {
+            [] spawn render_vphud;
+        };
+    }];
+    player addEventHandler ["SeatSwitchedMan", {
+        if ([] call check_rendering_conditions) then {
+            [] spawn render_vphud;
+            } else {
+                ["vphud", "onEachFrame"] call BIS_fnc_removeStackedEventHandler;
+            }
+    }];
+    player addEventHandler ["GetOutMan", {
+        ["vphud", "onEachFrame"] call BIS_fnc_removeStackedEventHandler;
+    }];
+    player addEventHandler ["Killed", {
+        ["vphud", "onEachFrame"] call BIS_fnc_removeStackedEventHandler;
+    }];
+    player addAction["<t color='#00FF00'>VPHUD Options</t>",{[] spawn Grstr_fnc_VPHUD_Dialog;},nil,0,false];
 };

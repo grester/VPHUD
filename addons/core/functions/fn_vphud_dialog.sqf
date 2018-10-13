@@ -4,12 +4,12 @@ _measureUnits = ["Metric System","Imperial System"];
 createDialog "Grstr_VPHUD_Dialog";
 waitUntil {!isNull (findDisplay 2110);};
 {
-	lbAdd [2100,_x];
+    lbAdd [2100,_x];
 } forEach _measureUnits;
 lbSetCurSel [2100, vphud_unit_system];
 
 /*{
-	lbAdd [2101,_x];
+    lbAdd [2101,_x];
 } forEach _povTypes;
 lbSetCurSel [2101, vphud_pov];*/
 
