@@ -1603,22 +1603,22 @@ class Grstr_VPHUD_Dialog
         };
         class Grstr_ok: RscButtonMenuOK
         {
-            text = "Save"; //--- ToDo: Localize;
+            text = "$STR_save";
             x = 0.365937 * safezoneW + safezoneX;
             y = 0.544 * safezoneH + safezoneY;
             w = 0.0309375 * safezoneW;
             h = 0.022 * safezoneH;
-            tooltip = "Save Options";
+            tooltip = "$STR_saveOptions";
             action = "closeDialog 0; profileNamespace setVariable ['vphud_scaling',vphud_scaling];    profileNamespace setVariable ['vphud_spacing',vphud_spacing];    profileNamespace setVariable ['vphud_crosshair_toggle',vphud_crosshair_toggle];    profileNamespace setVariable ['vphud_crosshair_color_red',vphud_crosshair_color_red];    profileNamespace setVariable ['vphud_crosshair_color_green',vphud_crosshair_color_green];    profileNamespace setVariable ['vphud_crosshair_color_blue',vphud_crosshair_color_blue];    profileNamespace setVariable ['vphud_crosshair_color_alpha',vphud_crosshair_color_alpha];profileNamespace setVariable ['vphud_unit_system',vphud_unit_system];profileNamespace setVariable ['vphud_force',vphud_force];profileNamespace setVariable ['vphud_crosshair_only_toggle',vphud_crosshair_only_toggle];saveProfileNamespace;";
         };
         class Grstr_cancel: RscButtonMenuCancel
         {
-            text ="Cancel";
+            text ="$STR_cancel";
             x = 0.592812 * safezoneW + safezoneX;
             y = 0.544 * safezoneH + safezoneY;
             w = 0.04125 * safezoneW;
             h = 0.022 * safezoneH;
-            tooltip = "Cancel Changes";
+            tooltip = "$STR_cancelChanges";
             action = "closeDialog 0; vphud_scaling = profileNamespace getVariable ['vphud_scaling',1]; vphud_spacing = profileNamespace getVariable ['vphud_spacing',1]; vphud_crosshair_toggle = profileNamespace getVariable ['vphud_crosshair_toggle',false]; vphud_crosshair_color_red = profileNamespace getVariable ['vphud_crosshair_color_red',0]; vphud_crosshair_color_green = profileNamespace getVariable ['vphud_crosshair_color_green',1]; vphud_crosshair_color_blue = profileNamespace getVariable ['vphud_crosshair_color_blue',0]; vphud_crosshair_color_alpha = profileNamespace getVariable ['vphud_crosshair_color_alpha',1]; vphud_unit_system = profileNamespace getVariable ['vphud_unit_system',0]; vphud_force = profileNamespace getVariable ['vphud_force',false]; if ([] call should_render) then {[] spawn render_vphud;} else {['vphud', 'onEachFrame'] call BIS_fnc_removeStackedEventHandler;}; vphud_crosshair_only_toggle = profileNamespace getVariable ['vphud_crosshair_only_toggle',false];";
         };
         class Grstr_tcbch: RscTextCheckbox
@@ -1630,11 +1630,11 @@ class Grstr_VPHUD_Dialog
             h = 0.022 * safezoneH;
             strings[] =
             {
-                "Disabled"
+                "$STR_disabled"
             };
             checked_strings[] =
             {
-                "Enabled"
+                "$STR_enabled"
             };
             onCheckBoxesSelChanged = "if (_this select 2 == 1) then {vphud_crosshair_toggle = true;} else {vphud_crosshair_toggle = false;};";
         };
@@ -1689,7 +1689,7 @@ class Grstr_VPHUD_Dialog
         class Grstr_tbch: RscText
         {
             idc = 1001;
-            text = "Virtual Crosshair"; //--- ToDo: Localize;
+            text = "$STR_virtualCrosshair";
             x = 0.37625 * safezoneW + safezoneX;
             y = 0.467 * safezoneH + safezoneY;
             w = 0.061875 * safezoneW;
@@ -1698,7 +1698,7 @@ class Grstr_VPHUD_Dialog
         class Grstr_tbred: RscText
         {
             idc = 1002;
-            text = "0"; //--- ToDo: Localize;
+            text = "0";
             x = 0.618594 * safezoneW + safezoneX;
             y = 0.335 * safezoneH + safezoneY;
             w = 0.020625 * safezoneW;
@@ -1707,7 +1707,7 @@ class Grstr_VPHUD_Dialog
         class Grstr_tbgreen: RscText
         {
             idc = 1003;
-            text = "255"; //--- ToDo: Localize;
+            text = "255";
             x = 0.618594 * safezoneW + safezoneX;
             y = 0.39 * safezoneH + safezoneY;
             w = 0.020625 * safezoneW;
@@ -1716,7 +1716,7 @@ class Grstr_VPHUD_Dialog
         class Grstr_tbblue: RscText
         {
             idc = 1004;
-            text = "0"; //--- ToDo: Localize;
+            text = "0";
             x = 0.618594 * safezoneW + safezoneX;
             y = 0.445 * safezoneH + safezoneY;
             w = 0.020625 * safezoneW;
@@ -1725,7 +1725,7 @@ class Grstr_VPHUD_Dialog
         class Grstr_tbalpha: RscText
         {
             idc = 1005;
-            text = "100%"; //--- ToDo: Localize;
+            text = "100%";
             x = 0.618594 * safezoneW + safezoneX;
             y = 0.5 * safezoneH + safezoneY;
             w = 0.020625 * safezoneW;
@@ -1734,7 +1734,7 @@ class Grstr_VPHUD_Dialog
         class Grstr_tred: RscText
         {
             idc = 1006;
-            text = "Red"; //--- ToDo: Localize;
+            text = "$STR_red";
             x = 0.561875 * safezoneW + safezoneX;
             y = 0.313 * safezoneH + safezoneY;
             w = 0.020625 * safezoneW;
@@ -1743,7 +1743,7 @@ class Grstr_VPHUD_Dialog
         class Grstr_tgreen: RscText
         {
             idc = 1007;
-            text = "Green"; //--- ToDo: Localize;
+            text = "$STR_green";
             x = 0.561875 * safezoneW + safezoneX;
             y = 0.357 * safezoneH + safezoneY;
             w = 0.0257812 * safezoneW;
@@ -1752,7 +1752,7 @@ class Grstr_VPHUD_Dialog
         class Grstr_tblue: RscText
         {
             idc = 1008;
-            text = "Blue"; //--- ToDo: Localize;
+            text = "$STR_blue";
             x = 0.561875 * safezoneW + safezoneX;
             y = 0.423 * safezoneH + safezoneY;
             w = 0.020625 * safezoneW;
@@ -1761,7 +1761,7 @@ class Grstr_VPHUD_Dialog
         class Grstr_talpha: RscText
         {
             idc = 1009;
-            text = "Opacity"; //--- ToDo: Localize;
+            text = "$STR_opacity";
             x = 0.55 * safezoneW + safezoneX;
             y = 0.478 * safezoneH + safezoneY;
             w = 0.060 * safezoneW;
@@ -1770,7 +1770,7 @@ class Grstr_VPHUD_Dialog
         class Grstr_tscale: RscText
         {
             idc = 1010;
-            text = "HUD Scale"; //--- ToDo: Localize;
+            text = "$STR_hudScaling";
             x = 0.386562 * safezoneW + safezoneX;
             y = 0.335 * safezoneH + safezoneY;
             w = 0.04125 * safezoneW;
@@ -1779,7 +1779,7 @@ class Grstr_VPHUD_Dialog
         class Grstr_tspace: RscText
         {
             idc = 1011;
-            text = "HUD Spacing"; //--- ToDo: Localize;
+            text = "$STR_hudSpacing";
             x = 0.381406 * safezoneW + safezoneX;
             y = 0.401 * safezoneH + safezoneY;
             w = 0.0515625 * safezoneW;
@@ -1788,7 +1788,7 @@ class Grstr_VPHUD_Dialog
         class Grstr_tmeasure: RscText
         {
             idc = 1012;
-            text = "System of Units"; //--- ToDo: Localize;
+            text = "$STR_unitSystem";
             x = 0.371094 * safezoneW + safezoneX;
             y = 0.269 * safezoneH + safezoneY;
             w = 0.0825 * safezoneW;
@@ -1805,7 +1805,7 @@ class Grstr_VPHUD_Dialog
         class Grstr_tbscale: RscText
         {
             idc = 1013;
-            text = "50"; //--- ToDo: Localize;
+            text = "50";
             x = 0.453594 * safezoneW + safezoneX;
             y = 0.368 * safezoneH + safezoneY;
             w = 0.0154688 * safezoneW;
@@ -1814,7 +1814,7 @@ class Grstr_VPHUD_Dialog
         class Grstr_tbspace: RscText
         {
             idc = 1014;
-            text = "50"; //--- ToDo: Localize;
+            text = "50";
             x = 0.453594 * safezoneW + safezoneX;
             y = 0.434 * safezoneH + safezoneY;
             w = 0.0154688 * safezoneW;
@@ -1823,7 +1823,7 @@ class Grstr_VPHUD_Dialog
         class Grstr_tcolor: RscText
         {
             idc = 1015;
-            text = "Crosshair Color"; //--- ToDo: Localize;
+            text = "$STR_crosshairColor";
             x = 0.546406 * safezoneW + safezoneX;
             y = 0.28 * safezoneH + safezoneY;
             w = 0.0567187 * safezoneW;
@@ -1841,7 +1841,7 @@ class Grstr_VPHUD_Dialog
         class Grstr_force: RscText
         {
             idc = 1016;
-            text = "Force/Unforce"; //--- ToDo: Localize;
+            text = "$STR_forceUnforce";
             x = 0.469062 * safezoneW + safezoneX;
             y = 0.367 * safezoneH + safezoneY;
             w = 0.0567187 * safezoneW;
@@ -1856,18 +1856,18 @@ class Grstr_VPHUD_Dialog
             h = 0.022 * safezoneH;
             strings[] =
             {
-                "Disabled"
+                "$STR_disabled"
             };
             checked_strings[] =
             {
-                "Enabled"
+                "$STR_enabled"
             };
             onCheckBoxesSelChanged = "if (_this select 2 == 1) then {vphud_force = true;} else {vphud_force = false;}; if ([] call should_render) then {[] spawn render_vphud;} else {[""vphud"", ""onEachFrame""] call BIS_fnc_removeStackedEventHandler;};";
         };
         class Grstr_chonly: RscText
         {
             idc = 1017;
-            text = "Crosshair Only"; //--- ToDo: Localize;
+            text = "$STR_crosshairOnly";
             x = 0.469062 * safezoneW + safezoneX;
             y = 0.46 * safezoneH + safezoneY;
             w = 0.0567187 * safezoneW;
@@ -1882,11 +1882,11 @@ class Grstr_VPHUD_Dialog
             h = 0.022 * safezoneH;
             strings[] =
             {
-                "Disabled"
+                "$STR_disabled"
             };
             checked_strings[] =
             {
-                "Enabled"
+                "$STR_enabled"
             };
             onCheckBoxesSelChanged = "if (_this select 2 == 1) then {vphud_crosshair_only_toggle = true;} else {vphud_crosshair_only_toggle = false;}; if ([] call should_render) then {[] spawn render_vphud;} else {[""vphud"", ""onEachFrame""] call BIS_fnc_removeStackedEventHandler;};";
         };

@@ -1,5 +1,5 @@
 disableSerialization;
-_measureUnits = ["Metric System","Imperial System"];
+_measureUnits = ["$STR_metricSystem","STR_imperialSystem"];
 //_povTypes = ["Vehicle","Player"];
 createDialog "Grstr_VPHUD_Dialog";
 waitUntil {!isNull (findDisplay 2110);};
