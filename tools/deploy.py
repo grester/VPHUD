@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-####################################
-# ACE3 automatic deployment script #
-# ================================ #
-# This is not meant to be run      #
-# directly!                        #
-####################################
+#####################################
+# VPHUD automatic deployment script #
+# ================================= #
+# This is not meant to be run       #
+# directly!                         #
+#####################################
 
 import os
 import sys
@@ -15,15 +15,13 @@ import subprocess as sp
 from github import Github, InputGitAuthor
 
 
-TRANSLATIONISSUE = 367
-TRANSLATIONBODY = """**[ACE3 Translation Guide](http://ace3mod.com/wiki/development/how-to-translate-ace3.html)**
-{}
-"""
+#TRANSLATIONISSUE = 367
+#TRANSLATIONBODY = """**[ACE3 Translation Guide](http://ace3mod.com/wiki/development/how-to-translate-ace3.html)**
+#{}
+#"""
 
-DEPENDENCIESPATH = "docs/_includes/dependencies_list.md"
-
-REPOUSER = "acemod"
-REPONAME = "ACE3"
+REPOUSER = "grester"
+REPONAME = "VPHUD"
 REPOPATH = "{}/{}".format(REPOUSER,REPONAME)
 
 
@@ -32,27 +30,6 @@ def update_translations(repo):
     diag = str(diag, "utf-8")
     issue = repo.get_issue(TRANSLATIONISSUE)
     issue.edit(body=TRANSLATIONBODY.format(diag))
-
-def update_dependencies(repo):
-    dependencies = sp.check_output(["python3", "tools/extract_dependencies.py", "--markdown"])
-    dependencies = str(dependencies, "utf-8")
-    diff = sp.check_output(["git", "diff", "--name-only", DEPENDENCIESPATH])
-    diff = str(diff, "utf-8")
-
-    if diff != "":
-        sha = repo.get_contents(DEPENDENCIESPATH
-            #, ref="travisForDocs" # Debug
-        ).sha
-        repo.update_file(
-            path="/{}".format(DEPENDENCIESPATH),
-            message="[Docs] Update component dependencies\nAutomatically committed through Travis CI.\n\n[ci skip]",
-            content=dependencies, sha=sha, committer=InputGitAuthor("ace3mod", "ace3mod@gmail.com")
-            #, branch="travisForDocs" # Debug
-        )
-        print("Dependencies successfully updated.")
-    else:
-        print("Dependencies skipped - no change.")
-
 
 def main():
     print("Obtaining token ...")
@@ -88,4 +65,4 @@ def main():
 
 
 if __name__ == "__main__":
-sys.exit(main())
+	sys.exit(main())
