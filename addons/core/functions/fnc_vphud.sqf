@@ -40,7 +40,7 @@ render_vphud = {
             _banky = round((vehicle player) call BIS_fnc_getPitchBank select 1);
             _vert = (velocity vehicle player select 2);
             drawIcon3D [
-            "Grstr_VPHUD\textures\artiPitch2.paa",
+            "\core\textures\artiPitch2.paa",
             [1,1,1,1],
             positionCameraToWorld [
             if (_pitchy >30) then {30*vphud_spacing+(30 * sin _banky)*0.150*vphud_scaling} else {if (_pitchy <-30) then {30*vphud_spacing+(-30 * sin _banky)*0.150*vphud_scaling} else {30*vphud_spacing+(_pitchy * sin _banky)*0.150*vphud_scaling}},
@@ -56,7 +56,7 @@ render_vphud = {
             "center"
             ];
             drawIcon3D [
-            "Grstr_VPHUD\textures\artiHori2.paa",
+            "\core\textures\artiHori2.paa",
             [1,1,1,1],
             positionCameraToWorld [30*vphud_spacing,-30*vphud_spacing,85],
             7*vphud_scaling,
@@ -69,7 +69,7 @@ render_vphud = {
             "center"
             ];
             drawIcon3D [
-            "Grstr_VPHUD\textures\artiInd2.paa",
+            "\core\textures\artiInd2.paa",
             [1,1,1,1],
             positionCameraToWorld [30*vphud_spacing,-30*vphud_spacing,85],
             7*vphud_scaling,
@@ -82,7 +82,7 @@ render_vphud = {
             "center"
             ];
             drawIcon3D [
-            "Grstr_VPHUD\textures\linhaAlt.paa",
+            "\core\textures\linhaAlt.paa",
             [0,1,0,1],
             positionCameraToWorld [-47*vphud_spacing,-39*vphud_spacing,85],
             7*vphud_scaling,
@@ -96,7 +96,7 @@ render_vphud = {
             ];
             if (vphud_unit_system == 0) then {
                 drawIcon3D [
-                "Grstr_VPHUD\textures\altimeter.paa",
+                "\core\textures\altimeter.paa",
                 [1,1,1,1],
                 positionCameraToWorld [-35*vphud_spacing,-28*vphud_spacing,85],
                 5*vphud_scaling,
@@ -109,7 +109,7 @@ render_vphud = {
                 "center"
                 ];
                 drawIcon3D [
-                "Grstr_VPHUD\textures\redline.paa",
+                "\core\textures\redline.paa",
                 [1,1,1,1],
                 positionCameraToWorld [-35*vphud_spacing,-28*vphud_spacing,85],
                 5*vphud_scaling,
@@ -149,7 +149,7 @@ render_vphud = {
                 ];
             } else {
                 drawIcon3D [
-                "Grstr_VPHUD\textures\altimeterft.paa",
+                "\core\textures\altimeterft.paa",
                 [1,1,1,1],
                 positionCameraToWorld [-35*vphud_spacing,-28*vphud_spacing,85],
                 5*vphud_scaling,
@@ -162,7 +162,7 @@ render_vphud = {
                 "center"
                 ];
                 drawIcon3D [
-                "Grstr_VPHUD\textures\redline.paa",
+                "\core\textures\redline.paa",
                 [1,1,1,1],
                 positionCameraToWorld [-35*vphud_spacing,-28*vphud_spacing,85],
                 5*vphud_scaling,
@@ -262,5 +262,5 @@ if (hasInterface) then {
     player addEventHandler ["Killed", {
         ["vphud", "onEachFrame"] call BIS_fnc_removeStackedEventHandler;
     }];
-    player addAction["<t color='#00FF00'>VPHUD Options</t>",{[] spawn Grstr_fnc_VPHUD_Dialog;},nil,0,false];
+    player addAction["<t color='#00FF00'>VPHUD Options</t>",{[] spawn VPHUD_fnc_vphud_dialog;},nil,0,false];
 };

@@ -1,14 +1,34 @@
 class CfgPatches
 {
-    class Grstr_VPHUD
+    class VPHUD
     {
         units[] = {};
         weapons[] = {};
         requiredVersion = "1.84";
-        version = "1.2.1";
+        //version = "1.2.1";
         author = "Grester";
     };
 };
+
+class CfgFunctions
+{
+    class VPHUD
+    {
+        class VPHUD_Core
+        {
+            file = "\core\functions";
+            class vphud{
+                postInit=1;
+                ext = ".sqf";
+            };
+            class vphud_dialog{
+                postInit=0;
+                ext = ".sqf";
+            };
+        };
+    };
+};
+
 // Control types
 #define CT_STATIC           0
 #define CT_BUTTON           1
@@ -1898,29 +1918,5 @@ class Grstr_VPHUD_Dialog
             w = 0.08 * safezoneW;
             h = 0.022 * safezoneH;
         };*/
-    };
-};
-
-
-class CfgFunctions
-{
-    class Grstr
-    {
-        class VPHUD
-        {
-            file = "\Grstr_VPHUD\functions";
-            class vphud{
-                postInit=1;
-                ext = ".sqf";
-            };
-        };
-        class VPHUD_Dialog
-        {
-            file = "\Grstr_VPHUD\functions";
-            class vphud_dialog{
-                postInit=0;
-                ext = ".sqf";
-            };
-        };
     };
 };
