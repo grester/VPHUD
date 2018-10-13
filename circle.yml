@@ -12,7 +12,7 @@ jobs:
           name: Build
           command: armake --version
       - deploy:
-          name: Update documentation and translation statistics
+          name: Circle build test
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ] && [ "${CIRCLE_PROJECT_USERNAME}" == "grester" ]; then
               pip install pygithub pygithub3
