@@ -25,11 +25,11 @@ REPONAME = "VPHUD"
 REPOPATH = "{}/{}".format(REPOUSER,REPONAME)
 
 
-def update_translations(repo):
-    diag = sp.check_output(["python3", "tools/stringtablediag.py", "--markdown"])
-    diag = str(diag, "utf-8")
-    issue = repo.get_issue(TRANSLATIONISSUE)
-    issue.edit(body=TRANSLATIONBODY.format(diag))
+#def update_translations(repo):
+#    diag = sp.check_output(["python3", "tools/stringtablediag.py", "--markdown"])
+#    diag = str(diag, "utf-8")
+#    issue = repo.get_issue(TRANSLATIONISSUE)
+#    issue.edit(body=TRANSLATIONBODY.format(diag))
 
 def main():
     print("Obtaining token ...")
@@ -43,23 +43,15 @@ def main():
     else:
         print("Token sucessfully obtained.")
 
-    print("\nUpdating translation issue ...")
-    try:
-        update_translations(repo)
-    except:
-        print("Failed to update translation issue.")
-        print(traceback.format_exc())
-        return 1
-    else:
-        print("Translation issue successfully updated.")
-
-    print("\nUpdating dependencies list ...")
-    try:
-        update_dependencies(repo)
-    except:
-        print("Failed to update dependencies.")
-        print(traceback.format_exc())
-        return 1
+#    print("\nUpdating translation issue ...")
+#    try:
+#        update_translations(repo)
+#    except:
+#        print("Failed to update translation issue.")
+#        print(traceback.format_exc())
+#        return 1
+#    else:
+#        print("Translation issue successfully updated.")
 
     return 0
 
