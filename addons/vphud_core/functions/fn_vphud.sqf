@@ -94,6 +94,32 @@ render_vphud = {
             "TahomaB",
             "center"
             ];
+            drawIcon3D [
+            "\vphud_core\textures\linhaAlt.paa",
+            [0,1,0,1],
+            positionCameraToWorld [47*vphud_spacing,39*vphud_spacing,85],
+            7*vphud_scaling,
+            (round((airplaneThrottle (vehicle player))/5))*vphud_scaling,
+            0,
+            "",
+            2,
+            0.1,
+            "TahomaB",
+            "center"
+            ];
+            drawIcon3D [
+                "",
+                [0,1,0,1],
+                positionCameraToWorld [40*vphud_spacing,35*vphud_spacing,85],
+                0,
+                0,
+                0,
+                str (round((airplaneThrottle (vehicle player))))+" %",
+                2,
+                0.05*vphud_scaling,
+                "TahomaB",
+                "center"
+                ];
             if (vphud_unit_system == 0) then {
                 drawIcon3D [
                 "\vphud_core\textures\altimeter.paa",
