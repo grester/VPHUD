@@ -3,60 +3,79 @@
 	<Package name="GUI">
 		<Key ID="STR_metricSystem">
 			<Original>Metric System</Original>
+			<Dutch>Metriek Stelsel</Dutch>
 		</Key>
 		<Key ID="STR_imperialSystem">
 			<Original>Imperial System</Original>
+			<Dutch>Imperiaal Stelsel</Dutch>
 		</Key>
 		<Key ID="STR_save">
 			<Original>Save</Original>
+			<Dutch>Opslaan</Dutch>
 		</Key>
 		<Key ID="STR_saveOptions">
 			<Original>Save Options</Original>
+			<Dutch>Sla Opties Op</Dutch>
 		</Key>
 		<Key ID="STR_cancel">
 			<Original>Cancel</Original>
+			<Dutch>Annuleren</Dutch>
 		</Key>
 		<Key ID="STR_cancelChanges">
 			<Original>Cancel Changes</Original>
+			<Dutch>Annuleer Veranderingen</Dutch>
 		</Key>
 		<Key ID="STR_disabled">
 			<Original>Disabled</Original>
+			<Dutch>Uitgeschakeld</Dutch>
 		</Key>
 		<Key ID="STR_enabled">
 			<Original>Enabled</Original>
+			<Dutch>Ingeschakeld</Dutch>
 		</Key>
 		<Key ID="STR_virtualCrosshair">
 			<Original>Virtual Crosshair</Original>
+			<Dutch>Virtueel Vizier</Dutch>
 		</Key>
 		<Key ID="STR_crosshairOnly">
 			<Original>Crosshair Only</Original>
+			<Dutch>Alleen Vizier</Dutch>
 		</Key>
 		<Key ID="STR_crosshairColor">
 			<Original>Crosshair Color</Original>
+			<Dutch>Kleur Vizier</Dutch>
 		</Key>
 		<Key ID="STR_red">
 			<Original>Red</Original>
+			<Dutch>Rood</Dutch>
 		</Key>
 		<Key ID="STR_green">
 			<Original>Green</Original>
+			<Dutch>Groen</Dutch>
 		</Key>
 		<Key ID="STR_blue">
 			<Original>Blue</Original>
+			<Dutch>Blauw</Dutch>
 		</Key>
 		<Key ID="STR_opacity">
 			<Original>Opacity</Original>
+			<Dutch>Doorschijnendheid</Dutch>
 		</Key>
 		<Key ID="STR_hudScaling">
 			<Original>HUD Scaling</Original>
+			<Dutch>HUD Schaling</Dutch>
 		</Key>
 		<Key ID="STR_hudSpacing">
 			<Original>HUD Spacing</Original>
+			<Dutch>HUD Afstanden</Dutch>
 		</Key>
 		<Key ID="STR_unitSystem">
 			<Original>Units System</Original>
+			<Dutch>Eenhedenstelsel</Dutch>
 		</Key>
 		<Key ID="STR_forceUnforce">
 			<Original>Force/Unforce</Original>
+			<Dutch>Dwingen/Ontdwingen</Dutch>
 		</Key>
 	</Package>
 </Project>
