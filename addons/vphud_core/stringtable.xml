@@ -4,78 +4,97 @@
 		<Key ID="STR_unitSystem">
 			<Original>Units System</Original>
 			<Dutch>Eenhedenstelsel</Dutch>
+			<Portuguese>Sistema Unitário</Portuguese>
 		</Key>		
 		<Key ID="STR_metricSystem">
 			<Original>Metric System</Original>
 			<Dutch>Metriek Stelsel</Dutch>
+			<Portuguese>Sistema Métrico</Portuguese>
 		</Key>
 		<Key ID="STR_imperialSystem">
 			<Original>Imperial System</Original>
 			<Dutch>Imperiaal Stelsel</Dutch>
+			<Portuguese>Sistema Imperial</Portuguese>
 		</Key>
 		<Key ID="STR_save">
 			<Original>Save</Original>
 			<Dutch>Opslaan</Dutch>
+			<Portuguese>Guardar</Portuguese>
 		</Key>
 		<Key ID="STR_saveOptions">
 			<Original>Save Options</Original>
 			<Dutch>Sla Opties Op</Dutch>
+			<Portuguese>Guardar Opções</Portuguese>
 		</Key>
 		<Key ID="STR_cancel">
 			<Original>Cancel</Original>
 			<Dutch>Annuleren</Dutch>
+			<Portuguese>Cancelar</Portuguese>
 		</Key>
 		<Key ID="STR_cancelChanges">
 			<Original>Cancel Changes</Original>
 			<Dutch>Annuleer Veranderingen</Dutch>
+			<Portuguese>Cancelar Alterações</Portuguese>
 		</Key>
 		<Key ID="STR_disabled">
 			<Original>Disabled</Original>
 			<Dutch>Uitgeschakeld</Dutch>
+			<Portuguese>Desativado</Portuguese>
 		</Key>
 		<Key ID="STR_enabled">
 			<Original>Enabled</Original>
 			<Dutch>Ingeschakeld</Dutch>
+			<Portuguese>Ativado</Portuguese>
 		</Key>
 		<Key ID="STR_virtualCrosshair">
 			<Original>Virtual Crosshair</Original>
 			<Dutch>Virtueel Vizier</Dutch>
+			<Portuguese>Mira Virtual</Portuguese>
 		</Key>
 		<Key ID="STR_crosshairOnly">
 			<Original>Crosshair Only</Original>
 			<Dutch>Alleen Vizier</Dutch>
+			<Portuguese>Só Mira</Portuguese>
 		</Key>
 		<Key ID="STR_crosshairColor">
 			<Original>Crosshair Color</Original>
 			<Dutch>Kleur Vizier</Dutch>
+			<Portuguese>Côr da Mira</Portuguese>
 		</Key>
 		<Key ID="STR_red">
 			<Original>Red</Original>
 			<Dutch>Rood</Dutch>
+			<Portuguese>Vermelho</Portuguese>
 		</Key>
 		<Key ID="STR_green">
 			<Original>Green</Original>
 			<Dutch>Groen</Dutch>
+			<Portuguese>Verde</Portuguese>
 		</Key>
 		<Key ID="STR_blue">
 			<Original>Blue</Original>
 			<Dutch>Blauw</Dutch>
+			<Portuguese>Azul</Portuguese>
 		</Key>
 		<Key ID="STR_opacity">
 			<Original>Opacity</Original>
 			<Dutch>Doorschijnendheid</Dutch>
+			<Portuguese>Opacidade</Portuguese>
 		</Key>
 		<Key ID="STR_hudScaling">
 			<Original>HUD Scaling</Original>
 			<Dutch>HUD Schaling</Dutch>
+			<Portuguese>Escala do HUD</Portuguese>
 		</Key>
 		<Key ID="STR_hudSpacing">
 			<Original>HUD Spacing</Original>
 			<Dutch>HUD Afstanden</Dutch>
+			<Portuguese>Espaçamento do HUD</Portuguese>
 		</Key>
 		<Key ID="STR_forceUnforce">
 			<Original>Force/Unforce</Original>
 			<Dutch>Dwingen/Ontdwingen</Dutch>
+			<Portuguese>Forçar/Desforçar</Portuguese>
 		</Key>
 	</Package>
 </Project>
