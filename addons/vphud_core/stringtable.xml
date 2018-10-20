@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project name="VPHUD">
 	<Package name="GUI">
+		<Key ID="STR_unitSystem">
+			<Original>Units System</Original>
+			<Dutch>Eenhedenstelsel</Dutch>
+		</Key>		
 		<Key ID="STR_metricSystem">
 			<Original>Metric System</Original>
 			<Dutch>Metriek Stelsel</Dutch>
@@ -68,10 +72,6 @@
 		<Key ID="STR_hudSpacing">
 			<Original>HUD Spacing</Original>
 			<Dutch>HUD Afstanden</Dutch>
-		</Key>
-		<Key ID="STR_unitSystem">
-			<Original>Units System</Original>
-			<Dutch>Eenhedenstelsel</Dutch>
 		</Key>
 		<Key ID="STR_forceUnforce">
 			<Original>Force/Unforce</Original>
