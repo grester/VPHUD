@@ -5,7 +5,6 @@ class CfgPatches
         units[] = {};
         weapons[] = {};
         requiredVersion = "1.84";
-        version = "1.2.1";
         author = "Grester";
     };
 };
