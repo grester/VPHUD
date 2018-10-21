@@ -98,7 +98,7 @@ render_vphud = {
                 drawIcon3D [
                 "\vphud_core\textures\linhaAlt.paa",
                 [0,1,0,1],
-                positionCameraToWorld [41*vphud_spacing,-40.5*vphud_spacing,85],
+                positionCameraToWorld [43*vphud_spacing,-40.5*vphud_spacing,85],
                 7*vphud_scaling,
                 (round((airplaneThrottle (vehicle player)*100)/6))*vphud_scaling,
                 0,
