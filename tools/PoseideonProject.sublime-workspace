@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"STR",
+				"STR_enabled"
+			],
+			[
 				"number",
 				"getNumber"
 			],
@@ -60,15 +64,15 @@
 	"buffers":
 	[
 		{
-			"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/config.cpp",
+			"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/config.cpp",
 			"settings":
 			{
-				"buffer_size": 40153,
+				"buffer_size": 39756,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/functions/fn_vphud.sqf",
+			"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/functions/fn_vphud.sqf",
 			"settings":
 			{
 				"buffer_size": 12533,
@@ -76,10 +80,10 @@
 			}
 		},
 		{
-			"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/functions/fn_vphud_dialog.sqf",
+			"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/functions/fn_vphud_dialog.sqf",
 			"settings":
 			{
-				"buffer_size": 2897,
+				"buffer_size": 2806,
 				"line_ending": "Windows"
 			}
 		}
@@ -108,6 +112,14 @@
 	},
 	"file_history":
 	[
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/config.cpp",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/mod.cpp",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/functions/fnc_vphud.sqf",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/.circleci/config.yml",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/stringtable.xml",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/$PBOPREFIX$",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/functions/fn_vphud_dialog.sqf",
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/functions/fn_vphud.sqf",
 		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/tools/PoseideonProject.sublime-project",
 		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/Grstr_VPHUD/config.cpp",
 		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/Grstr_VPHUD/functions/fn_vphud.sqf",
@@ -227,19 +239,11 @@
 		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/CFA.Altis/missionTasks.sqf",
 		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/CFA.Altis/initPlayerLocal.sqf",
 		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/CFA.Altis/initServer.sqf",
-		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/CFA.Altis/init.sqf",
-		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/@alforces/config.cpp",
-		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/@al_vegetation/alvegetation/CfgPatches.hpp",
-		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/vietnam.blud_cordelia/mission.sqm",
-		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/testeVPHUD.Stratis/vphud.sqf",
-		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/missions/testeVPHUD.Stratis/description.ext",
-		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/@vphud/Grstr_VPHUD/functions/fn_vphud.sqf",
-		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/@vphud/Grstr_VPHUD/config.cpp",
-		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/!Workshop/@Advanced Towing/addons/SA_AdvancedTowing/config.cpp"
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/CFA.Altis/init.sqf"
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 45.0
 	},
 	"find_in_files":
 	{
@@ -253,6 +257,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"textures",
+			"texture",
+			"fnc_",
+			"fn_",
+			"fnc",
+			"VPHUD_Dialog",
+			"VPHUD 1.2",
 			"	",
 			"modelToWorld",
 			"force",
@@ -367,18 +378,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/config.cpp",
+					"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/config.cpp",
 					"settings":
 					{
-						"buffer_size": 40153,
+						"buffer_size": 39756,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1087,
-								1087
+								27214,
+								27214
 							]
 						],
 						"settings":
@@ -432,17 +443,18 @@
 								"bh_single_quote_close"
 							],
 							"syntax": "Packages/Lang C++ Arma/cpp.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 522.0,
+						"translation.y": 5248.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/functions/fn_vphud.sqf",
+					"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/functions/fn_vphud.sqf",
 					"settings":
 					{
 						"buffer_size": 12533,
@@ -452,8 +464,8 @@
 						"selection":
 						[
 							[
-								2976,
-								2976
+								9261,
+								9250
 							]
 						],
 						"settings":
@@ -507,28 +519,29 @@
 								"bh_single_quote_close"
 							],
 							"syntax": "Packages/Bin/fsmEditor/SQF.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 261.0,
+						"translation.y": 5033.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/functions/fn_vphud_dialog.sqf",
+					"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/functions/fn_vphud_dialog.sqf",
 					"settings":
 					{
-						"buffer_size": 2897,
+						"buffer_size": 2806,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								193,
-								193
+								260,
+								260
 							]
 						],
 						"settings":
