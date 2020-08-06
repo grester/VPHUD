@@ -28,13 +28,14 @@ vphud_crosshair_color_alpha = profileNamespace getVariable ["vphud_crosshair_col
 vphud_unit_system = profileNamespace getVariable ["vphud_unit_system",0];
 vphud_force = profileNamespace getVariable ["vphud_force",false];
 vphud_crosshair_only_toggle = profileNamespace getVariable ["vphud_crosshair_only_toggle",false];
+vphud_event_handler_index = nil;
 //vphud_pov = profileNamespace getVariable ["vphud_pov",0];
 
 //BEGIN METHODS
 
-//Main method
+//Core method
 render_vphud = {
-    ["vphud", "onEachFrame", {
+    vphud_event_handler_index = addMissionEventHandler ["Draw3D", {
         if (!vphud_crosshair_only_toggle) then {
             _pitchy = round((vehicle player) call BIS_fnc_getPitchBank select 0);
             _banky = round((vehicle player) call BIS_fnc_getPitchBank select 1);
@@ -246,9 +247,9 @@ render_vphud = {
                  false
             ];
         };
-    }] call BIS_fnc_addStackedEventHandler;
+    }];
 };
-//End Main Method
+//End Core Method
 
 filtered_vehicles = {
     if (vphud_force) then {
@@ -267,7 +268,10 @@ check_rendering_conditions = {
 
 //Main
 if (hasInterface) then {
-    player addEventHandler ["Init", {
+    if ([] call check_rendering_conditions) then {
+        [] spawn render_vphud;
+    };
+    player addEventHandler ["Respawn", {
         if ([] call check_rendering_conditions) then {
             [] spawn render_vphud;
         };
@@ -281,14 +285,14 @@ if (hasInterface) then {
         if ([] call check_rendering_conditions) then {
             [] spawn render_vphud;
             } else {
-                ["vphud", "onEachFrame"] call BIS_fnc_removeStackedEventHandler;
+                removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
             }
     }];
     player addEventHandler ["GetOutMan", {
-        ["vphud", "onEachFrame"] call BIS_fnc_removeStackedEventHandler;
+        removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
     }];
     player addEventHandler ["Killed", {
-        ["vphud", "onEachFrame"] call BIS_fnc_removeStackedEventHandler;
+        removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
     }];
     player addAction["<t color='#00FF00'>VPHUD Options</t>",{[] spawn VPHUD_fnc_vphud_dialog;},nil,0,false];
 };
