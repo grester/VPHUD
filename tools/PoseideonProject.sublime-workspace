@@ -75,7 +75,7 @@
 			"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/functions/fn_vphud.sqf",
 			"settings":
 			{
-				"buffer_size": 13473,
+				"buffer_size": 13599,
 				"line_ending": "Unix"
 			}
 		},
@@ -265,6 +265,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"vphud_force",
 			"textures",
 			"texture",
 			"fnc_",
@@ -465,15 +466,15 @@
 					"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/functions/fn_vphud.sqf",
 					"settings":
 					{
-						"buffer_size": 13473,
+						"buffer_size": 13599,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3082,
-								3076
+								12102,
+								12102
 							]
 						],
 						"settings":
@@ -531,7 +532,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5986.0,
+						"translation.y": 1305.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -605,7 +606,7 @@
 							"syntax": "Packages/Bin/fsmEditor/SQF.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 175.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

@@ -4,7 +4,7 @@ class CfgPatches
     {
         units[] = {};
         weapons[] = {};
-        requiredVersion = "1.84";
+        requiredVersion = "1.98";
         author = "Grester";
     };
 };
@@ -1628,7 +1628,7 @@ class Grstr_VPHUD_Dialog
             w = 0.0309375 * safezoneW;
             h = 0.022 * safezoneH;
             tooltip = "$STR_saveOptions";
-            action = "closeDialog 0; profileNamespace setVariable ['vphud_scaling',vphud_scaling];    profileNamespace setVariable ['vphud_spacing',vphud_spacing];    profileNamespace setVariable ['vphud_crosshair_toggle',vphud_crosshair_toggle];    profileNamespace setVariable ['vphud_crosshair_color_red',vphud_crosshair_color_red];    profileNamespace setVariable ['vphud_crosshair_color_green',vphud_crosshair_color_green];    profileNamespace setVariable ['vphud_crosshair_color_blue',vphud_crosshair_color_blue];    profileNamespace setVariable ['vphud_crosshair_color_alpha',vphud_crosshair_color_alpha];profileNamespace setVariable ['vphud_unit_system',vphud_unit_system];profileNamespace setVariable ['vphud_force',vphud_force];profileNamespace setVariable ['vphud_crosshair_only_toggle',vphud_crosshair_only_toggle];saveProfileNamespace;";
+            action = "closeDialog 0; profileNamespace setVariable ['vphud_scaling',vphud_scaling]; profileNamespace setVariable ['vphud_spacing',vphud_spacing]; profileNamespace setVariable ['vphud_crosshair_toggle',vphud_crosshair_toggle]; profileNamespace setVariable ['vphud_crosshair_color_red',vphud_crosshair_color_red];    profileNamespace setVariable ['vphud_crosshair_color_green',vphud_crosshair_color_green];    profileNamespace setVariable ['vphud_crosshair_color_blue',vphud_crosshair_color_blue];    profileNamespace setVariable ['vphud_crosshair_color_alpha',vphud_crosshair_color_alpha];profileNamespace setVariable ['vphud_unit_system',vphud_unit_system];profileNamespace setVariable ['vphud_force',vphud_force];profileNamespace setVariable ['vphud_crosshair_only_toggle',vphud_crosshair_only_toggle];  profileNamespace setVariable ['vphud_crosshair_style',vphud_crosshair_style];  saveProfileNamespace;";
         };
         class Grstr_cancel: RscButtonMenuCancel
         {
@@ -1638,7 +1638,7 @@ class Grstr_VPHUD_Dialog
             w = 0.04125 * safezoneW;
             h = 0.022 * safezoneH;
             tooltip = "$STR_cancelChanges";
-            action = "closeDialog 0; vphud_scaling = profileNamespace getVariable ['vphud_scaling',1]; vphud_spacing = profileNamespace getVariable ['vphud_spacing',1]; vphud_crosshair_toggle = profileNamespace getVariable ['vphud_crosshair_toggle',false]; vphud_crosshair_color_red = profileNamespace getVariable ['vphud_crosshair_color_red',0]; vphud_crosshair_color_green = profileNamespace getVariable ['vphud_crosshair_color_green',1]; vphud_crosshair_color_blue = profileNamespace getVariable ['vphud_crosshair_color_blue',0]; vphud_crosshair_color_alpha = profileNamespace getVariable ['vphud_crosshair_color_alpha',1]; vphud_unit_system = profileNamespace getVariable ['vphud_unit_system',0]; vphud_force = profileNamespace getVariable ['vphud_force',false]; if ([] call should_render) then {[] spawn render_vphud;} else {['vphud', 'onEachFrame'] call BIS_fnc_removeStackedEventHandler;}; vphud_crosshair_only_toggle = profileNamespace getVariable ['vphud_crosshair_only_toggle',false];";
+            action = "closeDialog 0; vphud_scaling = profileNamespace getVariable ['vphud_scaling',1]; vphud_spacing = profileNamespace getVariable ['vphud_spacing',1]; vphud_crosshair_toggle = profileNamespace getVariable ['vphud_crosshair_toggle',false]; vphud_crosshair_color_red = profileNamespace getVariable ['vphud_crosshair_color_red',0]; vphud_crosshair_color_green = profileNamespace getVariable ['vphud_crosshair_color_green',1]; vphud_crosshair_color_blue = profileNamespace getVariable ['vphud_crosshair_color_blue',0]; vphud_crosshair_color_alpha = profileNamespace getVariable ['vphud_crosshair_color_alpha',1]; vphud_unit_system = profileNamespace getVariable ['vphud_unit_system',0]; vphud_force = profileNamespace getVariable ['vphud_force',false]; vphud_crosshair_only_toggle = profileNamespace getVariable ['vphud_crosshair_only_toggle',false]; vphud_crosshair_style = profileNamespace getVariable ['vphud_crosshair_style','V']; if ([] call check_rendering_conditions) then {[] spawn render_vphud;} else {removeMissionEventHandler [""Draw3D"", vphud_event_handler_index];};";
         };
         class Grstr_tcbch: RscTextCheckbox
         {
@@ -1781,7 +1781,7 @@ class Grstr_VPHUD_Dialog
         {
             idc = 1009;
             text = "$STR_opacity";
-            x = 0.55 * safezoneW + safezoneX;
+            x = 0.54125 * safezoneW + safezoneX;
             y = 0.478 * safezoneH + safezoneY;
             w = 0.060 * safezoneW;
             h = 0.02 * safezoneH;
@@ -1790,9 +1790,9 @@ class Grstr_VPHUD_Dialog
         {
             idc = 1010;
             text = "$STR_hudScaling";
-            x = 0.386562 * safezoneW + safezoneX;
+            x = 0.381406 * safezoneW + safezoneX;
             y = 0.335 * safezoneH + safezoneY;
-            w = 0.04125 * safezoneW;
+            w = 0.0515625 * safezoneW;
             h = 0.022 * safezoneH;
         };
         class Grstr_tspace: RscText
@@ -1881,22 +1881,22 @@ class Grstr_VPHUD_Dialog
             {
                 "$STR_enabled"
             };
-            onCheckBoxesSelChanged = "if (_this select 2 == 1) then {vphud_force = true;} else {vphud_force = false;}; if ([] call should_render) then {[] spawn render_vphud;} else {[""vphud"", ""onEachFrame""] call BIS_fnc_removeStackedEventHandler;};";
+            onCheckBoxesSelChanged = "if (_this select 2 == 1) then {vphud_force = true;} else {vphud_force = false;}; if ([] call check_rendering_conditions) then {[] spawn render_vphud;} else {removeMissionEventHandler [""Draw3D"", vphud_event_handler_index];};";
         };
         class Grstr_chonly: RscText
         {
             idc = 1017;
             text = "$STR_crosshairOnly";
             x = 0.469062 * safezoneW + safezoneX;
-            y = 0.46 * safezoneH + safezoneY;
+            y = 0.423 * safezoneH + safezoneY;
             w = 0.0567187 * safezoneW;
-            h = 0.022 * safezoneH
+            h = 0.022 * safezoneH;
         };
         class Grstr_tcbchonly: RscTextCheckbox
         {
             idc = 2502;
             x = 0.479375 * safezoneW + safezoneX;
-            y = 0.489 * safezoneH + safezoneY;
+            y = 0.456 * safezoneH + safezoneY;
             w = 0.0360937 * safezoneW;
             h = 0.022 * safezoneH;
             strings[] =
@@ -1907,8 +1907,35 @@ class Grstr_VPHUD_Dialog
             {
                 "$STR_enabled"
             };
-            onCheckBoxesSelChanged = "if (_this select 2 == 1) then {vphud_crosshair_only_toggle = true;} else {vphud_crosshair_only_toggle = false;}; if ([] call should_render) then {[] spawn render_vphud;} else {[""vphud"", ""onEachFrame""] call BIS_fnc_removeStackedEventHandler;};";
+            onCheckBoxesSelChanged = "if (_this select 2 == 1) then {vphud_crosshair_only_toggle = true;} else {vphud_crosshair_only_toggle = false;}; if ([] call check_rendering_conditions) then {[] spawn render_vphud;} else {removeMissionEventHandler [""Draw3D"", vphud_event_handler_index];};";
         };
+        class Grstr_tbchs: RscText
+        {
+            idc = 1020;
+            text = "$STR_crosshairStyle";
+            x = 0.463906 * safezoneW + safezoneX;
+            y = 0.489 * safezoneH + safezoneY;
+            w = 0.061875 * safezoneW;
+            h = 0.011 * safezoneH;
+        };
+        class Grstr_edChs: RscEdit
+        {
+            idc = 1400;
+            text = "";
+            x = 0.484531 * safezoneW + safezoneX;
+            y = 0.511 * safezoneH + safezoneY;
+            w = 0.020625 * safezoneW;
+            h = 0.022 * safezoneH;
+            onKeyUp = "";
+        };
+        /*class Grstr_cbChs: RscCombo
+        {
+            idc = 2101;
+            x = 0.463906 * safezoneW + safezoneX;
+            y = 0.511 * safezoneH + safezoneY;
+            w = 0.061875 * safezoneW;
+            h = 0.022 * safezoneH;
+        };*/
         /*class Grstr_cbPov: RscCombo
         {
             idc = 2101;
