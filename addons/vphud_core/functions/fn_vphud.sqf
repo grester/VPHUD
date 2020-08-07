@@ -13,6 +13,7 @@ if(isNil {profileNamespace getVariable "vphud_scaling"}) then {
     profileNamespace setVariable ["vphud_unit_system",0];
     profileNamespace setVariable ["vphud_force",false];
     profileNamespace setVariable ["vphud_crosshair_only_toggle",false];
+    profileNamespace setVariable ["vphud_crosshair_style","V"];
     //profileNamespace setVariable ["vphud_pov",0];
     saveProfileNamespace;
 };
@@ -28,24 +29,37 @@ vphud_crosshair_color_alpha = profileNamespace getVariable ["vphud_crosshair_col
 vphud_unit_system = profileNamespace getVariable ["vphud_unit_system",0];
 vphud_force = profileNamespace getVariable ["vphud_force",false];
 vphud_crosshair_only_toggle = profileNamespace getVariable ["vphud_crosshair_only_toggle",false];
+vphud_crosshair_style = profileNamespace getVariable ["vphud_crosshair_style","V"];
+vphud_event_handler_index = nil;
 //vphud_pov = profileNamespace getVariable ["vphud_pov",0];
 
 //BEGIN METHODS
-
-//Main method
+//Core method
 render_vphud = {
-    ["vphud", "onEachFrame", {
+    vphud_event_handler_index = addMissionEventHandler ["Draw3D", {
         if (!vphud_crosshair_only_toggle) then {
             _pitchy = round((vehicle player) call BIS_fnc_getPitchBank select 0);
             _banky = round((vehicle player) call BIS_fnc_getPitchBank select 1);
             _vert = (velocity vehicle player select 2);
             drawIcon3D [
-            "\vphud_core\textures\artiPitch2.paa",
+            "\vphud_core\textures\artiPitch3.pac",
             [1,1,1,1],
             positionCameraToWorld [
-            if (_pitchy >30) then {30*vphud_spacing+(30 * sin _banky)*0.150*vphud_scaling} else {if (_pitchy <-30) then {30*vphud_spacing+(-30 * sin _banky)*0.150*vphud_scaling} else {30*vphud_spacing+(_pitchy * sin _banky)*0.150*vphud_scaling}},
-            if (_pitchy >30) then {-30*vphud_spacing-(30 * cos _banky)*0.150*vphud_scaling} else {if (_pitchy <-30) then {-30*vphud_spacing-(-30 * cos _banky)*0.150*vphud_scaling} else {-30*vphud_spacing-(_pitchy * cos _banky)*0.150*vphud_scaling}},
-            85],
+                if (_pitchy >45) then {
+                        (30 * vphud_spacing) + (45 * sin _banky) * 0.10 * vphud_scaling}
+                    else {if (_pitchy <-45) then {
+                        (30 * vphud_spacing) + (-45 * sin _banky) * 0.10 * vphud_scaling}
+                    else {
+                        (30 * vphud_spacing) + (_pitchy * sin _banky) * 0.10 * vphud_scaling}
+                },
+                if (_pitchy >45) then {
+                        (-30 * vphud_spacing) - (45 * cos _banky) * 0.10 * vphud_scaling}
+                    else {if (_pitchy <-45) then {
+                        (-30 * vphud_spacing) - (-45 * cos _banky) * 0.10 * vphud_scaling}
+                    else {
+                        (-30 * vphud_spacing) - (_pitchy * cos _banky) * 0.10 * vphud_scaling}
+                },
+                85],
             7*vphud_scaling,
             7*vphud_scaling,
             _banky,
@@ -94,6 +108,34 @@ render_vphud = {
             "TahomaB",
             "center"
             ];
+            if ((vehicle player) isKindOf "Plane") then{
+                drawIcon3D [
+                "\vphud_core\textures\linhaAlt.paa",
+                [0,1,0,1],
+                positionCameraToWorld [43*vphud_spacing,-40.5*vphud_spacing,85],
+                7*vphud_scaling,
+                (round((airplaneThrottle (vehicle player)*100)/6))*vphud_scaling,
+                0,
+                "",
+                2,
+                0.1,
+                "TahomaB",
+                "center"
+                ];
+                drawIcon3D [
+                "",
+                [0,1,0,1],
+                positionCameraToWorld [40*vphud_spacing,-40.5*vphud_spacing,85],
+                0,
+                0,
+                0,
+                str (round(airplaneThrottle (vehicle player)*100))+"%",
+                2,
+                0.05*vphud_scaling,
+                "TahomaB",
+                "center"
+                ];
+            };
             if (vphud_unit_system == 0) then {
                 drawIcon3D [
                 "\vphud_core\textures\altimeter.paa",
@@ -210,17 +252,17 @@ render_vphud = {
                 0,
                 0,
                 0,
-                "V",
+                vphud_crosshair_style,
                 2,
                 0.1*vphud_scaling,
                 "EtelkaMonospacePro",
                  "center",
-                 true
+                 false
             ];
         };
-    }] call BIS_fnc_addStackedEventHandler;
+    }];
 };
-//End Main Method
+//End Core Method
 
 filtered_vehicles = {
     if (vphud_force) then {
@@ -239,7 +281,10 @@ check_rendering_conditions = {
 
 //Main
 if (hasInterface) then {
-    player addEventHandler ["Init", {
+    if ([] call check_rendering_conditions) then {
+        [] spawn render_vphud;
+    };
+    player addEventHandler ["Respawn", {
         if ([] call check_rendering_conditions) then {
             [] spawn render_vphud;
         };
@@ -253,14 +298,14 @@ if (hasInterface) then {
         if ([] call check_rendering_conditions) then {
             [] spawn render_vphud;
             } else {
-                ["vphud", "onEachFrame"] call BIS_fnc_removeStackedEventHandler;
+                removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
             }
     }];
     player addEventHandler ["GetOutMan", {
-        ["vphud", "onEachFrame"] call BIS_fnc_removeStackedEventHandler;
+        removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
     }];
     player addEventHandler ["Killed", {
-        ["vphud", "onEachFrame"] call BIS_fnc_removeStackedEventHandler;
+        removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
     }];
     player addAction["<t color='#00FF00'>VPHUD Options</t>",{[] spawn VPHUD_fnc_vphud_dialog;},nil,0,false];
 };
