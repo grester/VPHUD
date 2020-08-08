@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"vphud_c",
+				"vphud_crosshair_style"
+			],
+			[
 				"STR",
 				"STR_enabled"
 			],
@@ -67,7 +71,7 @@
 			"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/config.cpp",
 			"settings":
 			{
-				"buffer_size": 39729,
+				"buffer_size": 40775,
 				"line_ending": "Windows"
 			}
 		},
@@ -75,7 +79,7 @@
 			"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/functions/fn_vphud.sqf",
 			"settings":
 			{
-				"buffer_size": 13599,
+				"buffer_size": 14095,
 				"line_ending": "Unix"
 			}
 		},
@@ -83,7 +87,7 @@
 			"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/functions/fn_vphud_dialog.sqf",
 			"settings":
 			{
-				"buffer_size": 2806,
+				"buffer_size": 3308,
 				"line_ending": "Windows"
 			}
 		},
@@ -93,6 +97,14 @@
 			{
 				"buffer_size": 1555,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/stringtable.xml",
+			"settings":
+			{
+				"buffer_size": 3599,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -120,6 +132,7 @@
 	},
 	"file_history":
 	[
+		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/stringtable.xml",
 		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/config.cpp",
 		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/mod.cpp",
 		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/core/functions/fnc_vphud.sqf",
@@ -246,8 +259,7 @@
 		"/E/Program Files (x86)/Steam/steamapps/common/Arma 3 Tools/CfgConvert/configMarkers.h",
 		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/CFA.Altis/missionTasks.sqf",
 		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/CFA.Altis/initPlayerLocal.sqf",
-		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/CFA.Altis/initServer.sqf",
-		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/CFA.Altis/init.sqf"
+		"/D/Users/Gil/Documents/Arma 3 - Other Profiles/Grester/mpmissions/CFA.Altis/initServer.sqf"
 	],
 	"find":
 	{
@@ -265,6 +277,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"_measureUnits",
+			"2100",
+			"cbMeasure",
+			"Grstr_cbMeasure",
+			"combo",
+			"RscText",
+			"tmeasure",
+			"artiPitch",
+			"artiPit",
+			"artipit",
 			"vphud_force",
 			"textures",
 			"texture",
@@ -390,15 +412,15 @@
 					"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/config.cpp",
 					"settings":
 					{
-						"buffer_size": 39729,
+						"buffer_size": 40775,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								120,
-								120
+								38915,
+								38915
 							]
 						],
 						"settings":
@@ -456,7 +478,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3393.0,
+						"translation.y": 54479.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -466,15 +488,15 @@
 					"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/functions/fn_vphud.sqf",
 					"settings":
 					{
-						"buffer_size": 13599,
+						"buffer_size": 14095,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12102,
-								12102
+								4949,
+								4940
 							]
 						],
 						"settings":
@@ -532,7 +554,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1305.0,
+						"translation.y": 1407.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -542,15 +564,15 @@
 					"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/functions/fn_vphud_dialog.sqf",
 					"settings":
 					{
-						"buffer_size": 2806,
+						"buffer_size": 3308,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								260,
-								260
+								3259,
+								3259
 							]
 						],
 						"settings":
@@ -606,7 +628,7 @@
 							"syntax": "Packages/Bin/fsmEditor/SQF.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 175.0,
+						"translation.y": 609.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -681,6 +703,81 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/stringtable.xml",
+					"settings":
+					{
+						"buffer_size": 3599,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3420,
+								3420
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Lang XML/XML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 271.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
