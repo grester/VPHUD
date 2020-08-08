@@ -34,7 +34,6 @@ vphud_event_handler_index = nil;
 //vphud_pov = profileNamespace getVariable ["vphud_pov",0];
 
 //BEGIN METHODS
-
 //Core method
 render_vphud = {
     vphud_event_handler_index = addMissionEventHandler ["Draw3D", {
