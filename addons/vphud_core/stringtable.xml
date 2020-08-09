@@ -1,123 +1,62 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project name="VPHUD">
 	<Package name="GUI">
-		<Key ID="STR_unitSystem">
-			<Original>Units System</Original>
-			<Dutch>Eenhedenstelsel</Dutch>
-			<Portuguese>Sistema Unitário</Portuguese>
-			<German>Einheitssystem</German>
-		</Key>
 		<Key ID="STR_metricSystem">
 			<Original>Metric System</Original>
-			<Dutch>Metriek Stelsel</Dutch>
-			<Portuguese>Sistema Métrico</Portuguese>
-			<German>Metrische System</German>
 		</Key>
 		<Key ID="STR_imperialSystem">
 			<Original>Imperial System</Original>
-			<Dutch>Imperiaal Stelsel</Dutch>
-			<Portuguese>Sistema Imperial</Portuguese>
-			<German>Imperiale System</German>
 		</Key>
 		<Key ID="STR_save">
 			<Original>Save</Original>
-			<Dutch>Opslaan</Dutch>
-			<Portuguese>Guardar</Portuguese>
-			<German>Speichern</German>
 		</Key>
 		<Key ID="STR_saveOptions">
 			<Original>Save Options</Original>
-			<Dutch>Sla Opties Op</Dutch>
-			<Portuguese>Guardar Opções</Portuguese>
-			<German>Speicheroptionen</German>
 		</Key>
 		<Key ID="STR_cancel">
 			<Original>Cancel</Original>
-			<Dutch>Annuleren</Dutch>
-			<Portuguese>Cancelar</Portuguese>
-			<German>Abbrechen</German>
 		</Key>
 		<Key ID="STR_cancelChanges">
 			<Original>Cancel Changes</Original>
-			<Dutch>Annuleer Veranderingen</Dutch>
-			<Portuguese>Cancelar Alterações</Portuguese>
-			<German>Änderungen verwerfen</German>
 		</Key>
 		<Key ID="STR_disabled">
 			<Original>Disabled</Original>
-			<Dutch>Uitgeschakeld</Dutch>
-			<Portuguese>Desativado</Portuguese>
-			<German>Deaktiviert</German>
 		</Key>
 		<Key ID="STR_enabled">
 			<Original>Enabled</Original>
-			<Dutch>Ingeschakeld</Dutch>
-			<Portuguese>Ativado</Portuguese>
-			<German>Aktiviert</German>
 		</Key>
 		<Key ID="STR_virtualCrosshair">
 			<Original>Virtual Crosshair</Original>
-			<Dutch>Virtueel Vizier</Dutch>
-			<Portuguese>Mira Virtual</Portuguese>
-			<German>Virtuelles Fadenkreuz</German>
 		</Key>
 		<Key ID="STR_crosshairOnly">
 			<Original>Crosshair Only</Original>
-			<Dutch>Alleen Vizier</Dutch>
-			<Portuguese>Só Mira</Portuguese>
-			<German>Nur Fadenkreuz</German>
 		</Key>
 		<Key ID="STR_crosshairColor">
 			<Original>Crosshair Color</Original>
-			<Dutch>Kleur Vizier</Dutch>
-			<Portuguese>Côr da Mira</Portuguese>
-			<German>Fadenkreuz-Farbe</German>
 		</Key>
 		<Key ID="STR_red">
 			<Original>Red</Original>
-			<Dutch>Rood</Dutch>
-			<Portuguese>Vermelho</Portuguese>
-			<German>Rot</German>
 		</Key>
 		<Key ID="STR_green">
 			<Original>Green</Original>
-			<Dutch>Groen</Dutch>
-			<Portuguese>Verde</Portuguese>
-			<German>Grün</German>
 		</Key>
 		<Key ID="STR_blue">
 			<Original>Blue</Original>
-			<Dutch>Blauw</Dutch>
-		    <Portuguese>Azul</Portuguese>
-			<German>Blau</German>
 		</Key>
 		<Key ID="STR_opacity">
 			<Original>Opacity</Original>
-			<Dutch>Doorschijnendheid</Dutch>
-			<Portuguese>Opacidade</Portuguese>
-			<German>Transparenz</German>
 		</Key>
 		<Key ID="STR_hudScaling">
 			<Original>HUD Scaling</Original>
-			<Dutch>HUD Schaling</Dutch>
-			<Portuguese>Escala do HUD</Portuguese>
-			<German>HUD Skalierung</German>
 		</Key>
 		<Key ID="STR_hudSpacing">
 			<Original>HUD Spacing</Original>
-			<Dutch>HUD Afstanden</Dutch>
-			<Portuguese>Espaçamento do HUD</Portuguese>
-			<German>HUD Abstände</German>
+		</Key>
+		<Key ID="STR_unitSystem">
+			<Original>Units System</Original>
 		</Key>
 		<Key ID="STR_forceUnforce">
 			<Original>Force/Unforce</Original>
-			<Dutch>Dwingen/Ontdwingen</Dutch>
-			<Portuguese>Forçar/Desforçar</Portuguese>
-			<German>Erzwingen/nicht Erzwingen</German>
-		</Key>
-		<Key ID="STR_crosshairStyle">
-			<Original>Crosshair Style</Original>
-			<Portuguese>Estilo da Mira</Portuguese>
 		</Key>
 	</Package>
 </Project>

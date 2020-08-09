@@ -1,6 +1,5 @@
 ![VPHUD Logo](http://i.imgur.com/6gH9Fej.jpg)<br>
-[![Current Version](https://img.shields.io/badge/version-1.3.0-green.svg)](https://steamcommunity.com/sharedfiles/filedetails/?id=909408380) <a href="https://forums.bohemia.net/forums/topic/203881-vphud-virtual-pilot-head-up-display/"><img src="https://img.shields.io/badge/BIF-Thread-lightgrey.svg" alt="BIF Thread"></a> <a href="https://circleci.com/gh/grester/VPHUD/"><img src="https://circleci.com/gh/grester/VPHUD.svg?style=svg" alt="VPHUD Build Status"></a>
-
+[![Current Version](https://img.shields.io/badge/version-1.3.0-green.svg)](http://steamcommunity.com/sharedfiles/filedetails/?id=312724602) <a href="https://forums.bohemia.net/forums/topic/203881-vphud-virtual-pilot-head-up-display/"><img src="https://img.shields.io/badge/BIF-Thread-lightgrey.svg" alt="BIF Thread"></a> <a href="https://circleci.com/gh/grester/VPHUD/"><img src="https://circleci.com/gh/grester/VPHUD.svg?style=svg" alt="VPHUD Build Status"></a>
 # What is VPHUD?
 Have you ever felt the need to look at the aircraft fixed gauges, because it had no HUD?
 Have you ever crashed your aircraft because you were distracted looking at such gauges?
