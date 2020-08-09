@@ -1,3 +1,7 @@
+branches:
+  only:
+  - master
+  - stable
 matrix:
   include:
     -language: python
