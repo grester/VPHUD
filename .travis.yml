@@ -1,7 +1,7 @@
 branches:
   only:
   - master
-  - stable
+  - rc2020
 matrix:
   include:
     -language: python
