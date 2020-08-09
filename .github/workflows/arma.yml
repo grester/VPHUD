@@ -3,7 +3,7 @@ name: Arma
 on:
   push:
     branches:
-    #- master
+    - master
     - rc2020
   pull_request:
 
