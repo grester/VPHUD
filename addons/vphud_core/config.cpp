@@ -1946,4 +1946,3 @@ class Grstr_VPHUD_Dialog
         };*/
     };
 };
-
