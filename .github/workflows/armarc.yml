@@ -11,7 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout the source code
-      uses: actions/checkout@rc2020
+      uses: actions/checkout@v2
+      with:
+        ref: rc2020
     - name: Validate SQF
       run: python3 tools/sqf_validator.py
     #- name: Validate Config
