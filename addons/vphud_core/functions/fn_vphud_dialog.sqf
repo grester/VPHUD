@@ -2,7 +2,7 @@ disableSerialization;
 _measureUnits = ["Metric","Imperial"];
 //_crosshairStyles = ["V","T","I","X","O","+","-",".","/\","\/","^"]
 //_povTypes = ["Vehicle","Player"];
-createDialog "Grstr_VPHUD_Dialog";
+createDialog "Vphud_Dialog";
 waitUntil {!isNull (findDisplay 2110);};
 {
     lbAdd [2100,_x];

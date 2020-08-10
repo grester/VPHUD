@@ -1603,14 +1603,16 @@ class RscControlsGroup
     style = 16;
 };
 
-class Grstr_VPHUD_Dialog
+//VPHUD classes begin here
+
+class VPHUD_Dialog
 {
     idd = 2110;
     movingEnabled = 1;
     enableSimulation = 1;
     class controls
     {
-        class Grstr_bg: IGUIBack
+        class Vphud_background: IGUIBack
         {
             idc = 2200;
             x = 0.355625 * safezoneW + safezoneX;
@@ -1620,7 +1622,7 @@ class Grstr_VPHUD_Dialog
             colorBackground[] = {0,0,0,0.6};
             moving = 1;
         };
-        class Grstr_ok: RscButtonMenuOK
+        class Vphud_okBtn: RscButtonMenuOK
         {
             text = "$STR_save";
             x = 0.365937 * safezoneW + safezoneX;
@@ -1628,9 +1630,9 @@ class Grstr_VPHUD_Dialog
             w = 0.0309375 * safezoneW;
             h = 0.022 * safezoneH;
             tooltip = "$STR_saveOptions";
-            action = "closeDialog 0; profileNamespace setVariable ['vphud_scaling',vphud_scaling]; profileNamespace setVariable ['vphud_spacing',vphud_spacing]; profileNamespace setVariable ['vphud_crosshair_toggle',vphud_crosshair_toggle]; profileNamespace setVariable ['vphud_crosshair_color_red',vphud_crosshair_color_red];    profileNamespace setVariable ['vphud_crosshair_color_green',vphud_crosshair_color_green];    profileNamespace setVariable ['vphud_crosshair_color_blue',vphud_crosshair_color_blue];    profileNamespace setVariable ['vphud_crosshair_color_alpha',vphud_crosshair_color_alpha];profileNamespace setVariable ['vphud_unit_system',vphud_unit_system];profileNamespace setVariable ['vphud_force',vphud_force];profileNamespace setVariable ['vphud_crosshair_only_toggle',vphud_crosshair_only_toggle];  profileNamespace setVariable ['vphud_crosshair_style',vphud_crosshair_style];  saveProfileNamespace;";
+            action = "[] spawn vphud_dialog_ok;";
         };
-        class Grstr_cancel: RscButtonMenuCancel
+        class Vphud_cancelBtn: RscButtonMenuCancel
         {
             text ="$STR_cancel";
             x = 0.592812 * safezoneW + safezoneX;
@@ -1638,9 +1640,9 @@ class Grstr_VPHUD_Dialog
             w = 0.04125 * safezoneW;
             h = 0.022 * safezoneH;
             tooltip = "$STR_cancelChanges";
-            action = "closeDialog 0; vphud_scaling = profileNamespace getVariable ['vphud_scaling',1]; vphud_spacing = profileNamespace getVariable ['vphud_spacing',1]; vphud_crosshair_toggle = profileNamespace getVariable ['vphud_crosshair_toggle',false]; vphud_crosshair_color_red = profileNamespace getVariable ['vphud_crosshair_color_red',0]; vphud_crosshair_color_green = profileNamespace getVariable ['vphud_crosshair_color_green',1]; vphud_crosshair_color_blue = profileNamespace getVariable ['vphud_crosshair_color_blue',0]; vphud_crosshair_color_alpha = profileNamespace getVariable ['vphud_crosshair_color_alpha',1]; vphud_unit_system = profileNamespace getVariable ['vphud_unit_system',0]; vphud_force = profileNamespace getVariable ['vphud_force',false]; vphud_crosshair_only_toggle = profileNamespace getVariable ['vphud_crosshair_only_toggle',false]; vphud_crosshair_style = profileNamespace getVariable ['vphud_crosshair_style','V']; if ([] call check_rendering_conditions) then {[] spawn render_vphud;} else {removeMissionEventHandler [""Draw3D"", vphud_event_handler_index];};";
+            action = "[] spawn vphud_dialog_cancel;";
         };
-        class Grstr_tcbch: RscTextCheckbox
+        class Vphud_txtCheckBoxCrosshair: RscTextCheckbox
         {
             idc = 2500;
             x = 0.39 * safezoneW + safezoneX;
@@ -1655,9 +1657,9 @@ class Grstr_VPHUD_Dialog
             {
                 "$STR_enabled"
             };
-            onCheckBoxesSelChanged = "if (_this select 2 == 1) then {vphud_crosshair_toggle = true;} else {vphud_crosshair_toggle = false;};";
+            onCheckBoxesSelChanged = "[] spawn vphud_dialog_txtCheckBoxCh;";
         };
-        class Grstr_slideScale: RscSlider
+        class Vphud_sliderScale: RscSlider
         {
             idc = 1900;
             x = 0.365937 * safezoneW + safezoneX;
@@ -1665,7 +1667,7 @@ class Grstr_VPHUD_Dialog
             w = 0.0825 * safezoneW;
             h = 0.022 * safezoneH;
         };
-        class Grstr_slideSpace: RscSlider
+        class Vphud_sliderSpace: RscSlider
         {
             idc = 1901;
             x = 0.365937 * safezoneW + safezoneX;
@@ -1673,7 +1675,7 @@ class Grstr_VPHUD_Dialog
             w = 0.0825 * safezoneW;
             h = 0.022 * safezoneH;
         };
-        class Grstr_red: RscSlider
+        class Vphud_sliderCrosshairRed: RscSlider
         {
             idc = 1902;
             x = 0.530937 * safezoneW + safezoneX;
@@ -1681,7 +1683,7 @@ class Grstr_VPHUD_Dialog
             w = 0.0825 * safezoneW;
             h = 0.022 * safezoneH;
         };
-        class Grstr_green: RscSlider
+        class Vphud_sliderCrosshairGreen: RscSlider
         {
             idc = 1903;
             x = 0.530937 * safezoneW + safezoneX;
@@ -1689,7 +1691,7 @@ class Grstr_VPHUD_Dialog
             w = 0.0825 * safezoneW;
             h = 0.022 * safezoneH;
         };
-        class Grstr_blue: RscSlider
+        class Vphud_sliderCrosshairBlue: RscSlider
         {
             idc = 1904;
             x = 0.530937 * safezoneW + safezoneX;
@@ -1697,7 +1699,7 @@ class Grstr_VPHUD_Dialog
             w = 0.0825 * safezoneW;
             h = 0.022 * safezoneH;
         };
-        class Grstr_alpha: RscSlider
+        class Vphud_sliderCrosshairAlpha: RscSlider
         {
             idc = 1905;
             x = 0.530937 * safezoneW + safezoneX;
@@ -1705,7 +1707,7 @@ class Grstr_VPHUD_Dialog
             w = 0.0825 * safezoneW;
             h = 0.022 * safezoneH;
         };
-        class Grstr_tbch: RscText
+        class Vphud_txtCrosshair: RscText
         {
             idc = 1001;
             text = "$STR_virtualCrosshair";
@@ -1714,7 +1716,7 @@ class Grstr_VPHUD_Dialog
             w = 0.061875 * safezoneW;
             h = 0.011 * safezoneH;
         };
-        class Grstr_tbred: RscText
+        class Vphud_txtCrosshairRed: RscText
         {
             idc = 1002;
             text = "0";
@@ -1723,7 +1725,7 @@ class Grstr_VPHUD_Dialog
             w = 0.020625 * safezoneW;
             h = 0.011 * safezoneH;
         };
-        class Grstr_tbgreen: RscText
+        class Vphud_txtCrosshairGreen: RscText
         {
             idc = 1003;
             text = "255";
@@ -1732,7 +1734,7 @@ class Grstr_VPHUD_Dialog
             w = 0.020625 * safezoneW;
             h = 0.011 * safezoneH;
         };
-        class Grstr_tbblue: RscText
+        class Vphud_txtCrosshairBlue: RscText
         {
             idc = 1004;
             text = "0";
@@ -1741,7 +1743,7 @@ class Grstr_VPHUD_Dialog
             w = 0.020625 * safezoneW;
             h = 0.011 * safezoneH;
         };
-        class Grstr_tbalpha: RscText
+        class Vphud_txtCrosshairAlpha: RscText
         {
             idc = 1005;
             text = "100%";
@@ -1750,7 +1752,7 @@ class Grstr_VPHUD_Dialog
             w = 0.020625 * safezoneW;
             h = 0.011 * safezoneH;
         };
-        class Grstr_tred: RscText
+        class Vphud_txtCrosshairRed: RscText
         {
             idc = 1006;
             text = "$STR_red";
@@ -1759,7 +1761,7 @@ class Grstr_VPHUD_Dialog
             w = 0.020625 * safezoneW;
             h = 0.011 * safezoneH;
         };
-        class Grstr_tgreen: RscText
+        class Vphud_txtCrosshairGreen: RscText
         {
             idc = 1007;
             text = "$STR_green";
@@ -1768,7 +1770,7 @@ class Grstr_VPHUD_Dialog
             w = 0.0257812 * safezoneW;
             h = 0.011 * safezoneH;
         };
-        class Grstr_tblue: RscText
+        class Vphud_txtCrosshairBlue: RscText
         {
             idc = 1008;
             text = "$STR_blue";
@@ -1777,7 +1779,7 @@ class Grstr_VPHUD_Dialog
             w = 0.020625 * safezoneW;
             h = 0.011 * safezoneH;
         };
-        class Grstr_talpha: RscText
+        class Vphud_txtCrosshairAlpha: RscText
         {
             idc = 1009;
             text = "$STR_opacity";
@@ -1786,7 +1788,7 @@ class Grstr_VPHUD_Dialog
             w = 0.060 * safezoneW;
             h = 0.02 * safezoneH;
         };
-        class Grstr_tscale: RscText
+        class Vphud_txtScaling: RscText
         {
             idc = 1010;
             text = "$STR_hudScaling";
@@ -1795,7 +1797,7 @@ class Grstr_VPHUD_Dialog
             w = 0.0515625 * safezoneW;
             h = 0.022 * safezoneH;
         };
-        class Grstr_tspace: RscText
+        class Vphud_txtSpacing: RscText
         {
             idc = 1011;
             text = "$STR_hudSpacing";
@@ -1804,7 +1806,7 @@ class Grstr_VPHUD_Dialog
             w = 0.0515625 * safezoneW;
             h = 0.022 * safezoneH;
         };
-        class Grstr_tmeasure: RscText
+        class Vphud_txtUnits: RscText
         {
             idc = 1012;
             text = "$STR_unitSystem";
@@ -1813,7 +1815,7 @@ class Grstr_VPHUD_Dialog
             w = 0.0825 * safezoneW;
             h = 0.022 * safezoneH;
         };
-        class Grstr_cbMeasure: RscCombo
+        class Vphud_comboBoxUnits: RscCombo
         {
             idc = 2100;
             x = 0.371094 * safezoneW + safezoneX;
@@ -1821,7 +1823,7 @@ class Grstr_VPHUD_Dialog
             w = 0.08 * safezoneW;
             h = 0.022 * safezoneH;
         };
-        class Grstr_tbscale: RscText
+        class Vphud_txtScalingValue: RscText
         {
             idc = 1013;
             text = "50";
@@ -1830,7 +1832,7 @@ class Grstr_VPHUD_Dialog
             w = 0.0154688 * safezoneW;
             h = 0.011 * safezoneH;
         };
-        class Grstr_tbspace: RscText
+        class Vphud_txtSpacingValue: RscText
         {
             idc = 1014;
             text = "50";
@@ -1839,7 +1841,7 @@ class Grstr_VPHUD_Dialog
             w = 0.0154688 * safezoneW;
             h = 0.011 * safezoneH;
         };
-        class Grstr_tcolor: RscText
+        class Vphud_txtCrosshairColor: RscText
         {
             idc = 1015;
             text = "$STR_crosshairColor";
@@ -1848,7 +1850,7 @@ class Grstr_VPHUD_Dialog
             w = 0.0567187 * safezoneW;
             h = 0.022 * safezoneH;
         };
-        class Grstr_logo: RscPicture
+        class Vphud_logo: RscPicture
         {
             idc = 1200;
             text = "vphud_core\textures\logo.paa";
@@ -1857,7 +1859,7 @@ class Grstr_VPHUD_Dialog
             w = 0.0515625 * safezoneW;
             h = 0.088 * safezoneH;
         };
-        class Grstr_force: RscText
+        class Vphud_txtForce: RscText
         {
             idc = 1016;
             text = "$STR_forceUnforce";
@@ -1866,7 +1868,7 @@ class Grstr_VPHUD_Dialog
             w = 0.0567187 * safezoneW;
             h = 0.011 * safezoneH
         };
-        class Grstr_tcbforce: RscTextCheckbox
+        class Vphud_txtCheckBoxForce: RscTextCheckbox
         {
             idc = 2501;
             x = 0.479375 * safezoneW + safezoneX;
@@ -1881,9 +1883,9 @@ class Grstr_VPHUD_Dialog
             {
                 "$STR_enabled"
             };
-            onCheckBoxesSelChanged = "if (_this select 2 == 1) then {vphud_force = true;} else {vphud_force = false;}; if ([] call check_rendering_conditions) then {[] spawn render_vphud;} else {removeMissionEventHandler [""Draw3D"", vphud_event_handler_index];};";
+            onCheckBoxesSelChanged = "[] spawn vphud_dialog_txtCheckBoxForce;";
         };
-        class Grstr_chonly: RscText
+        class Vphud_txtCrosshairOnly: RscText
         {
             idc = 1017;
             text = "$STR_crosshairOnly";
@@ -1892,7 +1894,7 @@ class Grstr_VPHUD_Dialog
             w = 0.0567187 * safezoneW;
             h = 0.022 * safezoneH;
         };
-        class Grstr_tcbchonly: RscTextCheckbox
+        class Vphud_txtCheckBoxCrosshairOnly: RscTextCheckbox
         {
             idc = 2502;
             x = 0.479375 * safezoneW + safezoneX;
@@ -1907,9 +1909,9 @@ class Grstr_VPHUD_Dialog
             {
                 "$STR_enabled"
             };
-            onCheckBoxesSelChanged = "if (_this select 2 == 1) then {vphud_crosshair_only_toggle = true;} else {vphud_crosshair_only_toggle = false;}; if ([] call check_rendering_conditions) then {[] spawn render_vphud;} else {removeMissionEventHandler [""Draw3D"", vphud_event_handler_index];};";
+            onCheckBoxesSelChanged = "[] spawn vphud_dialog_txtCheckBoxChOnly;";
         };
-        class Grstr_tbchs: RscText
+        class Vphud_txtCrosshairStyle: RscText
         {
             idc = 1020;
             text = "$STR_crosshairStyle";
@@ -1918,7 +1920,7 @@ class Grstr_VPHUD_Dialog
             w = 0.061875 * safezoneW;
             h = 0.011 * safezoneH;
         };
-        class Grstr_edChs: RscEdit
+        class Vphud_editCrosshairStyle: RscEdit
         {
             idc = 1400;
             text = "";
@@ -1926,16 +1928,9 @@ class Grstr_VPHUD_Dialog
             y = 0.511 * safezoneH + safezoneY;
             w = 0.020625 * safezoneW;
             h = 0.022 * safezoneH;
-            onKeyUp = "";
+            //onKeyUp = "";
         };
-        /*class Grstr_cbChs: RscCombo
-        {
-            idc = 2101;
-            x = 0.463906 * safezoneW + safezoneX;
-            y = 0.511 * safezoneH + safezoneY;
-            w = 0.061875 * safezoneW;
-            h = 0.022 * safezoneH;
-        };*/
+
         /*class Grstr_cbPov: RscCombo
         {
             idc = 2101;

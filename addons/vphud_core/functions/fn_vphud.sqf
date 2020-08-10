@@ -1,4 +1,4 @@
-#define hudedveh ["B_Heli_Attack_01_F","B_Plane_CAS_01_F","O_Plane_CAS_02_F","O_Heli_Attack_02_F","O_Heli_Attack_02_black_F","O_Heli_Light_02_F","O_Heli_Light_02_v2_F","O_Heli_Light_02_unarmed_F","I_Plane_Fighter_03_CAS_F","I_Plane_Fighter_03_AA_F","I_Heli_light_03_F","I_Heli_light_03_unarmed_F","RHS_AH64D_AA","RHS_AH64D_noradar_AA","RHS_AH64D_CS","RHS_AH64D_noradar_CS","RHS_AH64D_GS","RHS_AH64D_noradar_GS","RHS_AH64D","RHS_AH64D_noradar","RHS_AH64DGrey","RHS_AH64D_wd_AA","RHS_AH64D_noradar_wd_AA","RHS_AH64D_wd_CS","RHS_AH64D_noradar_wd_CS","RHS_AH64D_wd_GS","RHS_AH64D_noradar_wd_GS","RHS_AH64D_wd","RHS_AH64D_noradar_wd","rhsusf_f22","RHS_C130J","RHS_A10","RHS_A10_AT","RHS_AH1Z_CS","RHS_AH1Z_GS","RHS_AH1Z","rhsusf_CH53E_USMC_D","RHS_AH1Z_wd_CS","RHS_AH1Z_wd_GS","RHS_AH1Z_wd","rhsusf_CH53E_USMC","CUP_B_UH1Y_UNA_USMC","CUP_B_MV22_USMC","CUP_B_UH1Y_MEV_USMC","CUP_B_UH1Y_GUNSHIP_USMC","CUP_B_AH1_BAF","CUP_B_AH1_AT_BAF","CUP_B_AH1_NO_BAF","CUP_B_AH1_ES_BAF","CUP_B_AH1_MR_BAF","CUP_B_AH64D_USA","CUP_B_AH64D_AT_USA","CUP_B_AH64D_NO_USA","CUP_B_AH64D_ES_USA","CUP_B_AH64D_MR_USA","CUP_B_AH1Z_AT_USMC","CUP_B_AH1Z_7RndHydra_USMC","CUP_B_AH1Z_USMC","CUP_B_AH1Z_14RndHydra_USMC","CUP_B_AH1Z_Escort_USMC","CUP_B_AH1Z_NoWeapons_USMC","CUP_B_AH1Z_NOAA_USMC","CUP_I_AH1Z_AT_AAF","CUP_I_AH1Z_AAF","CUP_I_AH1Z_Escort_AAF","CUP_B_Merlin_HC4_GB","CUP_B_Merlin_HC3A_Armed_GB","CUP_B_Merlin_HC3A_GB","CUP_B_Merlin_HC3_VIV_GB","CUP_B_Merlin_HC3_Armed_GB","CUP_B_Merlin_HC3_GB","CUP_B_AW159_Cannon_RN_Blackcat","CUP_B_AW159_Hellfire_RN_Blackcat","CUP_B_AW159_Unarmed_RN_Blackcat","CUP_B_AW159_Cannon_GB","CUP_B_AW159_Hellfire_GB","CUP_B_AW159_Unarmed_GB","CUP_B_AW159_Cannon_RN_Grey","CUP_B_AW159_Hellfire_RN_Grey","CUP_B_AW159_Unarmed_RN_Grey","CUP_I_Wildcat_Cannon_Armed_Digital_AAF","CUP_I_Wildcat_Hellfire_Armed_Digital_AAF","CUP_I_Wildcat_Unarmed_Digital_AAF","CUP_I_Wildcat_Cannon_Armed_Green_AAF","CUP_I_Wildcat_Hellfire_Armed_Green_AAF","CUP_I_Wildcat_Unarmed_Green_AAF","CUP_B_F35B_AA_USMC","CUP_B_F35B_CAS_USMC","CUP_B_F35B_LGB_USMC","CUP_B_F35B_LGB_BAF","CUP_B_F35B_CAS_BAF","CUP_B_F35B_AA_BAF","CUP_B_CH53E_GER","CUP_B_CH53E_VIV_GER","CUP_B_CH53E_USMC","CUP_B_CH53E_VIV_USMC","CUP_B_MV22_USMC_RAMPGUN","CUP_B_MV22_VIV_USMC","CUP_O_Ka60_Grey_RU","CUP_O_Ka60_GL_Blk_CSAT","CUP_O_Ka60_Blk_CSAT","CUP_O_Ka60_GL_Hex_CSAT","CUP_O_Ka60_Hex_CSAT","CUP_O_Ka60_GL_Whale_CSAT","CUP_O_Ka60_Whale_CSAT","CUP_I_Ka60_GL_Digi_AAF","CUP_I_Ka60_Digi_AAF","CUP_I_Ka60_GL_Blk_ION","CUP_I_Ka60_Blk_ION","O_Heli_Attack_02_dynamicLoadout_F","O_Heli_Light_02_dynamicLoadout_F","O_Plane_CAS_02_dynamicLoadout_F","O_Plane_Fighter_02_F","O_Plane_Fighter_02_Stealth_F","B_Heli_Attack_01_dynamicLoadout_F","B_Plane_CAS_01_dynamicLoadout_F","B_Plane_Fighter_01_F","B_Plane_Fighter_01_Stealth_F","I_Heli_light_03_dynamicLoadout_F","I_Plane_Fighter_04_F","I_Plane_Fighter_03_dynamicLoadout_F","B_Parachute","CUP_T10_Parachute_backpack"] \
+#define vphud_hudedveh ["B_Heli_Attack_01_F","B_Plane_CAS_01_F","O_Plane_CAS_02_F","O_Heli_Attack_02_F","O_Heli_Attack_02_black_F","O_Heli_Light_02_F","O_Heli_Light_02_v2_F","O_Heli_Light_02_unarmed_F","I_Plane_Fighter_03_CAS_F","I_Plane_Fighter_03_AA_F","I_Heli_light_03_F","I_Heli_light_03_unarmed_F","RHS_AH64D_AA","RHS_AH64D_noradar_AA","RHS_AH64D_CS","RHS_AH64D_noradar_CS","RHS_AH64D_GS","RHS_AH64D_noradar_GS","RHS_AH64D","RHS_AH64D_noradar","RHS_AH64DGrey","RHS_AH64D_wd_AA","RHS_AH64D_noradar_wd_AA","RHS_AH64D_wd_CS","RHS_AH64D_noradar_wd_CS","RHS_AH64D_wd_GS","RHS_AH64D_noradar_wd_GS","RHS_AH64D_wd","RHS_AH64D_noradar_wd","rhsusf_f22","RHS_C130J","RHS_A10","RHS_A10_AT","RHS_AH1Z_CS","RHS_AH1Z_GS","RHS_AH1Z","rhsusf_CH53E_USMC_D","RHS_AH1Z_wd_CS","RHS_AH1Z_wd_GS","RHS_AH1Z_wd","rhsusf_CH53E_USMC","CUP_B_UH1Y_UNA_USMC","CUP_B_MV22_USMC","CUP_B_UH1Y_MEV_USMC","CUP_B_UH1Y_GUNSHIP_USMC","CUP_B_AH1_BAF","CUP_B_AH1_AT_BAF","CUP_B_AH1_NO_BAF","CUP_B_AH1_ES_BAF","CUP_B_AH1_MR_BAF","CUP_B_AH64D_USA","CUP_B_AH64D_AT_USA","CUP_B_AH64D_NO_USA","CUP_B_AH64D_ES_USA","CUP_B_AH64D_MR_USA","CUP_B_AH1Z_AT_USMC","CUP_B_AH1Z_7RndHydra_USMC","CUP_B_AH1Z_USMC","CUP_B_AH1Z_14RndHydra_USMC","CUP_B_AH1Z_Escort_USMC","CUP_B_AH1Z_NoWeapons_USMC","CUP_B_AH1Z_NOAA_USMC","CUP_I_AH1Z_AT_AAF","CUP_I_AH1Z_AAF","CUP_I_AH1Z_Escort_AAF","CUP_B_Merlin_HC4_GB","CUP_B_Merlin_HC3A_Armed_GB","CUP_B_Merlin_HC3A_GB","CUP_B_Merlin_HC3_VIV_GB","CUP_B_Merlin_HC3_Armed_GB","CUP_B_Merlin_HC3_GB","CUP_B_AW159_Cannon_RN_Blackcat","CUP_B_AW159_Hellfire_RN_Blackcat","CUP_B_AW159_Unarmed_RN_Blackcat","CUP_B_AW159_Cannon_GB","CUP_B_AW159_Hellfire_GB","CUP_B_AW159_Unarmed_GB","CUP_B_AW159_Cannon_RN_Grey","CUP_B_AW159_Hellfire_RN_Grey","CUP_B_AW159_Unarmed_RN_Grey","CUP_I_Wildcat_Cannon_Armed_Digital_AAF","CUP_I_Wildcat_Hellfire_Armed_Digital_AAF","CUP_I_Wildcat_Unarmed_Digital_AAF","CUP_I_Wildcat_Cannon_Armed_Green_AAF","CUP_I_Wildcat_Hellfire_Armed_Green_AAF","CUP_I_Wildcat_Unarmed_Green_AAF","CUP_B_F35B_AA_USMC","CUP_B_F35B_CAS_USMC","CUP_B_F35B_LGB_USMC","CUP_B_F35B_LGB_BAF","CUP_B_F35B_CAS_BAF","CUP_B_F35B_AA_BAF","CUP_B_CH53E_GER","CUP_B_CH53E_VIV_GER","CUP_B_CH53E_USMC","CUP_B_CH53E_VIV_USMC","CUP_B_MV22_USMC_RAMPGUN","CUP_B_MV22_VIV_USMC","CUP_O_Ka60_Grey_RU","CUP_O_Ka60_GL_Blk_CSAT","CUP_O_Ka60_Blk_CSAT","CUP_O_Ka60_GL_Hex_CSAT","CUP_O_Ka60_Hex_CSAT","CUP_O_Ka60_GL_Whale_CSAT","CUP_O_Ka60_Whale_CSAT","CUP_I_Ka60_GL_Digi_AAF","CUP_I_Ka60_Digi_AAF","CUP_I_Ka60_GL_Blk_ION","CUP_I_Ka60_Blk_ION","O_Heli_Attack_02_dynamicLoadout_F","O_Heli_Light_02_dynamicLoadout_F","O_Plane_CAS_02_dynamicLoadout_F","O_Plane_Fighter_02_F","O_Plane_Fighter_02_Stealth_F","B_Heli_Attack_01_dynamicLoadout_F","B_Plane_CAS_01_dynamicLoadout_F","B_Plane_Fighter_01_F","B_Plane_Fighter_01_Stealth_F","I_Heli_light_03_dynamicLoadout_F","I_Plane_Fighter_04_F","I_Plane_Fighter_03_dynamicLoadout_F","B_Parachute","CUP_T10_Parachute_backpack"] \
 
 //LEAVE LINE 2 EMPTY
 //Load profileVars (Mod settings) if exist
@@ -18,7 +18,7 @@ if(isNil {profileNamespace getVariable "vphud_scaling"}) then {
     saveProfileNamespace;
 };
 
-//Global vars
+//vars
 vphud_scaling = profileNamespace getVariable ["vphud_scaling",1];
 vphud_spacing = profileNamespace getVariable ["vphud_spacing",1];
 vphud_crosshair_toggle = profileNamespace getVariable ["vphud_crosshair_toggle",false];
@@ -36,7 +36,7 @@ vphud_event_handler_index = nil;
 //BEGIN METHODS
 
 //Core method
-render_vphud = {
+vphud_render = {
     vphud_event_handler_index = addMissionEventHandler ["Draw3D", {
         if (!vphud_crosshair_only_toggle) then {
             _pitchy = round((vehicle player) call BIS_fnc_getPitchBank select 0);
@@ -253,7 +253,7 @@ render_vphud = {
                 0,
                 0,
                 0,
-                vphud_crosshair_style,
+                _vphud_crosshair_style,
                 2,
                 0.1*vphud_scaling,
                 "EtelkaMonospacePro",
@@ -265,48 +265,125 @@ render_vphud = {
 };
 //End Core Method
 
-filtered_vehicles = {
+vphud_filtered_vehicles = {
     if (vphud_force) then {
-        (typeof vehicle player) in hudedveh;
+        (typeof vehicle player) in vphud_hudedveh;
     } else {
-        !((typeof vehicle player) in hudedveh);
+        !((typeof vehicle player) in vphud_hudedveh);
     };
 };
 
-check_rendering_conditions = {
+vphud_check_rendering_conditions = {
     if ((vehicle player isKindOf "Air") && ([] call filtered_vehicles)) then {
         if ( ((assignedVehicleRole player) select 0 == "driver") || ((assignedVehicleRole player) isEqualTo ["Turret",[0]]) ) then {true};
     } else {false};
+};
+
+vphud_dialog_ok = {
+    closeDialog 0;
+    profileNamespace setVariable ["vphud_scaling",vphud_scaling];
+    profileNamespace setVariable ["vphud_spacing",vphud_spacing];
+    profileNamespace setVariable ["vphud_crosshair_toggle",vphud_crosshair_toggle];
+    profileNamespace setVariable ["vphud_crosshair_color_red",vphud_crosshair_color_red];
+    profileNamespace setVariable ["vphud_crosshair_color_green",vphud_crosshair_color_green];
+    profileNamespace setVariable ["vphud_crosshair_color_blue",vphud_crosshair_color_blue];
+    profileNamespace setVariable ["vphud_crosshair_color_alpha",vphud_crosshair_color_alpha];
+    profileNamespace setVariable ["vphud_unit_system",vphud_unit_system];
+    profileNamespace setVariable ["vphud_force",vphud_force];
+    profileNamespace setVariable ["vphud_crosshair_only_toggle",vphud_crosshair_only_toggle];
+    profileNamespace setVariable ["vphud_crosshair_style",vphud_crosshair_style];
+    saveProfileNamespace;
+};
+
+vphud_dialog_cancel = {
+    closeDialog 0;
+    vphud_scaling = profileNamespace getVariable ["vphud_scaling",1];
+    vphud_spacing = profileNamespace getVariable ["vphud_spacing",1];
+    vphud_crosshair_toggle = profileNamespace getVariable ["vphud_crosshair_toggle",false];
+    vphud_crosshair_color_red = profileNamespace getVariable ["vphud_crosshair_color_red",0];
+    vphud_crosshair_color_green = profileNamespace getVariable ["vphud_crosshair_color_green",1];
+    vphud_crosshair_color_blue = profileNamespace getVariable ["vphud_crosshair_color_blue",0];
+    vphud_crosshair_color_alpha = profileNamespace getVariable ["vphud_crosshair_color_alpha",1];
+    vphud_unit_system = profileNamespace getVariable ["vphud_unit_system",0];
+    vphud_force = profileNamespace getVariable ["vphud_force",false];
+    vphud_crosshair_only_toggle = profileNamespace getVariable ["vphud_crosshair_only_toggle",false];
+    vphud_crosshair_style = profileNamespace getVariable ["vphud_crosshair_style",'V'];
+    if ([] call vphud_check_rendering_conditions) then {
+        [] spawn vphud_render;
+    } else {
+        removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
+    };
+};
+
+vphud_dialog_txtCheckBoxCh {
+    if (_this select 2 == 1) then {
+        vphud_crosshair_toggle = true;
+    } else {
+        vphud_crosshair_toggle = false;
+    };
+};
+
+vphud_dialog_txtCheckBoxForce {
+    if (_this select 2 == 1) then {
+        vphud_force = true;
+    } else {
+        vphud_force = false;
+    };
+    if ([] call check_rendering_conditions) then {
+        [] spawn vphud_render;
+    } else {
+        removeMissionEventHandler [""Draw3D"", vphud_event_handler_index];
+    };
+};
+
+vphud_dialog_txtCheckBoxChOnly {
+    if (_this select 2 == 1) then {
+        vphud_crosshair_only_toggle = true;
+    } else {
+        vphud_crosshair_only_toggle = false;
+    };
+    if ([] call check_rendering_conditions) then {
+        [] spawn vphud_render;
+    } else {
+        removeMissionEventHandler [""Draw3D"", vphud_event_handler_index];
+    };
 };
 //END METHODS
 
 //Main
 if (hasInterface) then {
-    if ([] call check_rendering_conditions) then {
-        [] spawn render_vphud;
+    if ([] call vphud_check_rendering_conditions) then {
+        [] spawn vphud_render;
+        hintSilent "Main";
     };
     player addEventHandler ["Respawn", {
-        if ([] call check_rendering_conditions) then {
-            [] spawn render_vphud;
+        if ([] call vphud_check_rendering_conditions) then {
+            [] spawn vphud_render;
+            hintSilent "Respawn";
         };
     }];
     player addEventHandler ["GetInMan", {
-        if ([] call check_rendering_conditions) then {
-            [] spawn render_vphud;
+        if ([] call vphud_check_rendering_conditions) then {
+            [] spawn vphud_render;
+            hintSilent "GetInMan";
         };
     }];
     player addEventHandler ["SeatSwitchedMan", {
-        if ([] call check_rendering_conditions) then {
-            [] spawn render_vphud;
+        if ([] call vphud_check_rendering_conditions) then {
+            [] spawn vphud_render;
+            hintSilent "SeatSwitchedMan";
             } else {
                 removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
+                hintSilent "Remove SeatSwitchedMan";
             }
     }];
     player addEventHandler ["GetOutMan", {
         removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
+        hintSilent "Rmv GetOutMan";
     }];
     player addEventHandler ["Killed", {
         removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
+        hintSilent "Rmv Killed";
     }];
     player addAction["<t color='#00FF00'>VPHUD Options</t>",{[] spawn VPHUD_fnc_vphud_dialog;},nil,0,false];
 };
