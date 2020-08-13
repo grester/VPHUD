@@ -122,7 +122,6 @@ class RscText
 {
     deletable = 0;
     fade = 0;
-    access = 0;
     type = 0;
     idc = -1;
     colorBackground[] =
@@ -183,7 +182,6 @@ class RscStructuredText
 {
     deletable = 0;
     fade = 0;
-    access = 0;
     type = 13;
     idc = -1;
     style = 0;
@@ -214,7 +212,6 @@ class RscPicture
 {
     deletable = 0;
     fade = 0;
-    access = 0;
     type = 0;
     idc = -1;
     style = 48;
@@ -268,7 +265,6 @@ class RscEdit
 {
     deletable = 0;
     fade = 0;
-    access = 0;
     type = 2;
     x = 0;
     y = 0;
@@ -336,7 +332,6 @@ class RscCombo
 {
     deletable = 0;
     fade = 0;
-    access = 0;
     type = 4;
     colorSelect[] =
     {
@@ -516,7 +511,6 @@ class RscListBox
 {
     deletable = 0;
     fade = 0;
-    access = 0;
     type = 5;
     rowHeight = 0;
     colorText[] =
@@ -703,7 +697,6 @@ class RscButton
 {
     deletable = 0;
     fade = 0;
-    access = 0;
     type = 1;
     text = "";
     colorText[] =
@@ -1073,7 +1066,6 @@ class RscSlider
 {
     deletable = 0;
     fade = 0;
-    access = 0;
     type = 3;
     style = 1024;
     color[] =
@@ -1657,7 +1649,7 @@ class VPHUD_Dialog
             {
                 "$STR_enabled"
             };
-            onCheckBoxesSelChanged = "[] spawn vphud_dialog_txtCheckBoxCh;";
+            onCheckBoxesSelChanged = "[_this select 2] spawn vphud_dialog_txtCheckBoxCh;";
         };
         class Vphud_sliderScale: RscSlider
         {
@@ -1716,7 +1708,7 @@ class VPHUD_Dialog
             w = 0.061875 * safezoneW;
             h = 0.011 * safezoneH;
         };
-        class Vphud_txtCrosshairRed: RscText
+        class Vphud_txtCrosshairRedValue: RscText
         {
             idc = 1002;
             text = "0";
@@ -1725,7 +1717,7 @@ class VPHUD_Dialog
             w = 0.020625 * safezoneW;
             h = 0.011 * safezoneH;
         };
-        class Vphud_txtCrosshairGreen: RscText
+        class Vphud_txtCrosshairGreenValue: RscText
         {
             idc = 1003;
             text = "255";
@@ -1734,7 +1726,7 @@ class VPHUD_Dialog
             w = 0.020625 * safezoneW;
             h = 0.011 * safezoneH;
         };
-        class Vphud_txtCrosshairBlue: RscText
+        class Vphud_txtCrosshairBlueValue: RscText
         {
             idc = 1004;
             text = "0";
@@ -1743,7 +1735,7 @@ class VPHUD_Dialog
             w = 0.020625 * safezoneW;
             h = 0.011 * safezoneH;
         };
-        class Vphud_txtCrosshairAlpha: RscText
+        class Vphud_txtCrosshairAlphaValue: RscText
         {
             idc = 1005;
             text = "100%";
@@ -1883,7 +1875,7 @@ class VPHUD_Dialog
             {
                 "$STR_enabled"
             };
-            onCheckBoxesSelChanged = "[] spawn vphud_dialog_txtCheckBoxForce;";
+            onCheckBoxesSelChanged = "[_this select 2] spawn vphud_dialog_txtCheckBoxForce;";
         };
         class Vphud_txtCrosshairOnly: RscText
         {
@@ -1909,7 +1901,7 @@ class VPHUD_Dialog
             {
                 "$STR_enabled"
             };
-            onCheckBoxesSelChanged = "[] spawn vphud_dialog_txtCheckBoxChOnly;";
+            onCheckBoxesSelChanged = "[_this select 2] spawn vphud_dialog_txtCheckBoxChOnly;";
         };
         class Vphud_txtCrosshairStyle: RscText
         {

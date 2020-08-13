@@ -37,8 +37,10 @@ vphud_event_handler_index = nil;
 
 //Core method
 vphud_render = {
+    diag_log "VPHUD-Starting rendering VPHUD";
     vphud_event_handler_index = addMissionEventHandler ["Draw3D", {
         if (!vphud_crosshair_only_toggle) then {
+            diag_log "VPHUD-Crosshair only disabled";
             _pitchy = round((vehicle player) call BIS_fnc_getPitchBank select 0);
             _banky = round((vehicle player) call BIS_fnc_getPitchBank select 1);
             _vert = (velocity vehicle player select 2);
@@ -110,6 +112,7 @@ vphud_render = {
             "center"
             ];
             if ((vehicle player) isKindOf "Plane") then{
+                diag_log "VPHUD-Vehicle is airplane";
                 drawIcon3D [
                 "\vphud_core\textures\linhaAlt.paa",
                 [0,1,0,1],
@@ -138,6 +141,7 @@ vphud_render = {
                 ];
             };
             if (vphud_unit_system == 0) then {
+                diag_log "VPHUD-Meter units";
                 drawIcon3D [
                 "\vphud_core\textures\altimeter.paa",
                 [1,1,1,1],
@@ -191,6 +195,7 @@ vphud_render = {
                 "center"
                 ];
             } else {
+                diag_log "VPHUD-Imperial units";
                 drawIcon3D [
                 "\vphud_core\textures\altimeterft.paa",
                 [1,1,1,1],
@@ -246,6 +251,7 @@ vphud_render = {
             };
         };
         if (vphud_crosshair_toggle) then {
+            diag_log "VPHUD-Crosshair only enabled";
             drawIcon3D [
                 "",
                 [vphud_crosshair_color_red,vphud_crosshair_color_green,vphud_crosshair_color_blue,vphud_crosshair_color_alpha],
@@ -253,7 +259,7 @@ vphud_render = {
                 0,
                 0,
                 0,
-                _vphud_crosshair_style,
+                vphud_crosshair_style,
                 2,
                 0.1*vphud_scaling,
                 "EtelkaMonospacePro",
@@ -266,20 +272,26 @@ vphud_render = {
 //End Core Method
 
 vphud_filtered_vehicles = {
+    diag_log "VPHUD-Called filtered vehicles";
     if (vphud_force) then {
+        diag_log "VPHUD-Forced disabled";
         (typeof vehicle player) in vphud_hudedveh;
     } else {
+        diag_log "VPHUD-Forced enabled"
         !((typeof vehicle player) in vphud_hudedveh);
     };
 };
 
 vphud_check_rendering_conditions = {
-    if ((vehicle player isKindOf "Air") && ([] call filtered_vehicles)) then {
-        if ( ((assignedVehicleRole player) select 0 == "driver") || ((assignedVehicleRole player) isEqualTo ["Turret",[0]]) ) then {true};
-    } else {false};
+    diag_log "VPHUD-Called rendering conditions"
+    diag_log ("VPHUD-Player entered "+typeOf vehicle player+" as "+(assignedVehicleRole player select 0));
+    if ((vehicle player isKindOf "Air") && ([] call vphud_filtered_vehicles)) then {
+        if ( ((assignedVehicleRole player) select 0 == "driver") || ((assignedVehicleRole player) isEqualTo ["Turret",[0]]) ) then {true; diag_log "VPHUD-Rendering checked true";};
+    } else {false; diag_log "VPHUD-Rendering checked false";};
 };
 
 vphud_dialog_ok = {
+    diag_log "VPHUD-Called dialog OK";
     closeDialog 0;
     profileNamespace setVariable ["vphud_scaling",vphud_scaling];
     profileNamespace setVariable ["vphud_spacing",vphud_spacing];
@@ -296,6 +308,7 @@ vphud_dialog_ok = {
 };
 
 vphud_dialog_cancel = {
+    diag_log "VPHUD-Called dialog cancel";
     closeDialog 0;
     vphud_scaling = profileNamespace getVariable ["vphud_scaling",1];
     vphud_spacing = profileNamespace getVariable ["vphud_spacing",1];
@@ -311,41 +324,63 @@ vphud_dialog_cancel = {
     if ([] call vphud_check_rendering_conditions) then {
         [] spawn vphud_render;
     } else {
-        removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
+        if (!isNil "vphud_event_handler_index") then {
+            diag_log "VPHUD-Stopping rendering VPHUD";
+            removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
+        };
     };
 };
 
-vphud_dialog_txtCheckBoxCh {
-    if (_this select 2 == 1) then {
+vphud_dialog_txtCheckBoxCh = {
+    diag_log "VPHUD-Called dialog crosshair";
+    params ["_in"];
+    if (_in == 1) then {
         vphud_crosshair_toggle = true;
+        diag_log "VPHUD-Crosshair enabled";
     } else {
         vphud_crosshair_toggle = false;
+        diag_log "VPHUD-Crosshair disabled";
     };
 };
 
-vphud_dialog_txtCheckBoxForce {
-    if (_this select 2 == 1) then {
+vphud_dialog_txtCheckBoxForce = {
+    diag_log "VPHUD-Called dialog force";
+    params ["_in"];
+    if (_in == 1) then {
         vphud_force = true;
+        diag_log "VPHUD-Forced enabled";
     } else {
         vphud_force = false;
+        diag_log "VPHUD-Forced disabled";
     };
-    if ([] call check_rendering_conditions) then {
+    if ([] call vphud_check_rendering_conditions) then {
         [] spawn vphud_render;
     } else {
-        removeMissionEventHandler [""Draw3D"", vphud_event_handler_index];
+        if (!isNil "vphud_event_handler_index") then {
+            diag_log "VPHUD-Stopping rendering VPHUD";
+            removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
+        };
     };
 };
 
-vphud_dialog_txtCheckBoxChOnly {
-    if (_this select 2 == 1) then {
+vphud_dialog_txtCheckBoxChOnly = {
+    diag_log "VPHUD-Called dialog crosshair only";
+    params ["_in"];
+    if (_in == 1) then {
+        diag_log "VPHUD-Crosshair only enabled";
         vphud_crosshair_only_toggle = true;
     } else {
+        diag_log "VPHUD-Crosshair only disabled";
         vphud_crosshair_only_toggle = false;
     };
-    if ([] call check_rendering_conditions) then {
+    if ([] call vphud_check_rendering_conditions) then {
         [] spawn vphud_render;
+        diag_log "Rendering VPHUD";
     } else {
-        removeMissionEventHandler [""Draw3D"", vphud_event_handler_index];
+        if (!isNil "vphud_event_handler_index") then {
+            diag_log "VPHUD-Stopping rendering VPHUD";
+            removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
+        };
     };
 };
 //END METHODS
@@ -373,16 +408,25 @@ if (hasInterface) then {
             [] spawn vphud_render;
             hintSilent "SeatSwitchedMan";
             } else {
-                removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
+                if (!isNil "vphud_event_handler_index") then {
+                    diag_log "VPHUD-Stopping rendering VPHUD";
+                    removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
+                };
                 hintSilent "Remove SeatSwitchedMan";
             }
     }];
     player addEventHandler ["GetOutMan", {
-        removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
+        if (!isNil "vphud_event_handler_index") then {
+            diag_log "VPHUD-Stopping rendering VPHUD";
+            removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
+        };
         hintSilent "Rmv GetOutMan";
     }];
     player addEventHandler ["Killed", {
-        removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
+        if (!isNil "vphud_event_handler_index") then {
+            diag_log "VPHUD-Stopping rendering VPHUD";
+            removeMissionEventHandler ["Draw3D", vphud_event_handler_index];
+        };
         hintSilent "Rmv Killed";
     }];
     player addAction["<t color='#00FF00'>VPHUD Options</t>",{[] spawn VPHUD_fnc_vphud_dialog;},nil,0,false];

@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"vphud_dialog",
+				"vphud_dialog_txtCheckBoxCh"
+			],
+			[
+				"Hint",
+				"hintSilent"
+			],
+			[
+				"global",
+				"Global"
+			],
+			[
 				"vphud_c",
 				"vphud_crosshair_style"
 			],
@@ -71,7 +83,7 @@
 			"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/config.cpp",
 			"settings":
 			{
-				"buffer_size": 40775,
+				"buffer_size": 38377,
 				"line_ending": "Windows"
 			}
 		},
@@ -79,7 +91,7 @@
 			"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/functions/fn_vphud.sqf",
 			"settings":
 			{
-				"buffer_size": 14095,
+				"buffer_size": 17889,
 				"line_ending": "Unix"
 			}
 		},
@@ -87,7 +99,7 @@
 			"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/functions/fn_vphud_dialog.sqf",
 			"settings":
 			{
-				"buffer_size": 3308,
+				"buffer_size": 3302,
 				"line_ending": "Windows"
 			}
 		},
@@ -270,6 +282,7 @@
 		"height": 0.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -277,6 +290,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"removeMissionEventHandler",
+			"toggle",
+			"check_rendering_conditions",
+			"value",
+			"Vphud_txtCrosshairRed",
+			"idc = 1006;",
+			"access = 0;",
+			"fnc_vphud_dialog",
+			"Grstr_Vphud",
+			"Grstr_tcbch",
+			"render_vphud",
+			"vphud_crosshair_style",
+			"check_rendering_conditions",
+			"filtered_vehicles",
 			"_measureUnits",
 			"2100",
 			"cbMeasure",
@@ -380,6 +407,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
+			"vphud_render",
+			"_vphud_crosshair_style",
 			"    ",
 			"'",
 			"render_vphud",
@@ -412,15 +442,15 @@
 					"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/config.cpp",
 					"settings":
 					{
-						"buffer_size": 40775,
+						"buffer_size": 38377,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								38915,
-								38915
+								27663,
+								27663
 							]
 						],
 						"settings":
@@ -478,7 +508,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 54479.0,
+						"translation.y": 55384.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -488,15 +518,15 @@
 					"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/functions/fn_vphud.sqf",
 					"settings":
 					{
-						"buffer_size": 14095,
+						"buffer_size": 17889,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4949,
-								4940
+								17745,
+								17745
 							]
 						],
 						"settings":
@@ -554,7 +584,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1407.0,
+						"translation.y": 10793.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -564,15 +594,15 @@
 					"file": "/E/Program Files (x86)/Steam/steamapps/common/Arma 3/VPHUD/addons/vphud_core/functions/fn_vphud_dialog.sqf",
 					"settings":
 					{
-						"buffer_size": 3308,
+						"buffer_size": 3302,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3259,
-								3259
+								185,
+								185
 							]
 						],
 						"settings":
@@ -628,7 +658,7 @@
 							"syntax": "Packages/Bin/fsmEditor/SQF.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 609.0,
+						"translation.y": 406.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -777,7 +807,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 271.0,
+						"translation.y": 358.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
