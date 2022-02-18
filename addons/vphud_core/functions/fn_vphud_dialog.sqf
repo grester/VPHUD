@@ -4,10 +4,6 @@ _measureUnits = ["Metric","Imperial"];
 //_povTypes = ["Vehicle","Player"];
 createDialog "Vphud_Dialog";
 waitUntil {!isNull (findDisplay 2110);};
-{
-    lbAdd [2100,_x];
-} forEach _measureUnits;
-lbSetCurSel [2100, vphud_unit_system];
 
 /*{
     lbAdd [2101,_x];
@@ -57,7 +53,11 @@ ctrlSetText[1005,str(round(vphud_crosshair_color_alpha*100))+"%"];
 ((findDisplay 2110) displayCtrl 1905) ctrlAddEventHandler ["SliderPosChanged","ctrlSetText[1005,str(round(sliderPosition(1905)))+""%""]; vphud_crosshair_color_alpha = sliderPosition(1905)/100;"];
 
 //Unit system changed
-((findDisplay 2110) displayCtrl 2100) ctrlAddEventHandler ["LBSelChanged", "vphud_unit_system = _this select 1;"];
+{
+    lbAdd [2100,_x];
+} forEach _measureUnits;
+//lbSetCurSel [2100, vphud_unit_system];
+((findDisplay 2110) displayCtrl 2100) lbSetCurSel vphud_unit_system;
 
 //Crosshair toggled
 ((findDisplay 2110) displayCtrl 2500) ctrlSetChecked vphud_crosshair_toggle;
