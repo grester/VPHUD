@@ -115,5 +115,25 @@
 			<Portuguese>Forçar/Desforçar</Portuguese>
 			<German>Erzwingen/nicht Erzwingen</German>
 		</Key>
+		<Key ID="STR_crosshairStyle">
+			<Original>Crosshair Style</Original>
+			<Portuguese>Estilo da Mira</Portuguese>
+		</Key>
+		<Key ID="STR_heightMeasure">
+			<Original>Altitude Measurement</Original>
+			<Portuguese>Medição da Altitude</Portuguese>
+		</Key>
+		<Key ID="STR_agl">
+			<Original>Above Ground Level</Original>
+			<Portuguese>Acima do Nível do Chão</Portuguese>
+		</Key>
+		<Key ID="STR_asl">
+			<Original>Above Sea Level</Original>
+			<Portuguese>Acima do Nível do Mar</Portuguese>
+		</Key>
+		<Key ID="STR_throttleindicator">
+			<Original>Throttle Indicator</Original>
+			<Portuguese>Indicador de Propulsão</Portuguese>
+		</Key>
 	</Package>
 </Project>
